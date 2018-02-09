@@ -1,0 +1,11 @@
+Calculations with Floating Point;5
+add;Add;add 7.4 8.6
+subtract;Subtract;sub 6546.3 534.654
+multiply;Multiply;mul 56.534 34.43
+divide;Divide;div 345 52.534
+modulus;Modulus;mod 534 76.534
+sqrt;Square Root;sqrt 200.54
+pow;Power;pow 6 6.5
+pow_negative;Power Negative;pow 6 -6.4
+abs;Absolute Positive; abs 8.6
+abs_negative;Absolute Negative; abs -8.8

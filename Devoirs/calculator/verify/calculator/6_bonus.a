@@ -1,0 +1,8 @@
+Bonus Complex;5
+add;Add;add 2 2 5 6 complex
+sub;Subtract;sub 2 2 5 6 complex
+mul;Multiply;mul 2 2 5 6 complex
+mul_negative;Multiply Negative;mul 2 2 5 -6 complex
+add_array;Add Array;add 2 2 5 -6 5 7 3 -6 7 3 complex
+sub_array;Subtract Array;sub 2 2 5 -6 5 -7 3 6 7 3 complex
+mul_array;Multiply Array;mul 2 2 5 -6 5 7 3 -6 7 3 complex

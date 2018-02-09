@@ -1,0 +1,11 @@
+Calculations;5
+add;Add;add 7 8
+subtract;Subtract;sub 6546 534
+multiply;Multiply;mul 56 34
+divide;Divide;div 345 52
+modulus;Modulus;mod 534 76
+sqrt;Square Root;sqrt 200
+pow;Power;pow 6 6
+pow_negative;Power Negative;pow 6 -6
+abs;Absolute Positive; abs 8
+abs_negative;Absolute Negative; abs -8
