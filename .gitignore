@@ -85,7 +85,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-*.out
 output/
 output
 package.json
