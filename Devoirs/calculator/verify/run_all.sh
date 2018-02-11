@@ -69,7 +69,10 @@ else
 					# fi
 					# cat $inputfile | tail -1
 					unset IFS
-					node "$1/$MAIN" $input | sort > "$outputfile"
+					node "$1/$MAIN" `echo $input` > homeworkoutput
+					head -8 homeworkoutput > "$outputfile"
+					tail -n +9 homeworkoutput | sort >> "$outputfile"
+					rm homeworkoutput
 					strtitle="Verifying $title"
 					printf '%s' "$strtitle"
 					pad=$(printf '%0.1s' "."{1..60})
@@ -87,6 +90,7 @@ else
 						echo $strtitle >> $errorslist
 						head -10 "$errorsfile" >> $errorslist
 					fi
+					rm original
 					total=$(($total+1))
 					printf '%*.*s' 0 $((padlength - ${#strtitle} - ${#str} )) "$pad"
 					printf '%s\n' "$str"
