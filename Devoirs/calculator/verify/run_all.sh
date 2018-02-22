@@ -12,7 +12,7 @@ cd "$1"
 
 if [ -d node_modules ];
 then
-	echo 'Please delete the node_modules folder in your homework archive'
+	echo 'Please delete the node_modules folder from your homework archive'
 elif [ ! -f package.json ];
 then
 	echo 'The package.json file is missing'
