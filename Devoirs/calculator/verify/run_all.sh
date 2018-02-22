@@ -10,7 +10,10 @@ rm -f $errorslist
 
 cd "$1"
 
-if [ ! -f package.json ];
+if [ -d node_modules ];
+then
+	echo 'Please delete the node_modules folder in your homework archive'
+elif [ ! -f package.json ];
 then
 	echo 'The package.json file is missing'
 	echo 'Please add a package.json file to you homework archive.'
