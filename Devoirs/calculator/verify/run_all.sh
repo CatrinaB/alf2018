@@ -71,7 +71,7 @@ else
 					unset IFS
 					node "$1/$MAIN" `echo $input` > homeworkoutput
 					head -8 homeworkoutput > "$outputfile"
-					tail -n +9 homeworkoutput | sort >> "$outputfile"
+					tail -n +9 homeworkoutput | sed "s/ *//" | sort >> "$outputfile"
 					rm homeworkoutput
 					strtitle="Verifying $title"
 					printf '%s' "$strtitle"
@@ -104,6 +104,7 @@ else
 
 	echo 'Tests: ' $passed '/' $total
 	echo 'Points: '$POINTS
+	echo 'Mark without penalties: '`echo $(($POINTS/3)) | sed 's/.$/.&/'`
 
 	if [ "$passed" != "$total" ];
 	then

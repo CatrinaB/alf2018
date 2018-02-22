@@ -11,7 +11,7 @@ do
 		echo $input
 		node main.js `echo $input` > output 
 		head -8 output > "$file"_"$output.out"
-		tail -n +9 output | sort >> "$file"_"$output.out"
+		tail -n +9 output | sed "s/^ *//" | sort >> "$file"_"$output.out"
 		rm output
 		IFS=';'
 	done

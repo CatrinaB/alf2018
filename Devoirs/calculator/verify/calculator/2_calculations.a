@@ -9,3 +9,4 @@ pow;Power;pow 6 6
 pow_negative;Power Negative;pow 6 -6
 abs;Absolute Positive; abs 8
 abs_negative;Absolute Negative; abs -8
+abs_float;Absolute Float; abs -7.6
