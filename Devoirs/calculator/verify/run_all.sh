@@ -81,7 +81,7 @@ else
 					pad=$(printf '%0.1s' "."{1..60})
 					padlength=65
 					sed "s/ALF/$AUTHOR/" "$originalfile" | sed "s/ ---/ `sed s/./-/g <<< $AUTHOR`/" | sed "s/ ___/ `sed s/./_/g <<< $AUTHOR`/" > original
-					if diff --side-by-side --suppress-common-lines original "$outputfile" &> "$errorsfile"
+					if diff --side-by-side --suppress-common-lines --ignore-space-change original "$outputfile" &> "$errorsfile"
 					then
 						str="ok (""$P""p)"
 						passed=$(($passed+1))
