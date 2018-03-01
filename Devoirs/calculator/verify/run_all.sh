@@ -12,7 +12,7 @@ cd "$1"
 
 if [ -d node_modules ];
 then
-	echo 'Please delete the node_modules folder in your homework archive'
+	echo 'Please delete the node_modules folder from your homework archive'
 elif [ ! -f package.json ];
 then
 	echo 'The package.json file is missing'
@@ -81,7 +81,7 @@ else
 					pad=$(printf '%0.1s' "."{1..60})
 					padlength=65
 					sed "s/ALF/$AUTHOR/" "$originalfile" | sed "s/ ---/ `sed s/./-/g <<< $AUTHOR`/" | sed "s/ ___/ `sed s/./_/g <<< $AUTHOR`/" > original
-					if diff --side-by-side --suppress-common-lines original "$outputfile" &> "$errorsfile"
+					if diff --side-by-side --suppress-common-lines --ignore-space-change original "$outputfile" &> "$errorsfile"
 					then
 						str="ok (""$P""p)"
 						passed=$(($passed+1))
