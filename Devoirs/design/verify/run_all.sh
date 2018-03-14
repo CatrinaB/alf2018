@@ -136,13 +136,13 @@ else
 						compare -verbose -metric AE "$originalsvgfile" "$outputsvgfile" > /dev/null 2> "$reportfile" - 
 						tail -n 5 "$reportfile" > "$reportfile.tmp"
 						mv "$reportfile.tmp" "$reportfile"
-						red_pixels=`cat "$reportfile" | grep red | cut -d ":" -f 2`
-						green_pixels=`cat "$reportfile" | grep green | cut -d ":" -f 2`
-						blue_pixels=`cat "$reportfile" | grep blue | cut -d ":" -f 2`
-						alpha_pixels=`cat "$reportfile" | grep alpha | cut -d ":" -f 2`
-						all_pixels=`cat "$reportfile" | grep all | cut -d ":" -f 2`
-						# echo $all_pixels
-						if [ "$all_pixels" -ne "" -a "$all_pixels" -le "$PIXEL" ];
+						red_pixels=`cat "$reportfile" | grep red | cut -d ":" -f 2 | tr -d " "`
+						green_pixels=`cat "$reportfile" | grep green | cut -d ":" -f 2 | tr -d " "`
+						blue_pixels=`cat "$reportfile" | grep blue | cut -d ":" -f 2 | tr -d " "`
+						alpha_pixels=`cat "$reportfile" | grep alpha | cut -d ":" -f 2 | tr -d " "`
+						all_pixels=`cat "$reportfile" | grep all | cut -d ":" -f 2 | tr -d " "`
+						# echo "all pixels " "{"$all_pixels"}"
+						if test "$all_pixels" != "" && [[ "$all_pixels" -le "$PIXELS" ]];
 						then
 							if diff --ignore-space-change --side-by-side --suppress-common-lines "$originalfile" "$outputfile" &> "$errorsfile"
 							then
@@ -161,11 +161,13 @@ else
 							failed=$(($failed+1))
 							echo "--------------" >> $errorslist 
 							echo $strtitle >> $errorslist
-							if [ "$all_pixels" -ne "" ];
+							if [ "$all_pixels" != "" ];
 							then
-								echo "Pixels that are different" $(head -10 "$reportfile") >> $errorslist
+								echo "Pixels that are different" >> $errorslist
+								head -10 "$reportfile" >> $errorslist
 							else
 								echo "Your SVG file has errors" >> $errorslist
+								head -10 "$reportfile" >> $errorslist
 							fi
 						fi
 						total=$(($total+1))
