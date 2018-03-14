@@ -32,7 +32,7 @@ else
 	failed=0
 	total=0
 
-	echo '{ "node":true, "esnext":true }' > .jshintrc
+	echo '{ "node":true, "esversion6":true }' > .jshintrc
 	if [ ! -f $MAIN ];
 	then
 		echo "Your main file, $MAIN, is not available"
