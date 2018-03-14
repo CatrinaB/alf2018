@@ -4,6 +4,7 @@ mkdir -p output
 rm -rf output/*
 
 POINTS=0
+PIXEL=100
 
 errorslist=$1/errors.out
 rm -f $errorslist
@@ -32,7 +33,7 @@ else
 	failed=0
 	total=0
 
-	echo '{ "node":true, "esversion6":true }' > .jshintrc
+	echo '{ "node":true, "esnext":true }' > .jshintrc
 	if [ ! -f $MAIN ];
 	then
 		echo "Your main file, $MAIN, is not available"
@@ -43,62 +44,139 @@ else
 	else
 		cd -
 
-		for file in calculator/*.a
+		# for file in calculator/*.a
+		# do
+		# 	head -n 1 $file | cut -d ';' -f 1
+		# 	P=`head -n 1 $file | cut -d ';' -f 2`
+		# 	if [ $failed == 0 ] || ! (echo $file | grep bonus &> /dev/null);
+		# 	then
+		# 		# STANDARDIFS=$IFS
+		# 		IFS=$'\n'
+		# 		for item in `tail -n +2 $file `;
+		# 		do
+		# 			output=`echo $item | cut -d ';' -f 1`
+		# 			title=`echo $item | cut -d ';' -f 2`
+		# 			input=`echo $item | cut -d ';' -f 3`
+		# 			# echo $output
+		# 			# inputfile=`pwd`/"$file"
+		# 			outputfile=output/`basename "$file"`_"$output".out
+		# 			originalfile="$file"_"$output".out
+		# 			errorsfile=output/`basename "$file"`_"$output".err
+		# 			# title=`head -n 1 "$file"`
+		# 			# if [ `echo -n "$title" | wc -c` -eq 0 ];
+		# 			# then
+		# 			# 	title=`basename $file`
+		# 			# fi
+		# 			# cat $inputfile | tail -1
+		# 			unset IFS
+		# 			node "$1/$MAIN" `echo $input` > homeworkoutput
+		# 			head -8 homeworkoutput > "$outputfile"
+		# 			tail -n +9 homeworkoutput | sed "s/ *//" | sort >> "$outputfile"
+		# 			rm homeworkoutput
+		# 			strtitle="Verifying $title"
+		# 			printf '%s' "$strtitle"
+		# 			pad=$(printf '%0.1s' "."{1..60})
+		# 			padlength=65
+		# 			sed "s/ALF/$AUTHOR/" "$originalfile" | sed "s/ ---/ `sed s/./-/g <<< $AUTHOR`/" | sed "s/ ___/ `sed s/./_/g <<< $AUTHOR`/" > original
+		# 			if diff --side-by-side --suppress-common-lines --ignore-space-change original "$outputfile" &> "$errorsfile"
+		# 			then
+		# 				str="ok (""$P""p)"
+		# 				passed=$(($passed+1))
+		# 				POINTS=$(($POINTS+$P))
+		# 			else
+		# 				str="error (0p)"
+		# 				failed=$(($failed+1))
+		# 				echo "--------------" >> $errorslist 
+		# 				echo $strtitle >> $errorslist
+		# 				head -10 "$errorsfile" >> $errorslist
+		# 			fi
+		# 			rm original
+		# 			total=$(($total+1))
+		# 			printf '%*.*s' 0 $((padlength - ${#strtitle} - ${#str} )) "$pad"
+		# 			printf '%s\n' "$str"
+		# 		done
+		# 		unset IFS 
+		# 	else
+		# 		echo "Not verifying bonus, you have $failed failed tests"
+		# 	fi
+		# done
+		for folder in design/*
 		do
-			head -n 1 $file | cut -d ';' -f 1
-			P=`head -n 1 $file | cut -d ';' -f 2`
-			if [ $failed == 0 ] || ! (echo $file | grep bonus &> /dev/null);
+			if [ -d $folder ];
 			then
-				# STANDARDIFS=$IFS
-				IFS=$'\n'
-				for item in `tail -n +2 $file `;
-				do
-					output=`echo $item | cut -d ';' -f 1`
-					title=`echo $item | cut -d ';' -f 2`
-					input=`echo $item | cut -d ';' -f 3`
-					# echo $output
-					# inputfile=`pwd`/"$file"
-					outputfile=output/`basename "$file"`_"$output".out
-					originalfile="$file"_"$output".out
-					errorsfile=output/`basename "$file"`_"$output".err
-					# title=`head -n 1 "$file"`
-					# if [ `echo -n "$title" | wc -c` -eq 0 ];
-					# then
-					# 	title=`basename $file`
-					# fi
-					# cat $inputfile | tail -1
-					unset IFS
-					node "$1/$MAIN" `echo $input` > homeworkoutput
-					head -8 homeworkoutput > "$outputfile"
-					tail -n +9 homeworkoutput | sed "s/ *//" | sort >> "$outputfile"
-					rm homeworkoutput
-					strtitle="Verifying $title"
-					printf '%s' "$strtitle"
-					pad=$(printf '%0.1s' "."{1..60})
-					padlength=65
-					sed "s/ALF/$AUTHOR/" "$originalfile" | sed "s/ ---/ `sed s/./-/g <<< $AUTHOR`/" | sed "s/ ___/ `sed s/./_/g <<< $AUTHOR`/" > original
-					if diff --side-by-side --suppress-common-lines --ignore-space-change original "$outputfile" &> "$errorsfile"
-					then
-						str="ok (""$P""p)"
-						passed=$(($passed+1))
-						POINTS=$(($POINTS+$P))
-					else
-						str="error (0p)"
-						failed=$(($failed+1))
-						echo "--------------" >> $errorslist 
-						echo $strtitle >> $errorslist
-						head -10 "$errorsfile" >> $errorslist
-					fi
-					rm original
-					total=$(($total+1))
-					printf '%*.*s' 0 $((padlength - ${#strtitle} - ${#str} )) "$pad"
-					printf '%s\n' "$str"
-				done
-				unset IFS 
-			else
-				echo "Not verifying bonus, you have $failed failed tests"
+				if [ -f "$folder"/run.txt ];
+				then
+					echo `head -n 1 "$folder"/run.txt`
+					P=`head -n 2 "$folder"/run.txt | tail -n 1`
+				else
+					echo `basename $folder`
+					P=10
+				fi
+				if [ $failed == 0 ] || ! (echo $folder | grep bonus &> /dev/null);
+				then
+					for file in "$folder"/*.dsn
+					do
+						inputfile=`pwd`/"$file"
+						outputfile=output/`basename "$file"`.out
+						outputsvgfile=output/`basename "$file"`.svg
+						originalfile="$file.out"
+						originalsvgfile="$file.svg"
+						errorsfile=output/`basename "$file"`.err
+						reportfile=output/`basename "$file"`.report
+						title=`head -n 1 "$file" | grep '&' | cut -d '&' -f 2`
+						if [ `echo -n "$title" | wc -c` -eq 0 ];
+						then
+							title=`basename $file`
+						fi
+						node "$1/$MAIN" "$inputfile" "$outputsvgfile" > "$outputfile"
+						strtitle="Verifying $title"
+						printf '%s' "$strtitle"
+						pad=$(printf '%0.1s' "."{1..60})
+						padlength=65
+						compare -verbose -metric AE "$originalsvgfile" "$outputsvgfile" > /dev/null 2> "$reportfile" - 
+						tail -n 5 "$reportfile" > "$reportfile.tmp"
+						mv "$reportfile.tmp" "$reportfile"
+						red_pixels=`cat "$reportfile" | grep red | cut -d ":" -f 2`
+						green_pixels=`cat "$reportfile" | grep green | cut -d ":" -f 2`
+						blue_pixels=`cat "$reportfile" | grep blue | cut -d ":" -f 2`
+						alpha_pixels=`cat "$reportfile" | grep alpha | cut -d ":" -f 2`
+						all_pixels=`cat "$reportfile" | grep all | cut -d ":" -f 2`
+						# echo $all_pixels
+						if [ "$all_pixels" -ne "" -a "$all_pixels" -le "$PIXEL" ];
+						then
+							if diff --ignore-space-change --side-by-side --suppress-common-lines "$originalfile" "$outputfile" &> "$errorsfile"
+							then
+								str="ok (""$P""p)"
+								passed=$(($passed+1))
+								POINTS=$(($POINTS+$P))
+							else
+								str="error (0p)"
+								failed=$(($failed+1))
+								echo "--------------" >> $errorslist 
+								echo $strtitle >> $errorslist
+								head -10 "$errorsfile" >> $errorslist
+							fi
+						else
+							str="error (0p)"
+							failed=$(($failed+1))
+							echo "--------------" >> $errorslist 
+							echo $strtitle >> $errorslist
+							if [ "$all_pixels" -ne "" ];
+							then
+								echo "Pixels that are different" $(head -10 "$reportfile") >> $errorslist
+							else
+								echo "Your SVG file has errors" >> $errorslist
+							fi
+						fi
+						total=$(($total+1))
+						printf '%*.*s' 0 $((padlength - ${#strtitle} - ${#str} )) "$pad"
+						printf '%s\n' "$str"
+					done
+				else
+					echo "Not verifying bonus, you have $failed failed tests"
+				fi
 			fi
-		done	
+		done
 	fi
 
 	echo 'Tests: ' $passed '/' $total

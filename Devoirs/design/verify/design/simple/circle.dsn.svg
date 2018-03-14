@@ -1,2 +1,4 @@
-<svg width="1024" height="768">
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1024" height="768">
+	<circle cx="120" cy="11" r="50" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(255,255,255)" />
 </svg>
