@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1024" height="768">
+	<circle cx="200" cy="100" r="100" stroke="rgb(20,0,200)" stroke-width="1" fill="rgb(20,0,200)" />
+	<circle cx="200" cy="100" r="97" stroke="rgb(20,0,190)" stroke-width="1" fill="rgb(20,0,190)" />
+	<circle cx="200" cy="100" r="94" stroke="rgb(20,0,180)" stroke-width="1" fill="rgb(20,0,180)" />
+	<circle cx="200" cy="100" r="91" stroke="rgb(20,0,170)" stroke-width="1" fill="rgb(20,0,170)" />
+	<circle cx="200" cy="100" r="88" stroke="rgb(20,0,160)" stroke-width="1" fill="rgb(20,0,160)" />
+	<circle cx="200" cy="100" r="85" stroke="rgb(20,0,150)" stroke-width="1" fill="rgb(20,0,150)" />
+	<circle cx="200" cy="100" r="82" stroke="rgb(20,0,140)" stroke-width="1" fill="rgb(20,0,140)" />
+	<circle cx="200" cy="100" r="79" stroke="rgb(20,0,130)" stroke-width="1" fill="rgb(20,0,130)" />
+	<circle cx="200" cy="100" r="76" stroke="rgb(20,0,120)" stroke-width="1" fill="rgb(20,0,120)" />
+	<circle cx="200" cy="100" r="73" stroke="rgb(20,0,110)" stroke-width="1" fill="rgb(20,0,110)" />
+	<circle cx="200" cy="100" r="70" stroke="rgb(20,0,100)" stroke-width="1" fill="rgb(20,0,100)" />
+	<circle cx="200" cy="100" r="67" stroke="rgb(20,0,90)" stroke-width="1" fill="rgb(20,0,90)" />
+	<circle cx="200" cy="100" r="64" stroke="rgb(20,0,80)" stroke-width="1" fill="rgb(20,0,80)" />
+	<circle cx="200" cy="100" r="61" stroke="rgb(20,0,70)" stroke-width="1" fill="rgb(20,0,70)" />
+	<circle cx="200" cy="100" r="58" stroke="rgb(20,0,60)" stroke-width="1" fill="rgb(20,0,60)" />
+	<circle cx="200" cy="100" r="55" stroke="rgb(20,0,50)" stroke-width="1" fill="rgb(20,0,50)" />
+	<circle cx="200" cy="100" r="52" stroke="rgb(20,0,40)" stroke-width="1" fill="rgb(20,0,40)" />
+	<circle cx="200" cy="100" r="49" stroke="rgb(20,0,30)" stroke-width="1" fill="rgb(20,0,30)" />
+	<circle cx="200" cy="100" r="46" stroke="rgb(20,0,20)" stroke-width="1" fill="rgb(20,0,20)" />
+	<circle cx="200" cy="100" r="43" stroke="rgb(20,0,10)" stroke-width="1" fill="rgb(20,0,10)" />
+	<circle cx="200" cy="100" r="40" stroke="rgb(20,0,0)" stroke-width="1" fill="rgb(20,0,0)" />
+	<circle cx="200" cy="100" r="37" stroke="rgb(20,0,-10)" stroke-width="1" fill="rgb(20,0,-10)" />
+	<circle cx="200" cy="100" r="34" stroke="rgb(20,0,-20)" stroke-width="1" fill="rgb(20,0,-20)" />
+	<circle cx="200" cy="100" r="31" stroke="rgb(20,0,-30)" stroke-width="1" fill="rgb(20,0,-30)" />
+	<circle cx="200" cy="100" r="28" stroke="rgb(20,0,-40)" stroke-width="1" fill="rgb(20,0,-40)" />
+	<circle cx="200" cy="100" r="25" stroke="rgb(20,0,-50)" stroke-width="1" fill="rgb(20,0,-50)" />
+	<circle cx="200" cy="100" r="22" stroke="rgb(20,0,-60)" stroke-width="1" fill="rgb(20,0,-60)" />
+	<circle cx="200" cy="100" r="19" stroke="rgb(20,0,-70)" stroke-width="1" fill="rgb(20,0,-70)" />
+	<circle cx="200" cy="100" r="16" stroke="rgb(20,0,-80)" stroke-width="1" fill="rgb(20,0,-80)" />
+	<circle cx="200" cy="100" r="13" stroke="rgb(20,0,-90)" stroke-width="1" fill="rgb(20,0,-90)" />
+</svg>

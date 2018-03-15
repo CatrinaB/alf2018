@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1024" height="768">
+	<circle cx="400" cy="350" r="300" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(100,20,50)" />
+	<circle cx="400" cy="350" r="293" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(98,23,54)" />
+	<circle cx="400" cy="350" r="286" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(96,26,58)" />
+	<circle cx="400" cy="350" r="279" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(94,29,62)" />
+	<circle cx="400" cy="350" r="272" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(92,32,66)" />
+	<circle cx="400" cy="350" r="265" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(90,35,70)" />
+	<circle cx="400" cy="350" r="258" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(88,38,74)" />
+	<circle cx="400" cy="350" r="251" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(86,41,78)" />
+	<circle cx="400" cy="350" r="244" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(84,44,82)" />
+	<circle cx="400" cy="350" r="237" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(82,47,86)" />
+	<circle cx="400" cy="350" r="230" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(80,50,90)" />
+	<circle cx="400" cy="350" r="223" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(78,53,94)" />
+	<circle cx="400" cy="350" r="216" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(76,56,98)" />
+	<circle cx="400" cy="350" r="209" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(74,59,102)" />
+	<circle cx="400" cy="350" r="202" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(72,62,106)" />
+	<circle cx="400" cy="350" r="195" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(70,65,110)" />
+	<circle cx="400" cy="350" r="188" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(68,68,114)" />
+	<circle cx="400" cy="350" r="181" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(66,71,118)" />
+	<circle cx="400" cy="350" r="174" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(64,74,122)" />
+	<circle cx="400" cy="350" r="167" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(62,77,126)" />
+	<circle cx="400" cy="350" r="160" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(60,80,130)" />
+	<circle cx="400" cy="350" r="153" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(58,83,134)" />
+	<circle cx="400" cy="350" r="146" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(56,86,138)" />
+	<circle cx="400" cy="350" r="139" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(54,89,142)" />
+	<circle cx="400" cy="350" r="132" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(52,92,146)" />
+	<circle cx="400" cy="350" r="125" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(50,95,150)" />
+	<circle cx="400" cy="350" r="118" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(48,98,154)" />
+	<circle cx="400" cy="350" r="111" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(46,101,158)" />
+	<circle cx="400" cy="350" r="104" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(44,104,162)" />
+	<circle cx="400" cy="350" r="97" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(42,107,166)" />
+	<circle cx="400" cy="350" r="90" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(40,110,170)" />
+	<circle cx="400" cy="350" r="83" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(38,113,174)" />
+	<circle cx="400" cy="350" r="76" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(36,116,178)" />
+	<circle cx="400" cy="350" r="69" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(34,119,182)" />
+	<circle cx="400" cy="350" r="62" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(32,122,186)" />
+	<circle cx="400" cy="350" r="55" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(30,125,190)" />
+	<circle cx="400" cy="350" r="48" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(28,128,194)" />
+	<circle cx="400" cy="350" r="41" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(26,131,198)" />
+	<circle cx="400" cy="350" r="34" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(24,134,202)" />
+	<circle cx="400" cy="350" r="27" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(22,137,206)" />
+	<polygon points="50,50 undefined,50 undefined,undefined 50,undefined" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(22,137,206)" />
+	<polygon points="100,100 undefined,100 undefined,undefined 100,undefined" stroke="rgb(0,0,0)" stroke-width="1" fill="rgb(22,137,206)" />
+</svg>

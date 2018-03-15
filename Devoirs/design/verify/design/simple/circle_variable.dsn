@@ -1,0 +1,4 @@
+& Circle
+SET: %a 70
+COLOR: fill 200 30 45
+CIRCLE: 120 11 %a
