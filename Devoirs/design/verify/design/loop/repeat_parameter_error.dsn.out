@@ -1,1 +1,2 @@
 You have 1 LOOP without REPEAT
+ERROR LINE 6: REPEAT has 0 parameters, you wrote 1

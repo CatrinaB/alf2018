@@ -1,0 +1,9 @@
+SET: %x 50
+SET:    %y  50
+SET: %r 200
+CIRCLE: %x %y %r
+DIV: %r 3
+ADD: %x 400
+SUB: %y 20
+PEN: 100   200   50
+CIRCLE: %x    %y %r

@@ -16,10 +16,11 @@ ADD: %b 4
 SUB: %r 2
 REPEAT
 
-SET: %x 50
+SET: %x 70
 SET: %y 100
+SET: %z 130
 LOOP: 2
-RECTANGLE: %x %x %y %y
+RECTANGLE: %x %y %z %x
 MUL: %x 2
 DIV: %y 2
 REPEAT

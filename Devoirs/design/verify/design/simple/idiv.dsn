@@ -1,0 +1,6 @@
+SET: %r1 255
+SET: %r 100
+CIRCLE: 50 100 %r
+IDIV: %r1 10
+SET: %r2 %r1
+CIRCLE: 800 200 %r2

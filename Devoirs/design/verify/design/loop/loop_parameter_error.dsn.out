@@ -1,1 +1,2 @@
 ERROR LINE 4: LOOP has 1 parameters, you wrote 2
+ERROR LINE 7: REPEAT and no LOOP or WHILE

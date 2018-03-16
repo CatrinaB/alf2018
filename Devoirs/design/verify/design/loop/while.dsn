@@ -1,0 +1,18 @@
+& WHILE
+
+SET: %var 200
+SET: %r 200
+SET: %g 100
+SET: %b 200
+
+POSITION: 200 100 20
+
+WHILE: %var
+COLOR: pen %r %g %b
+COLOR: fill %r %g %b
+ELLIPSE: 200 200 100 40
+SUB: %r 20
+ADD: %g 25
+SUB: %b 10
+IDIV: %var 20
+REPEAT
