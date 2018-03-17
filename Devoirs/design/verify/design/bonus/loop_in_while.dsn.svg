@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1024" height="768">
+	<polygon points="25,100 200,100 200,250 25,250" stroke="rgb(200,40,255)" stroke-width="1" fill="rgb(200,40,255)" />
+	<circle cx="110" cy="300" r="50" stroke="rgb(200,40,255)" stroke-width="1" fill="rgb(200,40,255)" />
+	<circle cx="110" cy="400" r="50" stroke="rgb(200,40,255)" stroke-width="1" fill="rgb(200,40,255)" />
+	<circle cx="110" cy="500" r="50" stroke="rgb(200,40,255)" stroke-width="1" fill="rgb(200,40,255)" />
+	<circle cx="110" cy="600" r="50" stroke="rgb(200,40,255)" stroke-width="1" fill="rgb(200,40,255)" />
+	<circle cx="110" cy="700" r="50" stroke="rgb(200,40,255)" stroke-width="1" fill="rgb(200,40,255)" />
+	<polygon points="225,100 400,100 400,250 225,250" stroke="rgb(190,80,215)" stroke-width="1" fill="rgb(190,80,215)" />
+	<circle cx="310" cy="300" r="50" stroke="rgb(190,80,215)" stroke-width="1" fill="rgb(190,80,215)" />
+	<circle cx="310" cy="400" r="50" stroke="rgb(190,80,215)" stroke-width="1" fill="rgb(190,80,215)" />
+	<circle cx="310" cy="500" r="50" stroke="rgb(190,80,215)" stroke-width="1" fill="rgb(190,80,215)" />
+	<circle cx="310" cy="600" r="50" stroke="rgb(190,80,215)" stroke-width="1" fill="rgb(190,80,215)" />
+	<polygon points="425,100 600,100 600,250 425,250" stroke="rgb(180,120,175)" stroke-width="1" fill="rgb(180,120,175)" />
+	<circle cx="510" cy="300" r="50" stroke="rgb(180,120,175)" stroke-width="1" fill="rgb(180,120,175)" />
+	<circle cx="510" cy="400" r="50" stroke="rgb(180,120,175)" stroke-width="1" fill="rgb(180,120,175)" />
+	<circle cx="510" cy="500" r="50" stroke="rgb(180,120,175)" stroke-width="1" fill="rgb(180,120,175)" />
+	<polygon points="625,100 800,100 800,250 625,250" stroke="rgb(170,160,135)" stroke-width="1" fill="rgb(170,160,135)" />
+	<circle cx="710" cy="300" r="50" stroke="rgb(170,160,135)" stroke-width="1" fill="rgb(170,160,135)" />
+	<circle cx="710" cy="400" r="50" stroke="rgb(170,160,135)" stroke-width="1" fill="rgb(170,160,135)" />
+	<polygon points="825,100 1000,100 1000,250 825,250" stroke="rgb(160,200,95)" stroke-width="1" fill="rgb(160,200,95)" />
+	<circle cx="910" cy="300" r="50" stroke="rgb(160,200,95)" stroke-width="1" fill="rgb(160,200,95)" />
+</svg>

@@ -1,0 +1,43 @@
+& LOOP in WHILE
+
+SET: %r 200
+SET: %g 40
+SET: %b 255
+
+SET: %x1 25
+SET: %y1 100
+SET: %x2 200
+SET: %y2 250
+
+SET: %i 5
+
+WHILE: %i
+SET: %j %i
+COLOR: pen %r %g %b
+COLOR: fill %r %g %b
+RECTANGLE: %x1 %y1 %x2 %y2
+SET: %x %x1
+ADD: %x 85
+SET: %y %y1
+ADD: %y 200
+SET: %radius 50
+LOOP: %j
+SET: %a %j
+MOD: %a 2
+IF: %a
+COLOR: pen 200 40 255
+COLOR: fill 200 40 255
+ELSE
+COLOR: pen 160 200 95
+COLOR: fill 160 200 95
+END
+CIRCLE: %x %y %radius
+ADD: %y 100
+REPEAT
+SUB: %r 10
+ADD: %g 40
+SUB: %b 40
+ADD: %x1 200
+ADD: %x2 200
+SUB: %i 1
+REPEAT

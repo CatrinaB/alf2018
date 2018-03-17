@@ -1,0 +1,13 @@
+& LOOP no REPEAT
+
+SET: %i 2
+SET: %x 100
+SET: %y 200
+LOOP: 2
+CIRCLE: 100 100 50
+WHILE: %i
+LINE: position %x %y
+ADD: %x 100
+SUB: %y 200
+SUB: %i 1
+REPEAT

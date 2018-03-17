@@ -1,0 +1,33 @@
+& LOOP in LOOP
+
+SET: %i 5
+SET: %j 30
+SET: %x1 25
+SET: %y1 100
+SET: %x2 200
+SET: %y2 250
+
+LOOP: %i
+COLOR: fill 10 200 100
+COLOR: pen 10 200 100
+RECTANGLE: %x1 %y1 %x2 %y2
+SET: %radius 60
+SET: %y %y1
+ADD: %y 75
+SET: %x %x1
+ADD: %x 85
+SET: %r 200
+SET: %g 10
+SET: %b 200
+LOOP: %j
+COLOR: fill %r %g %b
+COLOR: pen %r %g %b
+CIRCLE: %x %y %radius
+SUB: %radius 2
+SUB: %r 5
+ADD: %g 2
+SUB: %b 5
+REPEAT
+ADD: %x1 200
+ADD: %x2 200
+REPEAT
