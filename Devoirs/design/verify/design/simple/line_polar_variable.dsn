@@ -1,4 +1,0 @@
-& Line polar with variables
-SET: %a 450
-SET: %b 300
-LINE: polar %a %b

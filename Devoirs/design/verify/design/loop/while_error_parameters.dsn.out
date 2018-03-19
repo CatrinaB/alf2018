@@ -1,3 +1,0 @@
-ERROR LINE 3: WHILE has 1 parameters, you wrote 3
-ERROR LINE 5: COLOR parameter 1 requires one of (pen, fill), you wrote blue
-ERROR LINE 9: REPEAT and no LOOP or WHILE

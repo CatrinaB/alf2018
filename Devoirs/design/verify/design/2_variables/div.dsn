@@ -1,0 +1,4 @@
+&Div Variable
+SET: %s 10
+DEVI %2 2
+CIRCLE: 120 120 %s

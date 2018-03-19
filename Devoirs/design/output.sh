@@ -2,6 +2,7 @@
 
 for folder in verify/design/*
 do
+	rm $folder/*.svg $folder/*.out
 	for file in $folder/*.dsn
 	do
 		echo $file

@@ -1,0 +1,4 @@
+&Sub Variable
+SET: %s 10
+SUB: %s 5
+CIRCLE: 120 120 %s

@@ -1,0 +1,4 @@
+&Add Variable
+SET: %s 10
+ADD: %s 5
+CIRCLE: 120 120 %s

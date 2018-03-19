@@ -1,0 +1,4 @@
+&Mul Variable
+SET: %s 10
+MUL: %s 6
+CIRCLE: 120 120 %s

@@ -1,0 +1,26 @@
+& Multiple LOOPs
+
+SET:   %loop 40
+SET:   %a    300
+
+SET:   %r 100
+SET: %g   20
+SET: %b      50
+
+LOOP: %loop
+COLOR: fill %r %g   %b
+CIRCLE: 400 350 %a
+SUB: %a 7
+ADD: %g 3
+ADD: %b 4
+SUB: %r 2
+REPEAT
+
+SET: %x 70
+SET: %y 100
+SET: %z 130
+LOOP: 2
+RECTANGLE: %x %y %z %x
+MUL: %x 2
+DIV: %y 2
+REPEAT

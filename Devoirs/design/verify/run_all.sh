@@ -123,7 +123,8 @@ else
 						originalsvgfile="$file.svg"
 						errorsfile=output/`basename "$file"`.err
 						reportfile=output/`basename "$file"`.report
-						title=`head -n 1 "$file" | grep '&' | cut -d '&' -f 2`
+						title=`head -n 1 "$file" | grep '\&' | cut -d "&" -f 2`
+						# echo $title
 						if [ `echo -n "$title" | wc -c` -eq 0 ];
 						then
 							title=`basename $file`
@@ -136,11 +137,11 @@ else
 						compare -verbose -metric AE "$originalsvgfile" "$outputsvgfile" > /dev/null 2> "$reportfile" - 
 						tail -n 5 "$reportfile" > "$reportfile.tmp"
 						mv "$reportfile.tmp" "$reportfile"
-						red_pixels=`cat "$reportfile" | grep red | cut -d ":" -f 2 | tr -d " "`
-						green_pixels=`cat "$reportfile" | grep green | cut -d ":" -f 2 | tr -d " "`
-						blue_pixels=`cat "$reportfile" | grep blue | cut -d ":" -f 2 | tr -d " "`
-						alpha_pixels=`cat "$reportfile" | grep alpha | cut -d ":" -f 2 | tr -d " "`
-						all_pixels=`cat "$reportfile" | grep all | cut -d ":" -f 2 | tr -d " "`
+						red_pixels=`cat "$reportfile" | grep red | head -1 | cut -d ":" -f 2 | tr -d " "`
+						green_pixels=`cat "$reportfile" | grep green | head -1 | cut -d ":" -f 2 | tr -d " "`
+						blue_pixels=`cat "$reportfile" | grep blue | head -1 | cut -d ":" -f 2 | tr -d " "`
+						alpha_pixels=`cat "$reportfile" | grep alpha | head -1 | cut -d ":" -f 2 | tr -d " "`
+						all_pixels=`cat "$reportfile" | grep all | head -1 | cut -d ":" -f 2 | tr -d " "`
 						# echo "all pixels " "{"$all_pixels"}"
 						if test "$all_pixels" != "" && [[ "$all_pixels" -le "$PIXELS" ]];
 						then
@@ -183,7 +184,7 @@ else
 
 	echo 'Tests: ' $passed '/' $total
 	echo 'Points: '$POINTS
-	echo 'Mark without penalties: '`echo $(($POINTS/3)) | sed 's/.$/.&/'`
+	echo 'Mark without penalties: '`echo $(($POINTS/4)) | sed 's/.$/.&/'`
 
 	if [ "$passed" != "$total" ];
 	then

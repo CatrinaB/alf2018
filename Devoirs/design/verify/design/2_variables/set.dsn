@@ -1,0 +1,3 @@
+&Set Variable
+SET: %s 10
+CIRCLE: 120 120 %s

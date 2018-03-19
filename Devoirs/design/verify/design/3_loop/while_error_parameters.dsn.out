@@ -1,0 +1,3 @@
+ERROR LINE 4: WHILE has 1 parameters, you wrote 3
+ERROR LINE 6: COLOR parameter 1 requires one of (pen, fill), you wrote blue
+ERROR LINE 10: REPEAT and no LOOP or WHILE

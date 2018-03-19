@@ -1,0 +1,2 @@
+ERROR LINE 12: ELLIPSE has 4 parameters, you wrote 2
+ERROR LINE 13: CIRCLE parameter 3 requires a number or a variable, you wrote %radius

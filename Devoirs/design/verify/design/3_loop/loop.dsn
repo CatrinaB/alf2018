@@ -1,0 +1,9 @@
+& LOOP
+SET: %a        80
+SET: %b 160
+LOOP:  3
+   COLOR: fill %b 0 200
+SUB: %b    40
+CIRCLE: 400   400 %a
+   SUB: %a 20
+REPEAT

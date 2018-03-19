@@ -1,5 +1,0 @@
-& Rectangle with variables error
-SET: %x1 20
-SET: %y1 40
-SET: %x2 150
-RECTANGLE: %x1 %x2 %y1 %y2
