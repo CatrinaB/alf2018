@@ -8,6 +8,7 @@ run:
 	@cd verify && ./run_all.sh ..
 
 pack:
+	rm -f design.zip
 	zip -r design.zip verify/ Makefile.checker\
 		README.md 
 

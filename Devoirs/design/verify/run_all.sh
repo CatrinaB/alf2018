@@ -4,7 +4,7 @@ mkdir -p output
 rm -rf output/*
 
 POINTS=0
-PIXEL=100
+PIXELS=100
 
 errorslist=$1/errors.out
 rm -f $errorslist
@@ -145,7 +145,9 @@ else
 						# echo "all pixels " "{"$all_pixels"}"
 						if test "$all_pixels" != "" && [[ "$all_pixels" -le "$PIXELS" ]];
 						then
-							if diff --ignore-space-change --side-by-side --suppress-common-lines "$originalfile" "$outputfile" &> "$errorsfile"
+							cat "$originalfile" | sort > output/sorted_original
+							cat "$outputfile" | sort > output/sorted_output
+							if diff --ignore-space-change --side-by-side --suppress-common-lines output/sorted_original output/sorted_output &> "$errorsfile"
 							then
 								str="ok (""$P""p)"
 								passed=$(($passed+1))
