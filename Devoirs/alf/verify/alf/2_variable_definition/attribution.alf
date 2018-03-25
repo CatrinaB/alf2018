@@ -2,7 +2,3 @@
 define n:int
 
 n := 6
-
-begin
-
-end
