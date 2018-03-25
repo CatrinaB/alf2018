@@ -1,0 +1,8 @@
+{For loop}
+
+define n:int := 0
+
+for i in (1 .. 100)
+begin 
+	n := n + 1
+end;

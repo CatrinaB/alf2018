@@ -1,0 +1,10 @@
+{Array with class definition}
+class school
+	property name:string
+	property private:logic
+	property type:int
+end
+
+list:school[1 to 9]
+
+define list_of_schools:list

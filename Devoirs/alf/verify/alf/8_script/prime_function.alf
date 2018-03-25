@@ -1,0 +1,25 @@
+{Prime number message}
+
+message prime:boolean n:int
+begin
+	define p:boolean := true
+
+	for i in (2 to [module sqrt number : n])
+		if n mod i = 0 
+			p := false
+		end
+	end
+
+	return p
+end
+
+define v : int
+
+v := [module read]
+
+if [module prime n : v]
+	[module write text : v+" is prime"]
+else
+	[module write text : v+" is not prime"]
+end
+

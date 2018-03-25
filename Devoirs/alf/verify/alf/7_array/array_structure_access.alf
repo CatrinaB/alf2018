@@ -1,0 +1,12 @@
+{Array with class definition}
+class school
+	property name:string
+	property private:boolean
+	property type:int
+end
+
+list:school[1 to 9]
+
+define list_of_schools:list
+
+list_of_schools#1|name := "School"

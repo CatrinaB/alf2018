@@ -1,0 +1,10 @@
+{Random number}
+
+define n : int
+
+repeat
+	n := [module random start : 1, upto : 100]
+	if n != 0 
+		[module write text : n]
+	end
+when n != 0

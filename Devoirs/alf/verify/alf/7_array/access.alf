@@ -1,0 +1,6 @@
+{Access element of array}
+list:string[1 to 9]
+
+define v:list
+
+v#5 := "The new name for the school"

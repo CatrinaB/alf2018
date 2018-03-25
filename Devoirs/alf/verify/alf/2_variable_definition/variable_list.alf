@@ -1,0 +1,2 @@
+{Variable definition list}
+define n : int, r : real, l : boolean, s : string 

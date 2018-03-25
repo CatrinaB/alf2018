@@ -1,0 +1,5 @@
+{String}
+
+#register TEXT "This is text"
+
+[module print text : TEXT]

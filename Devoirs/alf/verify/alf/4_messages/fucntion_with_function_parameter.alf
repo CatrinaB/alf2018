@@ -1,0 +1,3 @@
+{Message with message parameter}
+
+[module print text:"text"+" "+"to"+" "+"write" number: [module math a:47821]]

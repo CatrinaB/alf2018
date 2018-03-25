@@ -1,0 +1,19 @@
+{Event numbers from 1 to 1000}
+
+define n := 2
+
+for n in (2 to 1000)
+	[module write text : n]
+end
+
+while n <= 1000
+	[module write:text := n]
+	n := n + 2
+end
+
+n := 2
+
+repeat
+	[module write text := n]
+	n := n + 2
+when n <= 1000

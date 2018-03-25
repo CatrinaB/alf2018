@@ -1,0 +1,8 @@
+{Message definition without parameters}
+
+message say:string
+begin 
+	"say1"
+	"say2"
+	"say3"
+end

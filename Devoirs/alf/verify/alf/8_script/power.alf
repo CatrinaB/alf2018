@@ -1,0 +1,16 @@
+{Power function}
+
+message power:int a:int, n => int 		
+begin
+	define p:int := 1
+	for i in (1 to n)
+		p := p * a
+	end
+	return a
+end
+
+define n := 0;
+
+n := [module power a :6, n : 5]
+
+

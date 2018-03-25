@@ -1,0 +1,8 @@
+{Variable declaration of type}
+class school
+	property name:string
+	property private:boolean
+	property type:int
+end
+
+define s:school

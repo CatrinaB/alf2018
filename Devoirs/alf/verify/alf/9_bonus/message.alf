@@ -1,0 +1,5 @@
+{Message}
+
+#register write [module print text :
+
+write "Text" ]

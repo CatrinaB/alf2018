@@ -1,0 +1,5 @@
+{Dispatch message in expression}
+
+define s:int
+
+s := [module sum x:50 y:50]

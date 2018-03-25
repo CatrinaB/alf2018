@@ -1,0 +1,7 @@
+{Repeat loop}
+
+define n:int:=0
+
+repeat 
+	n := n + 1
+when n < 100
