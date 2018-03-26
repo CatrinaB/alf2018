@@ -1,0 +1,12 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "id": "value",
+      "type": "string",
+      "value": "this is a string with with special chacaraters \" \\ \n \r ",
+      "line": 3
+    }
+  ],
+  "line": 3
+}

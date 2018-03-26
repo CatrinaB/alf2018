@@ -1,0 +1,74 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "id": "list",
+      "title": "list",
+      "element_type": "string",
+      "from": "1",
+      "to": "9",
+      "line": 2
+    },
+    {
+      "type": "define",
+      "elements": [
+        {
+          "type": "auto",
+          "title": "v",
+          "line": 4
+        }
+      ],
+      "line": 4
+    },
+    {
+      "id": "class",
+      "title": "structure",
+      "parent": "",
+      "properties": [
+        {
+          "type": "int",
+          "title": "position",
+          "line": 7
+        }
+      ],
+      "messages": []
+    },
+    {
+      "type": "define",
+      "elements": [
+        {
+          "type": "structure",
+          "title": "s",
+          "line": 10
+        }
+      ],
+      "line": 10
+    },
+    {
+      "id": "set",
+      "to": {
+        "id": "property",
+        "object": {
+          "id": "element_of_list",
+          "list": "v",
+          "index": {
+            "id": "identifier",
+            "title": "s",
+            "line": 12
+          },
+          "line": 12
+        },
+        "title": "position",
+        "line": 12
+      },
+      "from": {
+        "id": "value",
+        "type": "string",
+        "value": "The new name for the school",
+        "line": 12
+      },
+      "line": 12
+    }
+  ],
+  "line": 13
+}

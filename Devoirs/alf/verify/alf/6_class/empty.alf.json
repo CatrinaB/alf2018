@@ -1,0 +1,13 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "id": "class",
+      "title": "product",
+      "parent": "",
+      "properties": [],
+      "messages": []
+    }
+  ],
+  "line": 3
+}

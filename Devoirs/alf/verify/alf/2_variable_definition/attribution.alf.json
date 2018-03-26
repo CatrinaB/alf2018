@@ -1,0 +1,32 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "type": "define",
+      "elements": [
+        {
+          "type": "int",
+          "title": "n",
+          "line": 2
+        }
+      ],
+      "line": 2
+    },
+    {
+      "id": "set",
+      "to": {
+        "id": "identifier",
+        "title": "n",
+        "line": 4
+      },
+      "from": {
+        "id": "value",
+        "type": "int",
+        "value": 6,
+        "line": 4
+      },
+      "line": 4
+    }
+  ],
+  "line": 5
+}

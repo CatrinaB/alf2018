@@ -2,5 +2,5 @@
 class school
 	property name:string
 	property private:boolean
-	define type:int
+	property type:int
 end

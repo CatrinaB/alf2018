@@ -1,0 +1,48 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "id": "class",
+      "title": "school",
+      "parent": "",
+      "properties": [
+        {
+          "type": "string",
+          "title": "name",
+          "line": 3
+        },
+        {
+          "type": "logic",
+          "title": "private",
+          "line": 4
+        },
+        {
+          "type": "int",
+          "title": "type",
+          "line": 5
+        }
+      ],
+      "messages": []
+    },
+    {
+      "id": "list",
+      "title": "list",
+      "element_type": "school",
+      "from": "1",
+      "to": "9",
+      "line": 8
+    },
+    {
+      "type": "define",
+      "elements": [
+        {
+          "type": "list",
+          "title": "list_of_schools",
+          "line": 10
+        }
+      ],
+      "line": 10
+    }
+  ],
+  "line": 11
+}

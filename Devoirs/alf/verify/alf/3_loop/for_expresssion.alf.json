@@ -1,0 +1,76 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "type": "define",
+      "elements": [
+        {
+          "type": "int",
+          "title": "n",
+          "line": 3
+        }
+      ],
+      "line": 3
+    },
+    {
+      "type": "define",
+      "elements": [
+        {
+          "type": "int",
+          "title": "s",
+          "line": 4
+        }
+      ],
+      "line": 4
+    },
+    {
+      "type": "define",
+      "elements": [
+        {
+          "type": "int",
+          "title": "max",
+          "line": 5
+        }
+      ],
+      "line": 5
+    },
+    {
+      "id": "for",
+      "variable": "i",
+      "exp": {
+        "id": "identifier",
+        "title": "list",
+        "line": 7
+      },
+      "statements": [
+        {
+          "id": "set",
+          "to": {
+            "id": "identifier",
+            "title": "n",
+            "line": 8
+          },
+          "from": {
+            "id": "exp",
+            "op": "+",
+            "left": {
+              "id": "identifier",
+              "title": "n",
+              "line": 8
+            },
+            "right": {
+              "id": "value",
+              "type": "int",
+              "value": 1,
+              "line": 8
+            },
+            "line": 8
+          },
+          "line": 8
+        }
+      ],
+      "line": 9
+    }
+  ],
+  "line": 10
+}

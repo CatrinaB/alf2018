@@ -1,0 +1,229 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "id": "message",
+      "title": "prime",
+      "parameters": [
+        {
+          "type": "int",
+          "id": "n",
+          "line": 3
+        }
+      ],
+      "return_type": "boolean",
+      "statements": [
+        {
+          "type": "define",
+          "elements": [
+            {
+              "type": "boolean",
+              "title": "p",
+              "line": 5
+            }
+          ],
+          "line": 5
+        },
+        {
+          "id": "for",
+          "variable": "i",
+          "list": {
+            "low": {
+              "id": "value",
+              "type": "int",
+              "value": 2,
+              "line": 7
+            },
+            "high": {
+              "id": "dispatch",
+              "message": "sqrt",
+              "object": "module",
+              "parameters": {
+                "number": {
+                  "id": "identifier",
+                  "title": "n",
+                  "line": 7
+                }
+              },
+              "line": 7
+            },
+            "direction": "to"
+          },
+          "statements": [
+            {
+              "id": "if",
+              "exp": {
+                "id": "exp",
+                "op": "=",
+                "left": {
+                  "id": "exp",
+                  "op": "mod",
+                  "left": {
+                    "id": "identifier",
+                    "title": "n",
+                    "line": 8
+                  },
+                  "right": {
+                    "id": "identifier",
+                    "title": "i",
+                    "line": 8
+                  },
+                  "line": 8
+                },
+                "right": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 0,
+                  "line": 8
+                },
+                "line": 8
+              },
+              "then": [
+                {
+                  "id": "set",
+                  "to": {
+                    "id": "identifier",
+                    "title": "p",
+                    "line": 9
+                  },
+                  "from": {
+                    "id": "value",
+                    "type": "logic",
+                    "value": false,
+                    "line": 9
+                  },
+                  "line": 9
+                }
+              ],
+              "line": 10
+            }
+          ],
+          "line": 11
+        },
+        {
+          "id": "return",
+          "value": {
+            "id": "identifier",
+            "title": "p",
+            "line": 13
+          },
+          "line": 13
+        }
+      ],
+      "line": 14
+    },
+    {
+      "type": "define",
+      "elements": [
+        {
+          "type": "int",
+          "title": "v",
+          "line": 16
+        }
+      ],
+      "line": 16
+    },
+    {
+      "id": "set",
+      "to": {
+        "id": "identifier",
+        "title": "v",
+        "line": 18
+      },
+      "from": {
+        "id": "dispatch",
+        "message": "read",
+        "object": "module",
+        "parameters": [],
+        "line": 18
+      },
+      "line": 18
+    },
+    {
+      "id": "for",
+      "variable": "i",
+      "list": {
+        "low": {
+          "id": "identifier",
+          "title": "v",
+          "line": 20
+        },
+        "high": {
+          "id": "value",
+          "type": "int",
+          "value": 2,
+          "line": 20
+        },
+        "direction": "downto"
+      },
+      "statements": [
+        {
+          "id": "if",
+          "exp": {
+            "id": "dispatch",
+            "message": "prime",
+            "object": "module",
+            "parameters": {
+              "n": {
+                "id": "identifier",
+                "title": "i",
+                "line": 21
+              }
+            },
+            "line": 21
+          },
+          "then": [
+            {
+              "id": "dispatch",
+              "message": "write",
+              "object": "module",
+              "parameters": {
+                "text": {
+                  "id": "exp",
+                  "op": "+",
+                  "left": {
+                    "id": "exp",
+                    "op": "+",
+                    "left": {
+                      "id": "exp",
+                      "op": "+",
+                      "left": {
+                        "id": "value",
+                        "type": "string",
+                        "value": "The smallest prime number less than ",
+                        "line": 22
+                      },
+                      "right": {
+                        "id": "identifier",
+                        "title": "v",
+                        "line": 22
+                      },
+                      "line": 22
+                    },
+                    "right": {
+                      "id": "value",
+                      "type": "string",
+                      "value": " is ",
+                      "line": 22
+                    },
+                    "line": 22
+                  },
+                  "right": {
+                    "id": "identifier",
+                    "title": "i",
+                    "line": 22
+                  },
+                  "line": 22
+                }
+              },
+              "line": 22
+            }
+          ],
+          "line": 23
+        }
+      ],
+      "line": 24
+    }
+  ],
+  "line": 24
+}

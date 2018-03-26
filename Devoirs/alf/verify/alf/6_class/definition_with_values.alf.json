@@ -1,0 +1,29 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "id": "class",
+      "title": "school",
+      "parent": "",
+      "properties": [
+        {
+          "type": "string",
+          "title": "name",
+          "line": 3
+        },
+        {
+          "type": "boolean",
+          "title": "private",
+          "line": 4
+        },
+        {
+          "type": "int",
+          "title": "type",
+          "line": 5
+        }
+      ],
+      "messages": []
+    }
+  ],
+  "line": 7
+}

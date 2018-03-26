@@ -1,6 +1,6 @@
 {Message definition with empty value and statements}
 
-message print text:string
+message print:string text:string
 begin 
 	text := ""
 end

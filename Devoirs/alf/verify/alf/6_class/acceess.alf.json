@@ -1,0 +1,60 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "id": "class",
+      "title": "school",
+      "parent": "",
+      "properties": [
+        {
+          "type": "string",
+          "title": "name",
+          "line": 3
+        },
+        {
+          "type": "boolean",
+          "title": "private",
+          "line": 4
+        },
+        {
+          "type": "int",
+          "title": "type",
+          "line": 5
+        }
+      ],
+      "messages": []
+    },
+    {
+      "type": "define",
+      "elements": [
+        {
+          "type": "school",
+          "title": "s",
+          "line": 8
+        }
+      ],
+      "line": 8
+    },
+    {
+      "id": "set",
+      "to": {
+        "id": "property",
+        "object": {
+          "id": "identifier",
+          "title": "s",
+          "line": 10
+        },
+        "title": "name",
+        "line": 10
+      },
+      "from": {
+        "id": "value",
+        "type": "string",
+        "value": "The new name for the school",
+        "line": 10
+      },
+      "line": 10
+    }
+  ],
+  "line": 11
+}

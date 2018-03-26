@@ -1,0 +1,36 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "id": "message",
+      "title": "print",
+      "parameters": [
+        {
+          "type": "string",
+          "id": "text",
+          "line": 3
+        }
+      ],
+      "return_type": "string",
+      "statements": [
+        {
+          "id": "set",
+          "to": {
+            "id": "identifier",
+            "title": "text",
+            "line": 3
+          },
+          "from": {
+            "id": "value",
+            "type": "string",
+            "value": "",
+            "line": 3
+          },
+          "line": 3
+        }
+      ],
+      "line": 3
+    }
+  ],
+  "line": 4
+}

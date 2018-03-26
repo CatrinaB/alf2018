@@ -3,4 +3,4 @@ list:string[1 to 9]
 
 define v:list, p:list
 
-v#p#5 is "The new name for the school";
+v#p#5 := "The new name for the school"

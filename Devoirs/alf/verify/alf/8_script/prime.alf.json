@@ -1,0 +1,181 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "type": "define",
+      "elements": [
+        {
+          "type": "int",
+          "title": "n",
+          "line": 3
+        }
+      ],
+      "line": 3
+    },
+    {
+      "id": "set",
+      "to": {
+        "id": "identifier",
+        "title": "n",
+        "line": 5
+      },
+      "from": {
+        "id": "dispatch",
+        "message": "read",
+        "object": "module",
+        "parameters": [],
+        "line": 5
+      },
+      "line": 5
+    },
+    {
+      "type": "define",
+      "elements": [
+        {
+          "type": "boolean",
+          "title": "p",
+          "line": 7
+        }
+      ],
+      "line": 7
+    },
+    {
+      "id": "for",
+      "variable": "i",
+      "list": {
+        "low": {
+          "id": "value",
+          "type": "int",
+          "value": 2,
+          "line": 9
+        },
+        "high": {
+          "id": "dispatch",
+          "message": "sqrt",
+          "object": "module",
+          "parameters": {
+            "number": {
+              "id": "identifier",
+              "title": "n",
+              "line": 9
+            }
+          },
+          "line": 9
+        },
+        "direction": "to"
+      },
+      "statements": [
+        {
+          "id": "if",
+          "exp": {
+            "id": "exp",
+            "op": "=",
+            "left": {
+              "id": "exp",
+              "op": "mod",
+              "left": {
+                "id": "identifier",
+                "title": "n",
+                "line": 10
+              },
+              "right": {
+                "id": "identifier",
+                "title": "i",
+                "line": 10
+              },
+              "line": 10
+            },
+            "right": {
+              "id": "value",
+              "type": "int",
+              "value": 0,
+              "line": 10
+            },
+            "line": 10
+          },
+          "then": [
+            {
+              "id": "set",
+              "to": {
+                "id": "identifier",
+                "title": "p",
+                "line": 11
+              },
+              "from": {
+                "id": "value",
+                "type": "logic",
+                "value": false,
+                "line": 11
+              },
+              "line": 11
+            }
+          ],
+          "line": 12
+        }
+      ],
+      "line": 13
+    },
+    {
+      "id": "if",
+      "exp": {
+        "id": "identifier",
+        "title": "p",
+        "line": 15
+      },
+      "then": [
+        {
+          "id": "dispatch",
+          "message": "write",
+          "object": "module",
+          "parameters": {
+            "text": {
+              "id": "exp",
+              "op": "+",
+              "left": {
+                "id": "identifier",
+                "title": "n",
+                "line": 16
+              },
+              "right": {
+                "id": "value",
+                "type": "string",
+                "value": " is prime",
+                "line": 16
+              },
+              "line": 16
+            }
+          },
+          "line": 16
+        }
+      ],
+      "else": [
+        {
+          "id": "dispatch",
+          "message": "write",
+          "object": "module",
+          "parameters": {
+            "text": {
+              "id": "exp",
+              "op": "+",
+              "left": {
+                "id": "identifier",
+                "title": "n",
+                "line": 18
+              },
+              "right": {
+                "id": "value",
+                "type": "string",
+                "value": " is not prime",
+                "line": 18
+              },
+              "line": 18
+            }
+          },
+          "line": 18
+        }
+      ],
+      "line": 19
+    }
+  ],
+  "line": 19
+}

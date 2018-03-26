@@ -1,0 +1,70 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "id": "dispatch",
+      "message": "print",
+      "object": "module",
+      "parameters": {
+        "text": {
+          "id": "exp",
+          "op": "+",
+          "left": {
+            "id": "exp",
+            "op": "+",
+            "left": {
+              "id": "exp",
+              "op": "+",
+              "left": {
+                "id": "exp",
+                "op": "+",
+                "left": {
+                  "id": "value",
+                  "type": "string",
+                  "value": "text",
+                  "line": 3
+                },
+                "right": {
+                  "id": "value",
+                  "type": "character",
+                  "value": " ",
+                  "line": 3
+                },
+                "line": 3
+              },
+              "right": {
+                "id": "value",
+                "type": "string",
+                "value": "to",
+                "line": 3
+              },
+              "line": 3
+            },
+            "right": {
+              "id": "value",
+              "type": "character",
+              "value": " ",
+              "line": 3
+            },
+            "line": 3
+          },
+          "right": {
+            "id": "value",
+            "type": "string",
+            "value": "write",
+            "line": 3
+          },
+          "line": 3
+        },
+        "additional": {
+          "id": "value",
+          "type": "string",
+          "value": " text ",
+          "line": 3
+        }
+      },
+      "line": 3
+    }
+  ],
+  "line": 3
+}

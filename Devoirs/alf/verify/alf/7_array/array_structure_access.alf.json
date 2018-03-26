@@ -1,0 +1,74 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "id": "class",
+      "title": "school",
+      "parent": "",
+      "properties": [
+        {
+          "type": "string",
+          "title": "name",
+          "line": 3
+        },
+        {
+          "type": "boolean",
+          "title": "private",
+          "line": 4
+        },
+        {
+          "type": "int",
+          "title": "type",
+          "line": 5
+        }
+      ],
+      "messages": []
+    },
+    {
+      "id": "list",
+      "title": "list",
+      "element_type": "school",
+      "from": "1",
+      "to": "9",
+      "line": 8
+    },
+    {
+      "type": "define",
+      "elements": [
+        {
+          "type": "list",
+          "title": "list_of_schools",
+          "line": 10
+        }
+      ],
+      "line": 10
+    },
+    {
+      "id": "set",
+      "to": {
+        "id": "property",
+        "object": {
+          "id": "element_of_list",
+          "list": "list_of_schools",
+          "index": {
+            "id": "value",
+            "type": "int",
+            "value": 1,
+            "line": 12
+          },
+          "line": 12
+        },
+        "title": "name",
+        "line": 12
+      },
+      "from": {
+        "id": "value",
+        "type": "string",
+        "value": "School",
+        "line": 12
+      },
+      "line": 12
+    }
+  ],
+  "line": 13
+}

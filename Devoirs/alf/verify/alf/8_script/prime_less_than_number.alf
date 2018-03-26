@@ -4,7 +4,7 @@ message prime:boolean n:int
 begin
 	define p:boolean := true
 
-	for i in (2 to [module sqrt number : n])
+	for i in range(2 to [module sqrt number : n])
 		if n mod i = 0 
 			p := false
 		end
@@ -17,8 +17,8 @@ define v : int
 
 v := [module read]
 
-for i in (v downto 2)
-	if [message prime n : i]
+for i in range(v downto 2)
+	if [module prime n : i]
 		[module write text : "The smallest prime number less than "+v+" is "+i]
 	end
 end

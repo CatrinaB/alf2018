@@ -1,0 +1,20 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "id": "dispatch",
+      "message": "print",
+      "object": "module",
+      "parameters": {
+        "text": {
+          "id": "value",
+          "type": "string",
+          "value": "text to write",
+          "line": 3
+        }
+      },
+      "line": 3
+    }
+  ],
+  "line": 3
+}
