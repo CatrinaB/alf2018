@@ -1,0 +1,10 @@
+{
+  "error": "syntax",
+  "line": 3,
+  "text": "100",
+  "token": "NUMBER",
+  "expected": [
+    "'IDENTIFIER'",
+    "']'"
+  ]
+}

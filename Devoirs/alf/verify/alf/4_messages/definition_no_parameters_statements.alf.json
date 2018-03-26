@@ -1,0 +1,33 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "id": "message",
+      "title": "say",
+      "parameters": [],
+      "return_type": "string",
+      "statements": [
+        {
+          "id": "value",
+          "type": "string",
+          "value": "say1",
+          "line": 5
+        },
+        {
+          "id": "value",
+          "type": "string",
+          "value": "say2",
+          "line": 6
+        },
+        {
+          "id": "value",
+          "type": "string",
+          "value": "say3",
+          "line": 7
+        }
+      ],
+      "line": 8
+    }
+  ],
+  "line": 8
+}

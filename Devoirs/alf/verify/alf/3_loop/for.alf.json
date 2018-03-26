@@ -1,0 +1,64 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "type": "define",
+      "elements": [
+        {
+          "type": "int",
+          "title": "n",
+          "line": 3
+        }
+      ],
+      "line": 3
+    },
+    {
+      "id": "for",
+      "variable": "i",
+      "list": {
+        "low": {
+          "id": "value",
+          "type": "int",
+          "value": 1,
+          "line": 5
+        },
+        "high": {
+          "id": "value",
+          "type": "int",
+          "value": 100,
+          "line": 5
+        },
+        "direction": "to"
+      },
+      "statements": [
+        {
+          "id": "set",
+          "to": {
+            "id": "identifier",
+            "title": "n",
+            "line": 6
+          },
+          "from": {
+            "id": "exp",
+            "op": "+",
+            "left": {
+              "id": "identifier",
+              "title": "n",
+              "line": 6
+            },
+            "right": {
+              "id": "value",
+              "type": "int",
+              "value": 1,
+              "line": 6
+            },
+            "line": 6
+          },
+          "line": 6
+        }
+      ],
+      "line": 7
+    }
+  ],
+  "line": 8
+}

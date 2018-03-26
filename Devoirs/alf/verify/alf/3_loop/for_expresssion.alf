@@ -4,7 +4,6 @@ define n:int := 0
 define s:int := 1
 define max:int := 2*n
 
-for i in (1, 2, 3, 4, 5)
-begin 
-	n := n + 1;
+for i in list
+	n := n + 1
 end

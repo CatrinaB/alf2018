@@ -1,0 +1,17 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "type": "define",
+      "elements": [
+        {
+          "type": "int",
+          "title": "variable",
+          "line": 2
+        }
+      ],
+      "line": 2
+    }
+  ],
+  "line": 2
+}

@@ -1,0 +1,17 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "type": "define",
+      "elements": [
+        {
+          "type": "auto",
+          "title": "auto",
+          "line": 2
+        }
+      ],
+      "line": 2
+    }
+  ],
+  "line": 3
+}

@@ -2,7 +2,6 @@
 
 define n:int := 0
 
-for i in (1 .. 100)
-begin 
+for i in range (1 to 100)
 	n := n + 1
-end;
+end

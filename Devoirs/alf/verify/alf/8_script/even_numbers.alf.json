@@ -1,0 +1,187 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "type": "define",
+      "elements": [
+        {
+          "type": "auto",
+          "title": "n",
+          "line": 3
+        }
+      ],
+      "line": 3
+    },
+    {
+      "id": "for",
+      "variable": "n",
+      "list": {
+        "low": {
+          "id": "value",
+          "type": "int",
+          "value": 2,
+          "line": 5
+        },
+        "high": {
+          "id": "value",
+          "type": "int",
+          "value": 1000,
+          "line": 5
+        },
+        "direction": "to"
+      },
+      "statements": [
+        {
+          "id": "dispatch",
+          "message": "write",
+          "object": "module",
+          "parameters": {
+            "text": {
+              "id": "identifier",
+              "title": "n",
+              "line": 6
+            }
+          },
+          "line": 6
+        }
+      ],
+      "line": 7
+    },
+    {
+      "id": "while",
+      "exp": {
+        "id": "exp",
+        "op": "<=",
+        "left": {
+          "id": "identifier",
+          "title": "n",
+          "line": 9
+        },
+        "right": {
+          "id": "value",
+          "type": "int",
+          "value": 1000,
+          "line": 9
+        },
+        "line": 9
+      },
+      "statements": [
+        {
+          "id": "dispatch",
+          "message": "write",
+          "object": "module",
+          "parameters": {
+            "text": {
+              "id": "identifier",
+              "title": "n",
+              "line": 10
+            }
+          },
+          "line": 10
+        },
+        {
+          "id": "set",
+          "to": {
+            "id": "identifier",
+            "title": "n",
+            "line": 11
+          },
+          "from": {
+            "id": "exp",
+            "op": "+",
+            "left": {
+              "id": "identifier",
+              "title": "n",
+              "line": 11
+            },
+            "right": {
+              "id": "value",
+              "type": "int",
+              "value": 2,
+              "line": 11
+            },
+            "line": 11
+          },
+          "line": 11
+        }
+      ],
+      "line": 12
+    },
+    {
+      "id": "set",
+      "to": {
+        "id": "identifier",
+        "title": "n",
+        "line": 14
+      },
+      "from": {
+        "id": "value",
+        "type": "int",
+        "value": 2,
+        "line": 14
+      },
+      "line": 14
+    },
+    {
+      "id": "repeat",
+      "exp": {
+        "id": "exp",
+        "op": "<=",
+        "left": {
+          "id": "identifier",
+          "title": "n",
+          "line": 19
+        },
+        "right": {
+          "id": "value",
+          "type": "int",
+          "value": 1000,
+          "line": 19
+        },
+        "line": 19
+      },
+      "statements": [
+        {
+          "id": "dispatch",
+          "message": "write",
+          "object": "module",
+          "parameters": {
+            "text": {
+              "id": "identifier",
+              "title": "n",
+              "line": 17
+            }
+          },
+          "line": 17
+        },
+        {
+          "id": "set",
+          "to": {
+            "id": "identifier",
+            "title": "n",
+            "line": 18
+          },
+          "from": {
+            "id": "exp",
+            "op": "+",
+            "left": {
+              "id": "identifier",
+              "title": "n",
+              "line": 18
+            },
+            "right": {
+              "id": "value",
+              "type": "int",
+              "value": 2,
+              "line": 18
+            },
+            "line": 18
+          },
+          "line": 18
+        }
+      ],
+      "line": 19
+    }
+  ],
+  "line": 19
+}

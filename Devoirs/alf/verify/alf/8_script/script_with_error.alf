@@ -4,7 +4,7 @@ message prime:boolean n : int
 begin
 	define p : boolean := true
 
-	for i in (2 to [module sqrt number : n]
+	for i in range(2 to [module sqrt number : n]
 		if n mod i = 0
 			p := false
 		end

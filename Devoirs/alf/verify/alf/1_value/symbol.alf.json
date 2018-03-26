@@ -1,0 +1,12 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "id": "value",
+      "type": "character",
+      "value": "a",
+      "line": 2
+    }
+  ],
+  "line": 2
+}

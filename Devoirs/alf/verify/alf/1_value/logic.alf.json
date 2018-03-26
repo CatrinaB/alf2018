@@ -1,0 +1,12 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "id": "value",
+      "type": "logic",
+      "value": false,
+      "line": 1
+    }
+  ],
+  "line": 1
+}

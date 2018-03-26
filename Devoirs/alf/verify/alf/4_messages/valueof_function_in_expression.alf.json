@@ -1,0 +1,46 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "type": "define",
+      "elements": [
+        {
+          "type": "int",
+          "title": "s",
+          "line": 3
+        }
+      ],
+      "line": 3
+    },
+    {
+      "id": "set",
+      "to": {
+        "id": "identifier",
+        "title": "s",
+        "line": 5
+      },
+      "from": {
+        "id": "dispatch",
+        "message": "sum",
+        "object": "module",
+        "parameters": {
+          "x": {
+            "id": "value",
+            "type": "int",
+            "value": 50,
+            "line": 5
+          },
+          "y": {
+            "id": "value",
+            "type": "int",
+            "value": 50,
+            "line": 5
+          }
+        },
+        "line": 5
+      },
+      "line": 5
+    }
+  ],
+  "line": 6
+}

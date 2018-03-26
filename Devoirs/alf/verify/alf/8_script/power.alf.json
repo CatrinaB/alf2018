@@ -1,0 +1,131 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "id": "message",
+      "title": "power",
+      "parameters": [
+        {
+          "type": "int",
+          "id": "a",
+          "line": 3
+        },
+        {
+          "type": "int",
+          "id": "n",
+          "line": 3
+        }
+      ],
+      "return_type": "int",
+      "statements": [
+        {
+          "type": "define",
+          "elements": [
+            {
+              "type": "int",
+              "title": "p",
+              "line": 5
+            }
+          ],
+          "line": 5
+        },
+        {
+          "id": "for",
+          "variable": "i",
+          "list": {
+            "low": {
+              "id": "value",
+              "type": "int",
+              "value": 1,
+              "line": 6
+            },
+            "high": {
+              "id": "identifier",
+              "title": "n",
+              "line": 6
+            },
+            "direction": "to"
+          },
+          "statements": [
+            {
+              "id": "set",
+              "to": {
+                "id": "identifier",
+                "title": "p",
+                "line": 7
+              },
+              "from": {
+                "id": "exp",
+                "op": "*",
+                "left": {
+                  "id": "identifier",
+                  "title": "p",
+                  "line": 7
+                },
+                "right": {
+                  "id": "identifier",
+                  "title": "a",
+                  "line": 7
+                },
+                "line": 7
+              },
+              "line": 7
+            }
+          ],
+          "line": 8
+        },
+        {
+          "id": "return",
+          "value": {
+            "id": "identifier",
+            "title": "a",
+            "line": 9
+          },
+          "line": 9
+        }
+      ],
+      "line": 10
+    },
+    {
+      "type": "define",
+      "elements": [
+        {
+          "type": "auto",
+          "title": "n",
+          "line": 12
+        }
+      ],
+      "line": 12
+    },
+    {
+      "id": "set",
+      "to": {
+        "id": "identifier",
+        "title": "n",
+        "line": 14
+      },
+      "from": {
+        "id": "dispatch",
+        "message": "power",
+        "object": "module",
+        "parameters": {
+          "a": {
+            "id": "value",
+            "type": "int",
+            "value": 6,
+            "line": 14
+          },
+          "n": {
+            "id": "value",
+            "type": "int",
+            "value": 5,
+            "line": 14
+          }
+        },
+        "line": 14
+      },
+      "line": 14
+    }
+  ],
+  "line": 17
+}

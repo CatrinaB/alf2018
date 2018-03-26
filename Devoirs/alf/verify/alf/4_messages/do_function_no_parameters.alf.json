@@ -1,0 +1,13 @@
+{
+  "id": "module",
+  "statements": [
+    {
+      "id": "dispatch",
+      "message": "getpid",
+      "object": "module",
+      "parameters": [],
+      "line": 3
+    }
+  ],
+  "line": 3
+}
