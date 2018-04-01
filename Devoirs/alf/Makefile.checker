@@ -5,7 +5,7 @@ all: build-pre run build-post
 build-post: 
 
 run: 
-	@cd verify && ./run_all.sh ../main.js
+	@cd verify && ./run_all.sh ..
 
 pack:
 	rm -f alf.zip
