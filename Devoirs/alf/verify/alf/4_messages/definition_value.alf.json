@@ -24,6 +24,21 @@
             {
               "type": "int",
               "title": "s",
+              "value": {
+                "id": "exp",
+                "op": "+",
+                "left": {
+                  "id": "identifier",
+                  "title": "n1",
+                  "line": 6
+                },
+                "right": {
+                  "id": "identifier",
+                  "title": "n2",
+                  "line": 6
+                },
+                "line": 6
+              },
               "line": 6
             }
           ],

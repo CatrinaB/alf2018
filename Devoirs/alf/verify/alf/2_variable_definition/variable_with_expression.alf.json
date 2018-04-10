@@ -7,6 +7,34 @@
         {
           "type": "int",
           "title": "e",
+          "value": {
+            "id": "exp",
+            "op": "+",
+            "left": {
+              "id": "value",
+              "type": "int",
+              "value": 20,
+              "line": 2
+            },
+            "right": {
+              "id": "exp",
+              "op": "*",
+              "left": {
+                "id": "value",
+                "type": "int",
+                "value": 3,
+                "line": 2
+              },
+              "right": {
+                "id": "value",
+                "type": "int",
+                "value": 5,
+                "line": 2
+              },
+              "line": 2
+            },
+            "line": 2
+          },
           "line": 2
         }
       ],

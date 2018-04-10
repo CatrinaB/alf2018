@@ -15,6 +15,11 @@
         {
           "type": "auto",
           "title": "v",
+          "value": {
+            "id": "identifier",
+            "title": "list",
+            "line": 4
+          },
           "line": 4
         }
       ],
