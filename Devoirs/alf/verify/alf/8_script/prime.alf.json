@@ -34,12 +34,6 @@
         {
           "type": "boolean",
           "title": "p",
-          "value": {
-            "id": "value",
-            "type": "logic",
-            "value": true,
-            "line": 7
-          },
           "line": 7
         }
       ],

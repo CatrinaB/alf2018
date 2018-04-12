@@ -7,45 +7,21 @@
         {
           "type": "int",
           "title": "n",
-          "value": {
-            "id": "value",
-            "type": "int",
-            "value": 3,
-            "line": 2
-          },
           "line": 2
         },
         {
           "type": "real",
           "title": "r",
-          "value": {
-            "id": "value",
-            "type": "real",
-            "value": 3.7,
-            "line": 2
-          },
           "line": 2
         },
         {
           "type": "logic",
           "title": "l",
-          "value": {
-            "id": "value",
-            "type": "logic",
-            "value": false,
-            "line": 2
-          },
           "line": 2
         },
         {
           "type": "string",
           "title": "s",
-          "value": {
-            "id": "value",
-            "type": "string",
-            "value": "string",
-            "line": 2
-          },
           "line": 2
         }
       ],
