@@ -1,28 +1,20 @@
 {
-  "error": "syntax",
-  "line": 3,
-  "text": "#",
-  "token": "#",
-  "expected": [
-    "'EOF'",
-    "'message'",
-    "'('",
-    "'-'",
-    "'NOT'",
-    "'NUMBER'",
-    "'STRING_VALUE'",
-    "'SYMBOL'",
-    "'LOGIC_VALUE'",
-    "'IDENTIFIER'",
-    "'NONE'",
-    "'RETURN'",
-    "'DEFINE'",
-    "'['",
-    "'MESSAGE'",
-    "'CLASS'",
-    "'IF'",
-    "'WHILE'",
-    "'REPEAT'",
-    "'FOR'"
-  ]
+  "id": "module",
+  "statements": [
+    {
+      "id": "dispatch",
+      "message": "print",
+      "object": "module",
+      "parameters": {
+        "text": {
+          "id": "value",
+          "type": "string",
+          "value": "This is text",
+          "line": 5
+        }
+      },
+      "line": 5
+    }
+  ],
+  "line": 6
 }

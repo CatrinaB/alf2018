@@ -1,16 +1,16 @@
 {If then else imbricate}
-[register P 1]
-[register S 2]
+#register P 1
+#register S 2
 
-[if P = 1]
+#if P = 1
 	valueof print with text is "Print text "+P parameters;
-	[if S = 2]
+	#if S = 2
 		valueof print with text is "Print text "+S parameters;
-	[endif]
-[else]
+	#endif
+#else
 	valueof print with text is "Print text "+P parameters;
-	[if S != 2]
+	#if S != 2
 		valueof print with text is "Print text "+S parameters;
-	[endif]
-[endif]
+	#endif
+#endif
 

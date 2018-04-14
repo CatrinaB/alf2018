@@ -1,28 +1,5 @@
 {
-  "error": "syntax",
-  "line": 3,
-  "text": "#",
-  "token": "#",
-  "expected": [
-    "'EOF'",
-    "'message'",
-    "'('",
-    "'-'",
-    "'NOT'",
-    "'NUMBER'",
-    "'STRING_VALUE'",
-    "'SYMBOL'",
-    "'LOGIC_VALUE'",
-    "'IDENTIFIER'",
-    "'NONE'",
-    "'RETURN'",
-    "'DEFINE'",
-    "'['",
-    "'MESSAGE'",
-    "'CLASS'",
-    "'IF'",
-    "'WHILE'",
-    "'REPEAT'",
-    "'FOR'"
-  ]
+  "error": "lexical",
+  "line": 5,
+  "text": "Lexical error on line 5. Unrecognized text.\n...: string := variable;[module print tex\n-----------------------^"
 }
