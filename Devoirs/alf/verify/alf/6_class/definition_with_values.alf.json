@@ -9,16 +9,34 @@
         {
           "type": "string",
           "title": "name",
+          "value": {
+            "id": "value",
+            "type": "string",
+            "value": "Public Elementary School",
+            "line": 3
+          },
           "line": 3
         },
         {
           "type": "boolean",
           "title": "private",
+          "value": {
+            "id": "value",
+            "type": "logic",
+            "value": false,
+            "line": 4
+          },
           "line": 4
         },
         {
           "type": "int",
           "title": "type",
+          "value": {
+            "id": "value",
+            "type": "int",
+            "value": 0,
+            "line": 5
+          },
           "line": 5
         }
       ],

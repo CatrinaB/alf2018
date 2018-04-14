@@ -24,6 +24,12 @@
             {
               "type": "int",
               "title": "p",
+              "value": {
+                "id": "value",
+                "type": "int",
+                "value": 1,
+                "line": 5
+              },
               "line": 5
             }
           ],
@@ -92,6 +98,12 @@
         {
           "type": "auto",
           "title": "n",
+          "value": {
+            "id": "value",
+            "type": "int",
+            "value": 0,
+            "line": 12
+          },
           "line": 12
         }
       ],

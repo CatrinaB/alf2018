@@ -7,6 +7,12 @@
         {
           "type": "int",
           "title": "n",
+          "value": {
+            "id": "value",
+            "type": "int",
+            "value": 0,
+            "line": 3
+          },
           "line": 3
         }
       ],
@@ -18,6 +24,12 @@
         {
           "type": "int",
           "title": "s",
+          "value": {
+            "id": "value",
+            "type": "int",
+            "value": 1,
+            "line": 4
+          },
           "line": 4
         }
       ],
@@ -29,6 +41,22 @@
         {
           "type": "int",
           "title": "max",
+          "value": {
+            "id": "exp",
+            "op": "*",
+            "left": {
+              "id": "value",
+              "type": "int",
+              "value": 2,
+              "line": 5
+            },
+            "right": {
+              "id": "identifier",
+              "title": "n",
+              "line": 5
+            },
+            "line": 5
+          },
           "line": 5
         }
       ],
