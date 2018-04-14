@@ -1,26 +1,10 @@
 {
   "error": "syntax",
   "line": 6,
-  "text": "print",
-  "token": "IDENTIFIER",
+  "text": ":",
+  "token": ":",
   "expected": [
-    "'EOF'",
-    "'NL'",
-    "'='",
-    "'!='",
-    "'+'",
-    "'-'",
-    "'*'",
-    "'/'",
-    "'%'",
-    "'>'",
-    "'<'",
-    "'OR'",
-    "'XOR'",
-    "'AND'",
-    "':'",
-    "'ASSIGN'",
-    "'#'",
-    "'|'"
+    "'IDENTIFIER'",
+    "']'"
   ]
 }

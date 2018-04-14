@@ -1,5 +1,35 @@
 {
-  "error": "lexical",
-  "line": 5,
-  "text": "Lexical error on line 5. Unrecognized text.\n...: string := variable;[module print tex\n-----------------------^"
+  "id": "module",
+  "statements": [
+    {
+      "type": "define",
+      "elements": [
+        {
+          "type": "string",
+          "title": "s",
+          "value": {
+            "id": "identifier",
+            "title": "variable",
+            "line": 5
+          },
+          "line": 5
+        }
+      ],
+      "line": 5
+    },
+    {
+      "id": "dispatch",
+      "message": "print",
+      "object": "module",
+      "parameters": {
+        "text": {
+          "id": "identifier",
+          "title": "s",
+          "line": 7
+        }
+      },
+      "line": 7
+    }
+  ],
+  "line": 8
 }

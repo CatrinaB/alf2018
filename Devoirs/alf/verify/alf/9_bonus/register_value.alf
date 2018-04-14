@@ -2,5 +2,5 @@
 
 #register NUMBER 100
 
-do print with text is NUMBER parameters;
+[module print text:NUMBER]
 
