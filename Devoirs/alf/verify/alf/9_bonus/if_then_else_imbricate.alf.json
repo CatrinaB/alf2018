@@ -1,10 +1,28 @@
 {
   "error": "syntax",
   "line": 2,
-  "text": "1",
-  "token": "NUMBER",
+  "text": "#",
+  "token": "#",
   "expected": [
+    "'EOF'",
+    "'message'",
+    "'('",
+    "'-'",
+    "'NOT'",
+    "'NUMBER'",
+    "'STRING_VALUE'",
+    "'SYMBOL'",
+    "'LOGIC_VALUE'",
     "'IDENTIFIER'",
-    "']'"
+    "'NONE'",
+    "'RETURN'",
+    "'DEFINE'",
+    "'['",
+    "'MESSAGE'",
+    "'CLASS'",
+    "'IF'",
+    "'WHILE'",
+    "'REPEAT'",
+    "'FOR'"
   ]
 }

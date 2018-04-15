@@ -1,8 +1,8 @@
 {
   "error": "syntax",
-  "line": 3,
-  "text": "1",
-  "token": "NUMBER",
+  "line": 6,
+  "text": ":",
+  "token": ":",
   "expected": [
     "'IDENTIFIER'",
     "']'"

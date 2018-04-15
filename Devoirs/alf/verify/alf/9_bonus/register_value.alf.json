@@ -1,10 +1,20 @@
 {
-  "error": "syntax",
-  "line": 3,
-  "text": "100",
-  "token": "NUMBER",
-  "expected": [
-    "'IDENTIFIER'",
-    "']'"
-  ]
+  "id": "module",
+  "statements": [
+    {
+      "id": "dispatch",
+      "message": "print",
+      "object": "module",
+      "parameters": {
+        "text": {
+          "id": "value",
+          "type": "int",
+          "value": 100,
+          "line": 5
+        }
+      },
+      "line": 5
+    }
+  ],
+  "line": 7
 }

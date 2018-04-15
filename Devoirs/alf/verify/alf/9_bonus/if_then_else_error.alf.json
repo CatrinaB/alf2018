@@ -1,10 +1,31 @@
 {
-  "error": "syntax",
-  "line": 3,
-  "text": "1",
-  "token": "NUMBER",
-  "expected": [
-    "'IDENTIFIER'",
-    "']'"
-  ]
+  "id": "module",
+  "statements": [
+    {
+      "id": "dispatch",
+      "message": "print",
+      "object": "module",
+      "parameters": {
+        "text": {
+          "id": "exp",
+          "op": "+",
+          "left": {
+            "id": "value",
+            "type": "string",
+            "value": "Print text ",
+            "line": 6
+          },
+          "right": {
+            "id": "value",
+            "type": "int",
+            "value": 1,
+            "line": 6
+          },
+          "line": 6
+        }
+      },
+      "line": 6
+    }
+  ],
+  "line": 10
 }

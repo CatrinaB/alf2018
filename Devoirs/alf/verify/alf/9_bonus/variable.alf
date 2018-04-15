@@ -2,6 +2,6 @@
 
 #register ALF variable
 
-define s : string := ALF;
+define s : string := ALF
 
 [module print text : s]
