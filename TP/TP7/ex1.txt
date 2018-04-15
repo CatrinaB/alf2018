@@ -1,0 +1,7 @@
+var a of int, b of int
+a = 2+3*7
+b = 4/2*9
+function add(a of int, b of int)
+a + b
+endfunction
+add(a, b)
