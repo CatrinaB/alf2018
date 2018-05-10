@@ -1,0 +1,64 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "messages": {},
+         "types": {},
+         "type": "module"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "exp",
+            "op": "=",
+            "left": {
+               "id": "exp",
+               "op": "+",
+               "left": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 2,
+                  "line": 3,
+                  "symbol": 0
+               },
+               "right": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 3,
+                  "line": 3,
+                  "symbol": 0
+               },
+               "line": 3,
+               "symbol": 0
+            },
+            "right": {
+               "id": "exp",
+               "op": "+",
+               "left": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 4,
+                  "line": 3,
+                  "symbol": 0
+               },
+               "right": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 5,
+                  "line": 3,
+                  "symbol": 0
+               },
+               "line": 3,
+               "symbol": 0
+            },
+            "line": 3,
+            "symbol": 0
+         }
+      ],
+      "line": 3,
+      "symbol": 0
+   },
+   "error_list": []
+}

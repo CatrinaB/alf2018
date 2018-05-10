@@ -1,0 +1,22 @@
+{
+   "symbol_table": {},
+   "ast": {},
+   "error_list": [
+      {
+         "type": "SYNTAX",
+         "line": 4,
+         "elements": {
+            "error": "syntax",
+            "line": 4,
+            "text": "title",
+            "token": "IDENTIFIER",
+            "expected": [
+               "'MESSAGE'",
+               "'END'",
+               "'PROPERTY'"
+            ]
+         },
+         "text": "title"
+      }
+   ]
+}

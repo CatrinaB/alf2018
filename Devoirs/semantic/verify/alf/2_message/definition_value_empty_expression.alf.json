@@ -1,0 +1,77 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "messages": {
+            "print": {
+               "type": "string",
+               "parameters": [
+                  {
+                     "type": "string",
+                     "id": "text",
+                     "line": 3,
+                     "symbol": 1
+                  }
+               ],
+               "symbol": 1,
+               "line": 3
+            }
+         },
+         "types": {},
+         "type": "module"
+      },
+      {
+         "variables": {},
+         "messages": {},
+         "types": {},
+         "parent": 0,
+         "type": "message",
+         "message": "print",
+         "return_type": "string"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "message",
+            "title": "print",
+            "parameters": [
+               {
+                  "type": "string",
+                  "id": "text",
+                  "line": 3,
+                  "symbol": 1
+               }
+            ],
+            "return_type": "string",
+            "statements": [
+               {
+                  "id": "set",
+                  "to": {
+                     "id": "identifier",
+                     "title": "text",
+                     "line": 3,
+                     "symbol": 1,
+                     "type": "string"
+                  },
+                  "from": {
+                     "id": "value",
+                     "type": "string",
+                     "value": "",
+                     "line": 3,
+                     "symbol": 1
+                  },
+                  "line": 3,
+                  "symbol": 1
+               }
+            ],
+            "line": 3,
+            "symbol": 1
+         }
+      ],
+      "line": 4,
+      "symbol": 0
+   },
+   "error_list": []
+}

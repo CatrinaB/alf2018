@@ -1,0 +1,104 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "v": {
+               "type": "list",
+               "line": 4
+            },
+            "p": {
+               "type": "list",
+               "line": 4
+            }
+         },
+         "messages": {},
+         "types": {
+            "list": {
+               "type": "list",
+               "line": 2,
+               "element_type": "string",
+               "from": "1",
+               "to": "9"
+            }
+         },
+         "type": "module"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "list",
+            "title": "list",
+            "element_type": "string",
+            "from": "1",
+            "to": "9",
+            "line": 2,
+            "symbol": 0
+         },
+         {
+            "id": "define",
+            "elements": [
+               {
+                  "type": "list",
+                  "title": "v",
+                  "line": 4
+               },
+               {
+                  "type": "list",
+                  "title": "p",
+                  "line": 4
+               }
+            ],
+            "line": 4,
+            "symbol": 0
+         },
+         {
+            "id": "set",
+            "to": {
+               "id": "element_of_list",
+               "list": "v",
+               "index": {
+                  "id": "element_of_list",
+                  "list": "p",
+                  "index": {
+                     "id": "value",
+                     "type": "int",
+                     "value": 5,
+                     "line": 6,
+                     "symbol": 0
+                  },
+                  "line": 6,
+                  "symbol": 0,
+                  "type": "string"
+               },
+               "line": 6,
+               "symbol": 0,
+               "type": "string"
+            },
+            "from": {
+               "id": "value",
+               "type": "string",
+               "value": "The new name for the school",
+               "line": 6,
+               "symbol": 0
+            },
+            "line": 6,
+            "symbol": 0
+         }
+      ],
+      "line": 7,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "ARRAY_INDEX_TYPE",
+         "line": 6,
+         "elements": {
+            "array": "v",
+            "index": "string"
+         },
+         "text": "Array (v) index must be int or character"
+      }
+   ]
+}

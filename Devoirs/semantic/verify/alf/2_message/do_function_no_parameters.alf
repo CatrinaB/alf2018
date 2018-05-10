@@ -1,0 +1,5 @@
+{Dispatch message without parameters}
+
+message getpid:int = 120
+
+[module getpid]

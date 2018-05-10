@@ -1,0 +1,75 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "a": {
+               "type": "int",
+               "line": 3
+            }
+         },
+         "messages": {},
+         "types": {},
+         "type": "module"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "define",
+            "elements": [
+               {
+                  "type": "int",
+                  "title": "a",
+                  "line": 3
+               }
+            ],
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "id": "exp",
+            "op": "=",
+            "left": {
+               "id": "identifier",
+               "title": "a",
+               "line": 5,
+               "symbol": 0
+            },
+            "right": {
+               "id": "value",
+               "type": "int",
+               "value": 190,
+               "line": 5,
+               "symbol": 0
+            },
+            "line": 5,
+            "symbol": 0
+         },
+         {
+            "id": "define",
+            "elements": [
+               {
+                  "type": "int",
+                  "title": "a",
+                  "line": 7
+               }
+            ],
+            "line": 7,
+            "symbol": 0
+         }
+      ],
+      "line": 7,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "VARIABLE_ALREADY_DEFINED",
+         "line": 7,
+         "elements": {
+            "variable": "a"
+         },
+         "text": "variable a is already defined"
+      }
+   ]
+}

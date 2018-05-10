@@ -1,0 +1,9 @@
+{Message definition with statements and value}
+
+
+message sum:int n1:int, n2:int 
+begin
+	define s:int := n1 + n2
+	return s
+end
+

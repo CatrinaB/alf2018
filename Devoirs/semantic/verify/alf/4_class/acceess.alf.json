@@ -1,0 +1,106 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "s": {
+               "type": "school",
+               "line": 8
+            }
+         },
+         "messages": {},
+         "types": {
+            "school": {
+               "type": "class",
+               "properties": [
+                  {
+                     "type": "string",
+                     "title": "name",
+                     "line": 3
+                  },
+                  {
+                     "type": "boolean",
+                     "title": "private",
+                     "line": 4
+                  },
+                  {
+                     "type": "int",
+                     "title": "type",
+                     "line": 5
+                  }
+               ]
+            }
+         },
+         "type": "module"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "class",
+            "title": "school",
+            "parent": "",
+            "properties": [
+               {
+                  "type": "string",
+                  "title": "name",
+                  "line": 3
+               },
+               {
+                  "type": "boolean",
+                  "title": "private",
+                  "line": 4
+               },
+               {
+                  "type": "int",
+                  "title": "type",
+                  "line": 5
+               }
+            ],
+            "messages": [],
+            "symbol": 0
+         },
+         {
+            "id": "define",
+            "elements": [
+               {
+                  "type": "school",
+                  "title": "s",
+                  "line": 8
+               }
+            ],
+            "line": 8,
+            "symbol": 0
+         },
+         {
+            "id": "set",
+            "to": {
+               "id": "property",
+               "object": {
+                  "id": "identifier",
+                  "title": "s",
+                  "line": 10,
+                  "symbol": 0,
+                  "type": "school"
+               },
+               "title": "name",
+               "line": 10,
+               "symbol": 0,
+               "type": "string"
+            },
+            "from": {
+               "id": "value",
+               "type": "string",
+               "value": "The new name for the school",
+               "line": 10,
+               "symbol": 0
+            },
+            "line": 10,
+            "symbol": 0
+         }
+      ],
+      "line": 11,
+      "symbol": 0
+   },
+   "error_list": []
+}

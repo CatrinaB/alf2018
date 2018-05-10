@@ -1,0 +1,6 @@
+{Class property redefinition}
+
+class s 
+	property title:string
+	property define title => string
+end

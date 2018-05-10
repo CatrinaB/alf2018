@@ -1,0 +1,182 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "v": {
+               "type": "auto",
+               "value": {
+                  "id": "identifier",
+                  "title": "list",
+                  "line": 4,
+                  "symbol": 0,
+                  "type": ""
+               },
+               "line": 4
+            },
+            "s": {
+               "type": "structure",
+               "line": 10
+            }
+         },
+         "messages": {},
+         "types": {
+            "list": {
+               "type": "list",
+               "line": 2,
+               "element_type": "string",
+               "from": "1",
+               "to": "9"
+            },
+            "structure": {
+               "type": "class",
+               "properties": [
+                  {
+                     "type": "int",
+                     "title": "position",
+                     "line": 7
+                  }
+               ]
+            }
+         },
+         "type": "module"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "list",
+            "title": "list",
+            "element_type": "string",
+            "from": "1",
+            "to": "9",
+            "line": 2,
+            "symbol": 0
+         },
+         {
+            "id": "define",
+            "elements": [
+               {
+                  "type": "auto",
+                  "title": "v",
+                  "value": {
+                     "id": "identifier",
+                     "title": "list",
+                     "line": 4,
+                     "symbol": 0,
+                     "type": ""
+                  },
+                  "line": 4
+               }
+            ],
+            "line": 4,
+            "symbol": 0
+         },
+         {
+            "id": "class",
+            "title": "structure",
+            "parent": "",
+            "properties": [
+               {
+                  "type": "int",
+                  "title": "position",
+                  "line": 7
+               }
+            ],
+            "messages": [],
+            "symbol": 0
+         },
+         {
+            "id": "define",
+            "elements": [
+               {
+                  "type": "structure",
+                  "title": "s",
+                  "line": 10
+               }
+            ],
+            "line": 10,
+            "symbol": 0
+         },
+         {
+            "id": "set",
+            "to": {
+               "id": "property",
+               "object": {
+                  "id": "element_of_list",
+                  "list": "v",
+                  "index": {
+                     "id": "identifier",
+                     "title": "s",
+                     "line": 12,
+                     "symbol": 0
+                  },
+                  "line": 12,
+                  "symbol": 0,
+                  "type": ""
+               },
+               "title": "position",
+               "line": 12,
+               "symbol": 0,
+               "type": ""
+            },
+            "from": {
+               "id": "value",
+               "type": "string",
+               "value": "The new name for the school",
+               "line": 12,
+               "symbol": 0
+            },
+            "line": 12,
+            "symbol": 0
+         }
+      ],
+      "line": 13,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "UNDEFINED_VARIABLE",
+         "line": 4,
+         "elements": {
+            "variable": "list"
+         },
+         "text": "Undefined variable list"
+      },
+      {
+         "type": "UNDEFINED_TYPE",
+         "line": 4,
+         "elements": {
+            "variable": "auto",
+            "type": "auto"
+         },
+         "text": "Type auto is not defined"
+      },
+      {
+         "type": "NOT_ARRAY",
+         "line": 12,
+         "elements": {
+            "type": "v"
+         },
+         "text": "v is not a list"
+      },
+      {
+         "type": "NOT_CLASS",
+         "line": 12,
+         "elements": {
+            "type": ""
+         },
+         "text": " is not a class"
+      },
+      {
+         "type": "TYPE_EXPRESSION",
+         "line": 12,
+         "elements": {
+            "op": ":=",
+            "to": "",
+            "from": "string"
+         },
+         "text": "Type expression error  is string"
+      }
+   ]
+}

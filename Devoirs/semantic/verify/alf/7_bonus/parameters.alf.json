@@ -1,0 +1,21 @@
+{
+   "symbol_table": {},
+   "ast": {},
+   "error_list": [
+      {
+         "type": "SYNTAX",
+         "line": 3,
+         "elements": {
+            "error": "syntax",
+            "line": 3,
+            "text": "0.0",
+            "token": "NUMBER",
+            "expected": [
+               "'IDENTIFIER'",
+               "'TYPE'"
+            ]
+         },
+         "text": "0.0"
+      }
+   ]
+}

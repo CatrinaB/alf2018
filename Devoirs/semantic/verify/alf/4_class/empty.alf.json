@@ -1,0 +1,31 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "messages": {},
+         "types": {
+            "product": {
+               "type": "class",
+               "properties": []
+            }
+         },
+         "type": "module"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "class",
+            "title": "product",
+            "parent": "",
+            "properties": [],
+            "messages": [],
+            "symbol": 0
+         }
+      ],
+      "line": 3,
+      "symbol": 0
+   },
+   "error_list": []
+}

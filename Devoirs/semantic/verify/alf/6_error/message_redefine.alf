@@ -1,0 +1,5 @@
+{Message redefinition}
+
+define f:int =  190
+
+define f:int = 190

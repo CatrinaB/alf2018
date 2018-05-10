@@ -1,0 +1,6 @@
+{Access element of array with message}
+list:string[1 to 9]
+
+define v:list
+
+v#[module position] := "The new name for the school"

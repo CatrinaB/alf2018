@@ -1,0 +1,31 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "messages": {},
+         "types": {},
+         "type": "module"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "exp",
+            "op": "not",
+            "value": {
+               "id": "value",
+               "type": "int",
+               "value": 90,
+               "line": 3,
+               "symbol": 0
+            },
+            "line": 3,
+            "symbol": 0
+         }
+      ],
+      "line": 3,
+      "symbol": 0
+   },
+   "error_list": []
+}

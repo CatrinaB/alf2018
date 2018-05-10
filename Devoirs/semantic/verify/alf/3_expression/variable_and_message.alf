@@ -1,0 +1,8 @@
+{Expression with variable and message}
+
+define n : int
+
+message number value:int = 3
+
+n := 3
+n+[module number] + " text"

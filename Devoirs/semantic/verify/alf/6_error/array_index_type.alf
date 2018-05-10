@@ -1,0 +1,7 @@
+{Array index value error}
+
+a:string [1 to 9]
+
+define l : a
+
+l#"text" = "text"

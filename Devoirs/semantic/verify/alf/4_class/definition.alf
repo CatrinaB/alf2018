@@ -1,0 +1,6 @@
+{Class definition}
+class school
+	property name:string
+	property private:boolean
+	property type:int
+end

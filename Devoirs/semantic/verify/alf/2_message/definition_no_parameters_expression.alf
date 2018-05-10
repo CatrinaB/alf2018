@@ -1,0 +1,3 @@
+{Message definition without parameters}
+
+message say:string = "say"

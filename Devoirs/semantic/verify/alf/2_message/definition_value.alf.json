@@ -1,0 +1,147 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "messages": {
+            "sum": {
+               "type": "int",
+               "parameters": [
+                  {
+                     "type": "int",
+                     "id": "n1",
+                     "line": 4,
+                     "symbol": 1
+                  },
+                  {
+                     "type": "int",
+                     "id": "n2",
+                     "line": 4,
+                     "symbol": 1
+                  }
+               ],
+               "symbol": 1,
+               "line": 8
+            }
+         },
+         "types": {},
+         "type": "module"
+      },
+      {
+         "variables": {
+            "s": {
+               "type": "int",
+               "value": {
+                  "id": "exp",
+                  "op": "+",
+                  "left": {
+                     "id": "identifier",
+                     "title": "n1",
+                     "line": 6,
+                     "symbol": 1
+                  },
+                  "right": {
+                     "id": "identifier",
+                     "title": "n2",
+                     "line": 6,
+                     "symbol": 1
+                  },
+                  "line": 6,
+                  "symbol": 1
+               },
+               "line": 6
+            }
+         },
+         "messages": {},
+         "types": {},
+         "parent": 0,
+         "type": "message",
+         "message": "sum",
+         "return_type": "int"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "message",
+            "title": "sum",
+            "parameters": [
+               {
+                  "type": "int",
+                  "id": "n1",
+                  "line": 4,
+                  "symbol": 1
+               },
+               {
+                  "type": "int",
+                  "id": "n2",
+                  "line": 4,
+                  "symbol": 1
+               }
+            ],
+            "return_type": "int",
+            "statements": [
+               {
+                  "id": "define",
+                  "elements": [
+                     {
+                        "type": "int",
+                        "title": "s",
+                        "value": {
+                           "id": "exp",
+                           "op": "+",
+                           "left": {
+                              "id": "identifier",
+                              "title": "n1",
+                              "line": 6,
+                              "symbol": 1
+                           },
+                           "right": {
+                              "id": "identifier",
+                              "title": "n2",
+                              "line": 6,
+                              "symbol": 1
+                           },
+                           "line": 6,
+                           "symbol": 1
+                        },
+                        "line": 6
+                     }
+                  ],
+                  "line": 6,
+                  "symbol": 1
+               },
+               {
+                  "id": "return",
+                  "value": {
+                     "id": "identifier",
+                     "title": "s",
+                     "line": 7,
+                     "symbol": 1,
+                     "type": "int"
+                  },
+                  "line": 7,
+                  "symbol": 1,
+                  "type": "int"
+               }
+            ],
+            "line": 8,
+            "symbol": 1
+         }
+      ],
+      "line": 10,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "TYPE_EXPRESSION",
+         "line": 6,
+         "elements": {
+            "to": "int",
+            "from": "",
+            "op": ":="
+         },
+         "text": "Type expression int is "
+      }
+   ]
+}

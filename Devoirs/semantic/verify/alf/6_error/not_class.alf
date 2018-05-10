@@ -1,0 +1,5 @@
+{Not a class}
+
+define v:string
+
+v|t = "some text"

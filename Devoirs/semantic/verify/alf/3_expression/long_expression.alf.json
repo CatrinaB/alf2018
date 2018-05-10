@@ -1,0 +1,197 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "n": {
+               "type": "int",
+               "line": 3
+            }
+         },
+         "messages": {},
+         "types": {},
+         "type": "module"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "define",
+            "elements": [
+               {
+                  "type": "int",
+                  "title": "n",
+                  "line": 3
+               }
+            ],
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "id": "exp",
+            "op": "and",
+            "left": {
+               "id": "exp",
+               "op": ">",
+               "left": {
+                  "id": "exp",
+                  "op": "/",
+                  "left": {
+                     "id": "exp",
+                     "op": "*",
+                     "left": {
+                        "id": "exp",
+                        "op": "+",
+                        "left": {
+                           "id": "value",
+                           "type": "int",
+                           "value": 2,
+                           "line": 5,
+                           "symbol": 0
+                        },
+                        "right": {
+                           "id": "value",
+                           "type": "int",
+                           "value": 3,
+                           "line": 5,
+                           "symbol": 0
+                        },
+                        "line": 5,
+                        "symbol": 0
+                     },
+                     "right": {
+                        "id": "value",
+                        "type": "int",
+                        "value": 7,
+                        "line": 5,
+                        "symbol": 0
+                     },
+                     "line": 5,
+                     "symbol": 0
+                  },
+                  "right": {
+                     "id": "value",
+                     "type": "int",
+                     "value": 8,
+                     "line": 5,
+                     "symbol": 0
+                  },
+                  "line": 5,
+                  "symbol": 0
+               },
+               "right": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 10,
+                  "line": 5,
+                  "symbol": 0
+               },
+               "line": 5,
+               "symbol": 0
+            },
+            "right": {
+               "id": "exp",
+               "op": "xor",
+               "left": {
+                  "id": "exp",
+                  "op": "or",
+                  "left": {
+                     "id": "exp",
+                     "op": "<",
+                     "left": {
+                        "id": "exp",
+                        "op": "+",
+                        "left": {
+                           "id": "value",
+                           "type": "int",
+                           "value": 7,
+                           "line": 5,
+                           "symbol": 0
+                        },
+                        "right": {
+                           "id": "value",
+                           "type": "int",
+                           "value": 5,
+                           "line": 5,
+                           "symbol": 0
+                        },
+                        "line": 5,
+                        "symbol": 0
+                     },
+                     "right": {
+                        "id": "value",
+                        "type": "int",
+                        "value": 5,
+                        "line": 5,
+                        "symbol": 0
+                     },
+                     "line": 5,
+                     "symbol": 0
+                  },
+                  "right": {
+                     "id": "exp",
+                     "op": "=",
+                     "left": {
+                        "id": "value",
+                        "type": "string",
+                        "value": "test",
+                        "line": 5,
+                        "symbol": 0
+                     },
+                     "right": {
+                        "id": "exp",
+                        "op": "+",
+                        "left": {
+                           "id": "value",
+                           "type": "string",
+                           "value": "te",
+                           "line": 5,
+                           "symbol": 0
+                        },
+                        "right": {
+                           "id": "value",
+                           "type": "string",
+                           "value": "st",
+                           "line": 5,
+                           "symbol": 0
+                        },
+                        "line": 5,
+                        "symbol": 0
+                     },
+                     "line": 5,
+                     "symbol": 0
+                  },
+                  "line": 5,
+                  "symbol": 0
+               },
+               "right": {
+                  "id": "exp",
+                  "op": "!=",
+                  "left": {
+                     "id": "value",
+                     "type": "int",
+                     "value": 7,
+                     "line": 5,
+                     "symbol": 0
+                  },
+                  "right": {
+                     "id": "identifier",
+                     "title": "n",
+                     "line": 5,
+                     "symbol": 0
+                  },
+                  "line": 5,
+                  "symbol": 0
+               },
+               "line": 5,
+               "symbol": 0
+            },
+            "line": 5,
+            "symbol": 0
+         }
+      ],
+      "line": 5,
+      "symbol": 0
+   },
+   "error_list": []
+}

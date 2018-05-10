@@ -1,0 +1,6 @@
+{Class definition with values}
+class school
+	property name:string := "Public Elementary School"
+	property private:boolean := false
+	property type:int := 0
+end

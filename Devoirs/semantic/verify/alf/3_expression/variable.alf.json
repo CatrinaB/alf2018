@@ -1,0 +1,86 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "n": {
+               "type": "int",
+               "line": 3
+            }
+         },
+         "messages": {},
+         "types": {},
+         "type": "module"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "define",
+            "elements": [
+               {
+                  "type": "int",
+                  "title": "n",
+                  "line": 3
+               }
+            ],
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "id": "set",
+            "to": {
+               "id": "identifier",
+               "title": "n",
+               "line": 4,
+               "symbol": 0,
+               "type": "int"
+            },
+            "from": {
+               "id": "value",
+               "type": "int",
+               "value": 3,
+               "line": 4,
+               "symbol": 0
+            },
+            "line": 4,
+            "symbol": 0
+         },
+         {
+            "id": "exp",
+            "op": "+",
+            "left": {
+               "id": "exp",
+               "op": "+",
+               "left": {
+                  "id": "identifier",
+                  "title": "n",
+                  "line": 5,
+                  "symbol": 0
+               },
+               "right": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 4,
+                  "line": 5,
+                  "symbol": 0
+               },
+               "line": 5,
+               "symbol": 0
+            },
+            "right": {
+               "id": "value",
+               "type": "string",
+               "value": " text",
+               "line": 5,
+               "symbol": 0
+            },
+            "line": 5,
+            "symbol": 0
+         }
+      ],
+      "line": 5,
+      "symbol": 0
+   },
+   "error_list": []
+}

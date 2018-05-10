@@ -1,0 +1,7 @@
+{Undefined type}
+
+define n1:n2
+
+define n2:n3
+
+define n3:n1

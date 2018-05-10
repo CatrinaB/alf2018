@@ -1,0 +1,67 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "messages": {
+            "getpid": {
+               "type": "int",
+               "parameters": [],
+               "symbol": 1,
+               "line": 3
+            }
+         },
+         "types": {},
+         "type": "module"
+      },
+      {
+         "variables": {},
+         "messages": {},
+         "types": {},
+         "parent": 0,
+         "type": "message",
+         "message": "getpid",
+         "return_type": "int"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "message",
+            "title": "getpid",
+            "parameters": [],
+            "return_type": "int",
+            "statements": [
+               {
+                  "id": "value",
+                  "type": "int",
+                  "value": 120,
+                  "line": 3,
+                  "symbol": 1
+               }
+            ],
+            "line": 3,
+            "symbol": 1
+         },
+         {
+            "id": "dispatch",
+            "message": "getpid",
+            "object": "module",
+            "parameters": [],
+            "line": 5,
+            "symbol": 0,
+            "type": ""
+         }
+      ],
+      "line": 5,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "UNDEFINED_MESSAGE",
+         "line": 5,
+         "elements": {},
+         "text": "Undefined message undefined"
+      }
+   ]
+}

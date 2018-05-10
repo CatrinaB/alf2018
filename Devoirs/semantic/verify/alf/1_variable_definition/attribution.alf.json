@@ -1,0 +1,54 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "n": {
+               "type": "int",
+               "line": 2
+            }
+         },
+         "messages": {},
+         "types": {},
+         "type": "module"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "define",
+            "elements": [
+               {
+                  "type": "int",
+                  "title": "n",
+                  "line": 2
+               }
+            ],
+            "line": 2,
+            "symbol": 0
+         },
+         {
+            "id": "set",
+            "to": {
+               "id": "identifier",
+               "title": "n",
+               "line": 4,
+               "symbol": 0,
+               "type": "int"
+            },
+            "from": {
+               "id": "value",
+               "type": "int",
+               "value": 6,
+               "line": 4,
+               "symbol": 0
+            },
+            "line": 4,
+            "symbol": 0
+         }
+      ],
+      "line": 4,
+      "symbol": 0
+   },
+   "error_list": []
+}

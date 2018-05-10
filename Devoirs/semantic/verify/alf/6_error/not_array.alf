@@ -1,0 +1,5 @@
+{Not an array}
+
+define v :character
+
+v#1 = "some text"

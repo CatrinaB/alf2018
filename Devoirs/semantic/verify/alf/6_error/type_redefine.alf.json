@@ -1,0 +1,65 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "messages": {},
+         "types": {
+            "s": {
+               "type": "class",
+               "properties": [
+                  {
+                     "type": "string",
+                     "title": "title",
+                     "line": 4
+                  }
+               ]
+            }
+         },
+         "type": "module"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "class",
+            "title": "s",
+            "parent": "",
+            "properties": [
+               {
+                  "type": "string",
+                  "title": "title",
+                  "line": 4
+               }
+            ],
+            "messages": [],
+            "symbol": 0
+         },
+         {
+            "id": "class",
+            "title": "s",
+            "parent": "",
+            "properties": [
+               {
+                  "type": "string",
+                  "title": "title",
+                  "line": 8
+               }
+            ],
+            "messages": [],
+            "symbol": 0
+         }
+      ],
+      "line": 9,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "TYPE_ALREADY_DEFINED",
+         "elements": {
+            "type": "s"
+         },
+         "text": "type s is already defined"
+      }
+   ]
+}

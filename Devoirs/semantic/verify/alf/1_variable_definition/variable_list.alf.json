@@ -1,0 +1,72 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "n": {
+               "type": "int",
+               "line": 2
+            },
+            "r": {
+               "type": "real",
+               "line": 2
+            },
+            "l": {
+               "type": "logic",
+               "line": 2
+            },
+            "s": {
+               "type": "string",
+               "line": 2
+            }
+         },
+         "messages": {},
+         "types": {},
+         "type": "module"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "define",
+            "elements": [
+               {
+                  "type": "int",
+                  "title": "n",
+                  "line": 2
+               },
+               {
+                  "type": "real",
+                  "title": "r",
+                  "line": 2
+               },
+               {
+                  "type": "logic",
+                  "title": "l",
+                  "line": 2
+               },
+               {
+                  "type": "string",
+                  "title": "s",
+                  "line": 2
+               }
+            ],
+            "line": 2,
+            "symbol": 0
+         }
+      ],
+      "line": 2,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "UNDEFINED_TYPE",
+         "line": 2,
+         "elements": {
+            "variable": "logic",
+            "type": "logic"
+         },
+         "text": "Type logic is not defined"
+      }
+   ]
+}

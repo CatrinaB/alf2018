@@ -1,0 +1,51 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "messages": {
+            "say": {
+               "type": "string",
+               "parameters": [],
+               "symbol": 1,
+               "line": 3
+            }
+         },
+         "types": {},
+         "type": "module"
+      },
+      {
+         "variables": {},
+         "messages": {},
+         "types": {},
+         "parent": 0,
+         "type": "message",
+         "message": "say",
+         "return_type": "string"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "message",
+            "title": "say",
+            "parameters": [],
+            "return_type": "string",
+            "statements": [
+               {
+                  "id": "value",
+                  "type": "string",
+                  "value": "say",
+                  "line": 3,
+                  "symbol": 1
+               }
+            ],
+            "line": 3,
+            "symbol": 1
+         }
+      ],
+      "line": 3,
+      "symbol": 0
+   },
+   "error_list": []
+}

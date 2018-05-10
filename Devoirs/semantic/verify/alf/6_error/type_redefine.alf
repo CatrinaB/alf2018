@@ -1,0 +1,9 @@
+{Type redefinition}
+
+class s 
+	property title:string
+end
+
+class s 
+	property title:string
+end

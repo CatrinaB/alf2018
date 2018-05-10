@@ -1,0 +1,12 @@
+{Array with class definition}
+list:string[1 to 9]
+
+define v := list
+
+class structure
+	property position:int
+end
+
+define s:structure
+
+v#s|position := "The new name for the school"

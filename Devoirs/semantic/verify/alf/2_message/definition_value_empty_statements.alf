@@ -1,0 +1,6 @@
+{Message definition with empty value and statements}
+
+message print:string text:string
+begin 
+	text := ""
+end

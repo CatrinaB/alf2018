@@ -1,0 +1,4 @@
+{Array definition}
+
+list:string[1 to 9]
+

@@ -1,0 +1,89 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "messages": {
+            "print": {
+               "type": "string",
+               "parameters": [
+                  {
+                     "type": "string",
+                     "id": "text",
+                     "line": 3,
+                     "symbol": 1
+                  }
+               ],
+               "symbol": 1,
+               "line": 3
+            }
+         },
+         "types": {},
+         "type": "module"
+      },
+      {
+         "variables": {},
+         "messages": {},
+         "types": {},
+         "parent": 0,
+         "type": "message",
+         "message": "print",
+         "return_type": "string"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "message",
+            "title": "print",
+            "parameters": [
+               {
+                  "type": "string",
+                  "id": "text",
+                  "line": 3,
+                  "symbol": 1
+               }
+            ],
+            "return_type": "string",
+            "statements": [
+               {
+                  "id": "identifier",
+                  "title": "text",
+                  "line": 3,
+                  "symbol": 1,
+                  "type": "string"
+               }
+            ],
+            "line": 3,
+            "symbol": 1
+         },
+         {
+            "id": "dispatch",
+            "message": "print",
+            "object": "module",
+            "parameters": {
+               "text": {
+                  "id": "value",
+                  "type": "string",
+                  "value": "text to write",
+                  "line": 5,
+                  "symbol": 0
+               }
+            },
+            "line": 5,
+            "symbol": 0,
+            "type": ""
+         }
+      ],
+      "line": 5,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "UNDEFINED_MESSAGE",
+         "line": 5,
+         "elements": {},
+         "text": "Undefined message undefined"
+      }
+   ]
+}

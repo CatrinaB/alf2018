@@ -1,0 +1,78 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "l": {
+               "type": "a",
+               "line": 5
+            }
+         },
+         "messages": {},
+         "types": {
+            "a": {
+               "type": "list",
+               "line": 3,
+               "element_type": "string",
+               "from": "1",
+               "to": "9"
+            }
+         },
+         "type": "module"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "list",
+            "title": "a",
+            "element_type": "string",
+            "from": "1",
+            "to": "9",
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "id": "define",
+            "elements": [
+               {
+                  "type": "a",
+                  "title": "l",
+                  "line": 5
+               }
+            ],
+            "line": 5,
+            "symbol": 0
+         },
+         {
+            "id": "exp",
+            "op": "=",
+            "left": {
+               "id": "element_of_list",
+               "list": "l",
+               "index": {
+                  "id": "value",
+                  "type": "string",
+                  "value": "text",
+                  "line": 7,
+                  "symbol": 0
+               },
+               "line": 7,
+               "symbol": 0
+            },
+            "right": {
+               "id": "value",
+               "type": "string",
+               "value": "text",
+               "line": 7,
+               "symbol": 0
+            },
+            "line": 7,
+            "symbol": 0
+         }
+      ],
+      "line": 7,
+      "symbol": 0
+   },
+   "error_list": []
+}

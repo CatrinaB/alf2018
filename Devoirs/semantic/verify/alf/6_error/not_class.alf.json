@@ -1,0 +1,60 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "v": {
+               "type": "string",
+               "line": 3
+            }
+         },
+         "messages": {},
+         "types": {},
+         "type": "module"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "define",
+            "elements": [
+               {
+                  "type": "string",
+                  "title": "v",
+                  "line": 3
+               }
+            ],
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "id": "exp",
+            "op": "=",
+            "left": {
+               "id": "property",
+               "object": {
+                  "id": "identifier",
+                  "title": "v",
+                  "line": 5,
+                  "symbol": 0
+               },
+               "title": "t",
+               "line": 5,
+               "symbol": 0
+            },
+            "right": {
+               "id": "value",
+               "type": "string",
+               "value": "some text",
+               "line": 5,
+               "symbol": 0
+            },
+            "line": 5,
+            "symbol": 0
+         }
+      ],
+      "line": 5,
+      "symbol": 0
+   },
+   "error_list": []
+}

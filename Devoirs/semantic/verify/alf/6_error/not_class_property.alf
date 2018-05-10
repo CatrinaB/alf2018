@@ -1,0 +1,9 @@
+{Not a class property}
+
+class s 
+	title:string
+end
+
+define v: s
+
+v|t = "some text"

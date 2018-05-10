@@ -1,0 +1,11 @@
+{Class property}
+
+class school
+	property name:string
+	property private:logic
+	property type:int
+end
+
+define s:school
+
+define t = s|type

@@ -1,0 +1,47 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "messages": {},
+         "types": {},
+         "type": "module"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "return",
+            "value": {
+               "id": "value",
+               "type": "int",
+               "value": 90,
+               "line": 3,
+               "symbol": 0
+            },
+            "line": 3,
+            "symbol": 0,
+            "type": ""
+         }
+      ],
+      "line": 3,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "RETURN_OUTSIDE_MESSAGE",
+         "line": 3,
+         "elements": {},
+         "text": "value is used out of function"
+      },
+      {
+         "type": "TYPE_EXPRESSION",
+         "line": 3,
+         "elements": {
+            "op": "value",
+            "required": ""
+         },
+         "text": "Type expression error value "
+      }
+   ]
+}

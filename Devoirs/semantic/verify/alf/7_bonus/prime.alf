@@ -1,0 +1,25 @@
+{Prime number}
+
+define v = 768687
+
+message sqrt:real number=0 = number
+message read:int = v
+message write:empty text=""
+begin
+end
+
+define n = [module read];
+
+define p = true
+
+for i in range (2, [module sqrt number: n])
+	if n mod i = 0 then
+		p = false
+	end
+end
+
+if p then
+	[module write text : n+" is prime"]
+else
+	[module write text : n+" is not prime"]
+end

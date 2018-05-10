@@ -1,0 +1,105 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "messages": {},
+         "types": {
+            "school": {
+               "type": "class",
+               "properties": [
+                  {
+                     "type": "string",
+                     "title": "name",
+                     "line": 3,
+                     "value": {
+                        "id": "value",
+                        "type": "string",
+                        "value": "Public Elementary School",
+                        "line": 3,
+                        "symbol": 0
+                     }
+                  },
+                  {
+                     "type": "boolean",
+                     "title": "private",
+                     "line": 4,
+                     "value": {
+                        "id": "value",
+                        "type": "logic",
+                        "value": false,
+                        "line": 4,
+                        "symbol": 0
+                     }
+                  },
+                  {
+                     "type": "int",
+                     "title": "type",
+                     "line": 5,
+                     "value": {
+                        "id": "value",
+                        "type": "int",
+                        "value": 0,
+                        "line": 5,
+                        "symbol": 0
+                     }
+                  }
+               ]
+            }
+         },
+         "type": "module"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "class",
+            "title": "school",
+            "parent": "",
+            "properties": [
+               {
+                  "type": "string",
+                  "title": "name",
+                  "value": {
+                     "id": "value",
+                     "type": "string",
+                     "value": "Public Elementary School",
+                     "line": 3,
+                     "symbol": 0
+                  },
+                  "line": 3
+               },
+               {
+                  "type": "boolean",
+                  "title": "private",
+                  "value": {
+                     "id": "value",
+                     "type": "logic",
+                     "value": false,
+                     "line": 4,
+                     "symbol": 0
+                  },
+                  "line": 4
+               },
+               {
+                  "type": "int",
+                  "title": "type",
+                  "value": {
+                     "id": "value",
+                     "type": "int",
+                     "value": 0,
+                     "line": 5,
+                     "symbol": 0
+                  },
+                  "line": 5
+               }
+            ],
+            "messages": [],
+            "symbol": 0
+         }
+      ],
+      "line": 7,
+      "symbol": 0
+   },
+   "error_list": []
+}

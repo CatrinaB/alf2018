@@ -1,0 +1,96 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "list_of_schools": {
+               "type": "list",
+               "line": 10
+            }
+         },
+         "messages": {},
+         "types": {
+            "school": {
+               "type": "class",
+               "properties": [
+                  {
+                     "type": "string",
+                     "title": "name",
+                     "line": 3
+                  },
+                  {
+                     "type": "logic",
+                     "title": "private",
+                     "line": 4
+                  },
+                  {
+                     "type": "int",
+                     "title": "type",
+                     "line": 5
+                  }
+               ]
+            },
+            "list": {
+               "type": "list",
+               "line": 8,
+               "element_type": "school",
+               "from": "1",
+               "to": "9"
+            }
+         },
+         "type": "module"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "class",
+            "title": "school",
+            "parent": "",
+            "properties": [
+               {
+                  "type": "string",
+                  "title": "name",
+                  "line": 3
+               },
+               {
+                  "type": "logic",
+                  "title": "private",
+                  "line": 4
+               },
+               {
+                  "type": "int",
+                  "title": "type",
+                  "line": 5
+               }
+            ],
+            "messages": [],
+            "symbol": 0
+         },
+         {
+            "id": "list",
+            "title": "list",
+            "element_type": "school",
+            "from": "1",
+            "to": "9",
+            "line": 8,
+            "symbol": 0
+         },
+         {
+            "id": "define",
+            "elements": [
+               {
+                  "type": "list",
+                  "title": "list_of_schools",
+                  "line": 10
+               }
+            ],
+            "line": 10,
+            "symbol": 0
+         }
+      ],
+      "line": 11,
+      "symbol": 0
+   },
+   "error_list": []
+}

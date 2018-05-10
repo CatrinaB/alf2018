@@ -1,0 +1,61 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "v": {
+               "type": "character",
+               "line": 3
+            }
+         },
+         "messages": {},
+         "types": {},
+         "type": "module"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "define",
+            "elements": [
+               {
+                  "type": "character",
+                  "title": "v",
+                  "line": 3
+               }
+            ],
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "id": "exp",
+            "op": "=",
+            "left": {
+               "id": "element_of_list",
+               "list": "v",
+               "index": {
+                  "id": "value",
+                  "type": "int",
+                  "value": 1,
+                  "line": 5,
+                  "symbol": 0
+               },
+               "line": 5,
+               "symbol": 0
+            },
+            "right": {
+               "id": "value",
+               "type": "string",
+               "value": "some text",
+               "line": 5,
+               "symbol": 0
+            },
+            "line": 5,
+            "symbol": 0
+         }
+      ],
+      "line": 5,
+      "symbol": 0
+   },
+   "error_list": []
+}

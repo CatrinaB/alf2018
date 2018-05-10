@@ -1,0 +1,2 @@
+{Variable definition list with value}
+define n : int := 3, r:real:=3.7, l:logic:=false,s:string := "string"

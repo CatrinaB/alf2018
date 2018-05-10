@@ -1,0 +1,95 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "n1": {
+               "type": "n2",
+               "line": 3
+            },
+            "n2": {
+               "type": "n3",
+               "line": 5
+            },
+            "n3": {
+               "type": "n1",
+               "line": 7
+            }
+         },
+         "messages": {},
+         "types": {},
+         "type": "module"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "define",
+            "elements": [
+               {
+                  "type": "n2",
+                  "title": "n1",
+                  "line": 3
+               }
+            ],
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "id": "define",
+            "elements": [
+               {
+                  "type": "n3",
+                  "title": "n2",
+                  "line": 5
+               }
+            ],
+            "line": 5,
+            "symbol": 0
+         },
+         {
+            "id": "define",
+            "elements": [
+               {
+                  "type": "n1",
+                  "title": "n3",
+                  "line": 7
+               }
+            ],
+            "line": 7,
+            "symbol": 0
+         }
+      ],
+      "line": 7,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "UNDEFINED_TYPE",
+         "line": 3,
+         "elements": {
+            "variable": "n2",
+            "type": "n2"
+         },
+         "text": "Type n2 is not defined"
+      },
+      {
+         "type": "UNDEFINED_TYPE",
+         "line": 5,
+         "elements": {
+            "variable": "n3",
+            "type": "n3"
+         },
+         "text": "Type n3 is not defined"
+      },
+      {
+         "type": "UNDEFINED_TYPE",
+         "line": 7,
+         "elements": {
+            "variable": "n1",
+            "type": "n1"
+         },
+         "text": "Type n1 is not defined"
+      }
+   ]
+}
