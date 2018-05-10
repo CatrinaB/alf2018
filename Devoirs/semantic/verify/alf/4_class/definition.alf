@@ -1,6 +1,6 @@
 {Class definition}
 class school
 	property name:string
-	property private:boolean
+	property private:logic
 	property type:int
 end
