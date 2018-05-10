@@ -89,14 +89,12 @@ output/
 output
 package.json
 package-lock.json
-main.js
 .jshintrc
 original
 calculator.zip
 design.zip
 errors.out
 homeworkoutput
-grammar.jison
 grammar.js
 alf.zip
 error.js

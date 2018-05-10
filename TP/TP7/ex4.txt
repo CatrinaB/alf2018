@@ -1,0 +1,5 @@
+var a of int, b of int
+a = 2+3*7
+b = 4/2*9
+c = "lala"
+d = 2.5

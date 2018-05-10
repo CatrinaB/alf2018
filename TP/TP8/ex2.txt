@@ -1,0 +1,3 @@
+var a of int
+var a, c
+var d of string

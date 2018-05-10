@@ -1,0 +1,6 @@
+function addVariables (a of int, b of int)
+    a + b
+endfunction
+function divVariables (a of float, b of float)
+    a / b
+endfunction
