@@ -68,7 +68,6 @@
          "type": "UNDEFINED_TYPE",
          "line": 3,
          "elements": {
-            "variable": "n2",
             "type": "n2"
          },
          "text": "Type n2 is not defined"
@@ -77,7 +76,6 @@
          "type": "UNDEFINED_TYPE",
          "line": 5,
          "elements": {
-            "variable": "n3",
             "type": "n3"
          },
          "text": "Type n3 is not defined"
@@ -86,7 +84,6 @@
          "type": "UNDEFINED_TYPE",
          "line": 7,
          "elements": {
-            "variable": "n1",
             "type": "n1"
          },
          "text": "Type n1 is not defined"

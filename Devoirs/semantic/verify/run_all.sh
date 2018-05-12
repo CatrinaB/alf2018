@@ -12,18 +12,16 @@ errorslist=$dir/errors.out
 rm -f $errorslist
 
 cd "$dir"
-if [ -f yarn.lock ];
-then
-	yarn || npm install
-else
-	npm install
-fi
+
+npm install
+
+npm install lodash
 
 passed=0
 failed=0
 total=0
 
-rm alfy.js
+rm grammar.js
 
 echo '{ "node":true, "loopfunc": true, "esnext":true }' > .jshintrc
 if [ ! -f `basename "$1"` ];
@@ -32,12 +30,12 @@ then
 elif ! jshint *.js;
 then
 	echo "Please review your code, you have jshint errors"
-elif ! jison alfy.jison 
+elif ! jison grammar.jison 
 then
 	echo "Please verify your grammar for errors"
 else
 	cd -
-	for folder in alfy/*
+	for folder in alf/*
 	do
 		if [ -d $folder ];
 		then
@@ -55,7 +53,7 @@ else
 			fi
 			if [ $failed == 0 ] || ! (echo $folder | grep bonus &> /dev/null);
 			then
-				for file in "$folder"/*.alfy
+				for file in "$folder"/*.alf
 				do
 					inputfile=`pwd`/"$file"
 					outputfile=output/`basename "$file"`.json
@@ -78,8 +76,10 @@ else
 					# Symbol
 					echo "Symbol" > "$errorsfile"
 					echo "-----------" >> "$errorsfile"
+					symbol=no
 					if node verify.js "$originalfile" "$outputfile" "$P1" "symbol" >> "$errorsfile" 2>&1
 					then
+						symbol=yes
 						p=$P1
 						passed=$(($passed+1))
 						POINTS=$(($POINTS+$P1))
@@ -91,8 +91,10 @@ else
 					# AST
 					echo "AST" >> "$errorsfile"
 					echo "-----------" >> "$errorsfile" 
+					ast=no
 					if node verify.js "$originalfile" "$outputfile" "$P2" "ast" >> "$errorsfile" 2>&1
 					then
+						ast=yes
 						p=$P2
 						passed=$(($passed+1))
 						POINTS=$(($POINTS+$P2))
@@ -104,7 +106,7 @@ else
 					# Error
 					echo "Error" >> "$errorsfile"
 					echo "-----------" >> "$errorsfile"
-					if node verify.js "$originalfile" "$outputfile" "$P3" "error" >> "$errorsfile" 2>&1
+					if test $ast == "yes" -a $symbol == "yes" && node verify.js "$originalfile" "$outputfile" "$P3" "error" >> "$errorsfile" 2>&1
 					then
 						p=$P3
 						passed=$(($passed+1))

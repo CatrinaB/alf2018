@@ -3,4 +3,4 @@
 define a : int
 define s : string
 
-a = s
+a := s

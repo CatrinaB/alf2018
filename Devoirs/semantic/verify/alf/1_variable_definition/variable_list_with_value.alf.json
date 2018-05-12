@@ -114,15 +114,5 @@
       "line": 2,
       "symbol": 0
    },
-   "error_list": [
-      {
-         "type": "UNDEFINED_TYPE",
-         "line": 2,
-         "elements": {
-            "variable": "logic",
-            "type": "logic"
-         },
-         "text": "Type logic is not defined"
-      }
-   ]
+   "error_list": []
 }

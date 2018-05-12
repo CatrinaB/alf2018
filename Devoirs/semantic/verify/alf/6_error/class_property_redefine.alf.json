@@ -1,20 +1,53 @@
 {
-   "symbol_table": {},
-   "ast": {},
-   "error_list": [
+   "symbol_table": [
       {
-         "type": "SYNTAX",
-         "line": 5,
-         "elements": {
-            "error": "syntax",
-            "line": 5,
-            "text": "define",
-            "token": "DEFINE",
-            "expected": [
-               "'IDENTIFIER'"
-            ]
+         "variables": {},
+         "messages": {},
+         "types": {
+            "s": {
+               "type": "class",
+               "properties": [
+                  {
+                     "type": "string",
+                     "title": "title",
+                     "line": 4
+                  },
+                  {
+                     "type": "string",
+                     "title": "title",
+                     "line": 5
+                  }
+               ]
+            }
          },
-         "text": "define"
+         "type": "module"
       }
-   ]
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "class",
+            "title": "s",
+            "parent": "",
+            "properties": [
+               {
+                  "type": "string",
+                  "title": "title",
+                  "line": 4
+               },
+               {
+                  "type": "string",
+                  "title": "title",
+                  "line": 5
+               }
+            ],
+            "messages": [],
+            "symbol": 0
+         }
+      ],
+      "line": 6,
+      "symbol": 0
+   },
+   "error_list": []
 }

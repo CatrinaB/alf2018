@@ -147,7 +147,6 @@
          "type": "UNDEFINED_TYPE",
          "line": 4,
          "elements": {
-            "variable": "auto",
             "type": "auto"
          },
          "text": "Type auto is not defined"

@@ -2,5 +2,5 @@
 
 class s 
 	property title:string
-	property define title => string
+	property title :string
 end
