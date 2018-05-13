@@ -34,7 +34,8 @@
                      "symbol": 0
                   },
                   "line": 3,
-                  "symbol": 0
+                  "symbol": 0,
+                  "type": "int"
                },
                "right": {
                   "id": "exp",
@@ -54,10 +55,12 @@
                      "symbol": 0
                   },
                   "line": 3,
-                  "symbol": 0
+                  "symbol": 0,
+                  "type": "int"
                },
                "line": 3,
-               "symbol": 0
+               "symbol": 0,
+               "type": "logic"
             },
             "right": {
                "id": "exp",
@@ -80,7 +83,8 @@
                      "symbol": 0
                   },
                   "line": 3,
-                  "symbol": 0
+                  "symbol": 0,
+                  "type": "int"
                },
                "right": {
                   "id": "exp",
@@ -100,17 +104,31 @@
                      "symbol": 0
                   },
                   "line": 3,
-                  "symbol": 0
+                  "symbol": 0,
+                  "type": "int"
                },
                "line": 3,
-               "symbol": 0
+               "symbol": 0,
+               "type": "logic"
             },
             "line": 3,
-            "symbol": 0
+            "symbol": 0,
+            "type": ""
          }
       ],
       "line": 3,
       "symbol": 0
    },
-   "error_list": []
+   "error_list": [
+      {
+         "type": "TYPE_EXPRESSION",
+         "line": 3,
+         "elements": {
+            "left": "logic",
+            "right": "logic",
+            "op": "and"
+         },
+         "text": "Type expression error undefined and logic"
+      }
+   ]
 }

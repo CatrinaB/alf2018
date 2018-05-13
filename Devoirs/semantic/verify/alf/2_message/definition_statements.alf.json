@@ -65,16 +65,19 @@
                      "id": "identifier",
                      "title": "n1",
                      "line": 6,
-                     "symbol": 1
+                     "symbol": 1,
+                     "type": "int"
                   },
                   "right": {
                      "id": "identifier",
                      "title": "n2",
                      "line": 6,
-                     "symbol": 1
+                     "symbol": 1,
+                     "type": "int"
                   },
                   "line": 6,
-                  "symbol": 1
+                  "symbol": 1,
+                  "type": "int"
                }
             ],
             "line": 7,

@@ -17,7 +17,8 @@
                "id": "identifier",
                "title": "i",
                "line": 3,
-               "symbol": 0
+               "symbol": 0,
+               "type": ""
             },
             "right": {
                "id": "value",
@@ -27,11 +28,21 @@
                "symbol": 0
             },
             "line": 3,
-            "symbol": 0
+            "symbol": 0,
+            "type": ""
          }
       ],
       "line": 3,
       "symbol": 0
    },
-   "error_list": []
+   "error_list": [
+      {
+         "type": "UNDEFINED_VARIABLE",
+         "line": 3,
+         "elements": {
+            "variable": "i"
+         },
+         "text": "Undefined variable i"
+      }
+   ]
 }
