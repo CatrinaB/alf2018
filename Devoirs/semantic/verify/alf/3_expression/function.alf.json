@@ -1,21 +1,88 @@
 {
-   "symbol_table": {},
-   "ast": {},
-   "error_list": [
+   "symbol_table": [
       {
-         "type": "SYNTAX",
-         "line": 3,
-         "elements": {
-            "error": "syntax",
-            "line": 3,
-            "text": "value",
-            "token": "IDENTIFIER",
-            "expected": [
-               "':'",
-               "'ASSIGN'"
-            ]
+         "variables": {},
+         "messages": {
+            "number": {
+               "type": "int",
+               "parameters": [
+                  {
+                     "type": "int",
+                     "id": "value",
+                     "line": 3,
+                     "symbol": 1
+                  }
+               ],
+               "symbol": 1,
+               "line": 3
+            }
          },
-         "text": "value"
+         "types": {},
+         "type": "module"
+      },
+      {
+         "variables": {},
+         "messages": {},
+         "types": {},
+         "parent": 0,
+         "type": "message",
+         "message": "number",
+         "return_type": "int"
       }
-   ]
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "message",
+            "title": "number",
+            "parameters": [
+               {
+                  "type": "int",
+                  "id": "value",
+                  "line": 3,
+                  "symbol": 1
+               }
+            ],
+            "return_type": "int",
+            "statements": [
+               {
+                  "id": "value",
+                  "type": "int",
+                  "value": 3,
+                  "line": 3,
+                  "symbol": 1
+               }
+            ],
+            "line": 3,
+            "symbol": 1
+         },
+         {
+            "id": "exp",
+            "op": "+",
+            "left": {
+               "id": "value",
+               "type": "int",
+               "value": 2,
+               "line": 5,
+               "symbol": 0
+            },
+            "right": {
+               "id": "dispatch",
+               "message": "number",
+               "object": "module",
+               "parameters": [],
+               "line": 5,
+               "symbol": 0,
+               "type": "int"
+            },
+            "line": 5,
+            "symbol": 0,
+            "type": "int"
+         }
+      ],
+      "line": 5,
+      "symbol": 0
+   },
+   "error_list": []
 }

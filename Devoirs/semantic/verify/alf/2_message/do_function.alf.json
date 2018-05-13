@@ -72,7 +72,7 @@
             },
             "line": 5,
             "symbol": 0,
-            "type": ""
+            "type": "string"
          }
       ],
       "line": 5,
@@ -80,10 +80,14 @@
    },
    "error_list": [
       {
-         "type": "UNDEFINED_MESSAGE",
+         "type": "TYPE_EXPRESSION",
          "line": 5,
-         "elements": {},
-         "text": "Undefined message undefined"
+         "elements": {
+            "to": "text",
+            "from": "string",
+            "op": ":="
+         },
+         "text": "Type expression text is string"
       }
    ]
 }

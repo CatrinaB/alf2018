@@ -80,8 +80,10 @@
       {
          "type": "UNDEFINED_MESSAGE",
          "line": 6,
-         "elements": {},
-         "text": "Undefined message undefined"
+         "elements": {
+            "id": "position"
+         },
+         "text": "Undefined message position"
       },
       {
          "type": "ARRAY_INDEX_TYPE",

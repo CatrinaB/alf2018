@@ -50,18 +50,11 @@
             "parameters": [],
             "line": 5,
             "symbol": 0,
-            "type": ""
+            "type": "int"
          }
       ],
       "line": 5,
       "symbol": 0
    },
-   "error_list": [
-      {
-         "type": "UNDEFINED_MESSAGE",
-         "line": 5,
-         "elements": {},
-         "text": "Undefined message undefined"
-      }
-   ]
+   "error_list": []
 }

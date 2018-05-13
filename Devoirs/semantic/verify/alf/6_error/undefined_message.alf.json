@@ -35,8 +35,10 @@
       {
          "type": "UNDEFINED_MESSAGE",
          "line": 3,
-         "elements": {},
-         "text": "Undefined message undefined"
+         "elements": {
+            "id": "print"
+         },
+         "text": "Undefined message print"
       }
    ]
 }

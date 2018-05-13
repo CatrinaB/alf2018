@@ -1,5 +1,5 @@
 {Expression with function}
 
-define number value:int = 3
+message number:int value:int = 3
 
-2+[module number];
+2+[module number]
