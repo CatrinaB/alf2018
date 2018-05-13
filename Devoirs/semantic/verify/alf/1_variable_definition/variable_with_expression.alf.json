@@ -32,10 +32,12 @@
                         "symbol": 0
                      },
                      "line": 2,
-                     "symbol": 0
+                     "symbol": 0,
+                     "type": "int"
                   },
                   "line": 2,
-                  "symbol": 0
+                  "symbol": 0,
+                  "type": "int"
                },
                "line": 2
             }
@@ -82,10 +84,12 @@
                            "symbol": 0
                         },
                         "line": 2,
-                        "symbol": 0
+                        "symbol": 0,
+                        "type": "int"
                      },
                      "line": 2,
-                     "symbol": 0
+                     "symbol": 0,
+                     "type": "int"
                   },
                   "line": 2
                }
@@ -97,16 +101,5 @@
       "line": 3,
       "symbol": 0
    },
-   "error_list": [
-      {
-         "type": "TYPE_EXPRESSION",
-         "line": 2,
-         "elements": {
-            "to": "int",
-            "from": "",
-            "op": ":="
-         },
-         "text": "Type expression int is "
-      }
-   ]
+   "error_list": []
 }

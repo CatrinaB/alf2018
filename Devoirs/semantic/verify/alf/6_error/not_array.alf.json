@@ -41,7 +41,8 @@
                   "symbol": 0
                },
                "line": 5,
-               "symbol": 0
+               "symbol": 0,
+               "type": ""
             },
             "right": {
                "id": "value",
@@ -51,11 +52,21 @@
                "symbol": 0
             },
             "line": 5,
-            "symbol": 0
+            "symbol": 0,
+            "type": ""
          }
       ],
       "line": 5,
       "symbol": 0
    },
-   "error_list": []
+   "error_list": [
+      {
+         "type": "NOT_ARRAY",
+         "line": 5,
+         "elements": {
+            "type": "v"
+         },
+         "text": "v is not a list"
+      }
+   ]
 }

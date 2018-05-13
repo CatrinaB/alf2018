@@ -31,7 +31,8 @@
                   "symbol": 0
                },
                "line": 3,
-               "symbol": 0
+               "symbol": 0,
+               "type": "real"
             },
             "right": {
                "id": "value",
@@ -41,7 +42,8 @@
                "symbol": 0
             },
             "line": 3,
-            "symbol": 0
+            "symbol": 0,
+            "type": "real"
          }
       ],
       "line": 3,

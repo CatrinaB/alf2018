@@ -58,7 +58,8 @@
                   "symbol": 0
                },
                "line": 7,
-               "symbol": 0
+               "symbol": 0,
+               "type": "string"
             },
             "right": {
                "id": "value",
@@ -68,11 +69,22 @@
                "symbol": 0
             },
             "line": 7,
-            "symbol": 0
+            "symbol": 0,
+            "type": "logic"
          }
       ],
       "line": 7,
       "symbol": 0
    },
-   "error_list": []
+   "error_list": [
+      {
+         "type": "ARRAY_INDEX_TYPE",
+         "line": 7,
+         "elements": {
+            "array": "l",
+            "index": "string"
+         },
+         "text": "Array (l) index must be int or character"
+      }
+   ]
 }

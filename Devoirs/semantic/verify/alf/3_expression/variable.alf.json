@@ -56,7 +56,8 @@
                   "id": "identifier",
                   "title": "n",
                   "line": 5,
-                  "symbol": 0
+                  "symbol": 0,
+                  "type": "int"
                },
                "right": {
                   "id": "value",
@@ -66,7 +67,8 @@
                   "symbol": 0
                },
                "line": 5,
-               "symbol": 0
+               "symbol": 0,
+               "type": "int"
             },
             "right": {
                "id": "value",
@@ -76,7 +78,8 @@
                "symbol": 0
             },
             "line": 5,
-            "symbol": 0
+            "symbol": 0,
+            "type": "string"
          }
       ],
       "line": 5,

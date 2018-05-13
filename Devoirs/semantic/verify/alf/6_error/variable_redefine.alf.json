@@ -34,7 +34,8 @@
                "id": "identifier",
                "title": "a",
                "line": 5,
-               "symbol": 0
+               "symbol": 0,
+               "type": "int"
             },
             "right": {
                "id": "value",
@@ -44,7 +45,8 @@
                "symbol": 0
             },
             "line": 5,
-            "symbol": 0
+            "symbol": 0,
+            "type": "logic"
          },
          {
             "id": "define",

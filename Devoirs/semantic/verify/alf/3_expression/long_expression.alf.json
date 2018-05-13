@@ -57,7 +57,8 @@
                            "symbol": 0
                         },
                         "line": 5,
-                        "symbol": 0
+                        "symbol": 0,
+                        "type": "int"
                      },
                      "right": {
                         "id": "value",
@@ -67,7 +68,8 @@
                         "symbol": 0
                      },
                      "line": 5,
-                     "symbol": 0
+                     "symbol": 0,
+                     "type": "int"
                   },
                   "right": {
                      "id": "value",
@@ -77,7 +79,8 @@
                      "symbol": 0
                   },
                   "line": 5,
-                  "symbol": 0
+                  "symbol": 0,
+                  "type": "int"
                },
                "right": {
                   "id": "value",
@@ -87,7 +90,8 @@
                   "symbol": 0
                },
                "line": 5,
-               "symbol": 0
+               "symbol": 0,
+               "type": "logic"
             },
             "right": {
                "id": "exp",
@@ -116,7 +120,8 @@
                            "symbol": 0
                         },
                         "line": 5,
-                        "symbol": 0
+                        "symbol": 0,
+                        "type": "int"
                      },
                      "right": {
                         "id": "value",
@@ -126,7 +131,8 @@
                         "symbol": 0
                      },
                      "line": 5,
-                     "symbol": 0
+                     "symbol": 0,
+                     "type": "logic"
                   },
                   "right": {
                      "id": "exp",
@@ -156,13 +162,16 @@
                            "symbol": 0
                         },
                         "line": 5,
-                        "symbol": 0
+                        "symbol": 0,
+                        "type": "string"
                      },
                      "line": 5,
-                     "symbol": 0
+                     "symbol": 0,
+                     "type": "logic"
                   },
                   "line": 5,
-                  "symbol": 0
+                  "symbol": 0,
+                  "type": ""
                },
                "right": {
                   "id": "exp",
@@ -178,20 +187,35 @@
                      "id": "identifier",
                      "title": "n",
                      "line": 5,
-                     "symbol": 0
+                     "symbol": 0,
+                     "type": "int"
                   },
                   "line": 5,
-                  "symbol": 0
+                  "symbol": 0,
+                  "type": "logic"
                },
                "line": 5,
-               "symbol": 0
+               "symbol": 0,
+               "type": ""
             },
             "line": 5,
-            "symbol": 0
+            "symbol": 0,
+            "type": ""
          }
       ],
       "line": 5,
       "symbol": 0
    },
-   "error_list": []
+   "error_list": [
+      {
+         "type": "TYPE_EXPRESSION",
+         "line": 5,
+         "elements": {
+            "left": "logic",
+            "right": "logic",
+            "op": "or"
+         },
+         "text": "Type expression error undefined or logic"
+      }
+   ]
 }

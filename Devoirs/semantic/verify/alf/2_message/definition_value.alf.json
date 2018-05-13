@@ -37,16 +37,19 @@
                      "id": "identifier",
                      "title": "n1",
                      "line": 6,
-                     "symbol": 1
+                     "symbol": 1,
+                     "type": "int"
                   },
                   "right": {
                      "id": "identifier",
                      "title": "n2",
                      "line": 6,
-                     "symbol": 1
+                     "symbol": 1,
+                     "type": "int"
                   },
                   "line": 6,
-                  "symbol": 1
+                  "symbol": 1,
+                  "type": "int"
                },
                "line": 6
             }
@@ -94,16 +97,19 @@
                               "id": "identifier",
                               "title": "n1",
                               "line": 6,
-                              "symbol": 1
+                              "symbol": 1,
+                              "type": "int"
                            },
                            "right": {
                               "id": "identifier",
                               "title": "n2",
                               "line": 6,
-                              "symbol": 1
+                              "symbol": 1,
+                              "type": "int"
                            },
                            "line": 6,
-                           "symbol": 1
+                           "symbol": 1,
+                           "type": "int"
                         },
                         "line": 6
                      }
@@ -132,16 +138,5 @@
       "line": 10,
       "symbol": 0
    },
-   "error_list": [
-      {
-         "type": "TYPE_EXPRESSION",
-         "line": 6,
-         "elements": {
-            "to": "int",
-            "from": "",
-            "op": ":="
-         },
-         "text": "Type expression int is "
-      }
-   ]
+   "error_list": []
 }

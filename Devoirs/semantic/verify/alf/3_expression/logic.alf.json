@@ -31,7 +31,8 @@
                   "symbol": 0
                },
                "line": 3,
-               "symbol": 0
+               "symbol": 0,
+               "type": "int"
             },
             "right": {
                "id": "exp",
@@ -51,10 +52,12 @@
                   "symbol": 0
                },
                "line": 3,
-               "symbol": 0
+               "symbol": 0,
+               "type": "int"
             },
             "line": 3,
-            "symbol": 0
+            "symbol": 0,
+            "type": "logic"
          }
       ],
       "line": 3,

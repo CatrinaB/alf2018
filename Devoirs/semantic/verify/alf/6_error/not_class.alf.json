@@ -36,11 +36,13 @@
                   "id": "identifier",
                   "title": "v",
                   "line": 5,
-                  "symbol": 0
+                  "symbol": 0,
+                  "type": "string"
                },
                "title": "t",
                "line": 5,
-               "symbol": 0
+               "symbol": 0,
+               "type": ""
             },
             "right": {
                "id": "value",
@@ -50,11 +52,21 @@
                "symbol": 0
             },
             "line": 5,
-            "symbol": 0
+            "symbol": 0,
+            "type": ""
          }
       ],
       "line": 5,
       "symbol": 0
    },
-   "error_list": []
+   "error_list": [
+      {
+         "type": "NOT_CLASS",
+         "line": 5,
+         "elements": {
+            "type": "string"
+         },
+         "text": "string is not a class"
+      }
+   ]
 }
