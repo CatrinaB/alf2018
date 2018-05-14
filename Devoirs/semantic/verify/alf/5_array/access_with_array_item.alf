@@ -1,6 +1,8 @@
 {Access element with array item}
 list:string[1 to 9]
 
-define v:list, p:list
+index_list: int[1 to 9]
+
+define v:list, p:index_list
 
 v#p#5 := "The new name for the school"

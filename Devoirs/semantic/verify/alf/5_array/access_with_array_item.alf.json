@@ -4,11 +4,11 @@
          "variables": {
             "v": {
                "type": "list",
-               "line": 4
+               "line": 6
             },
             "p": {
-               "type": "list",
-               "line": 4
+               "type": "index_list",
+               "line": 6
             }
          },
          "messages": {},
@@ -17,6 +17,13 @@
                "type": "list",
                "line": 2,
                "element_type": "string",
+               "from": "1",
+               "to": "9"
+            },
+            "index_list": {
+               "type": "list",
+               "line": 4,
+               "element_type": "int",
                "from": "1",
                "to": "9"
             }
@@ -37,20 +44,29 @@
             "symbol": 0
          },
          {
+            "id": "list",
+            "title": "index_list",
+            "element_type": "int",
+            "from": "1",
+            "to": "9",
+            "line": 4,
+            "symbol": 0
+         },
+         {
             "id": "define",
             "elements": [
                {
                   "type": "list",
                   "title": "v",
-                  "line": 4
+                  "line": 6
                },
                {
-                  "type": "list",
+                  "type": "index_list",
                   "title": "p",
-                  "line": 4
+                  "line": 6
                }
             ],
-            "line": 4,
+            "line": 6,
             "symbol": 0
          },
          {
@@ -65,14 +81,14 @@
                      "id": "value",
                      "type": "int",
                      "value": 5,
-                     "line": 6,
+                     "line": 8,
                      "symbol": 0
                   },
-                  "line": 6,
+                  "line": 8,
                   "symbol": 0,
-                  "type": "string"
+                  "type": "int"
                },
-               "line": 6,
+               "line": 8,
                "symbol": 0,
                "type": "string"
             },
@@ -80,25 +96,15 @@
                "id": "value",
                "type": "string",
                "value": "The new name for the school",
-               "line": 6,
+               "line": 8,
                "symbol": 0
             },
-            "line": 6,
+            "line": 8,
             "symbol": 0
          }
       ],
-      "line": 7,
+      "line": 9,
       "symbol": 0
    },
-   "error_list": [
-      {
-         "type": "ARRAY_INDEX_TYPE",
-         "line": 6,
-         "elements": {
-            "array": "v",
-            "index": "string"
-         },
-         "text": "Array (v) index must be int or character"
-      }
-   ]
+   "error_list": []
 }
