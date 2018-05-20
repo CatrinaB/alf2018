@@ -43,7 +43,7 @@ else
 		then
 			if [ -f "$folder"/run.txt ];
 			then
-				echo `head -n 1 "$folder"/run.txt` "(Variables, ASM)" 
+				echo `head -n 1 "$folder"/run.txt` "(Variables, WAS)" 
 				P1=`head -n 2 "$folder"/run.txt | tail -n 1 | cut -d " " -f 1`
 				P2=`head -n 2 "$folder"/run.txt | tail -n 1 | cut -d " " -f 2`
 			else
@@ -87,7 +87,7 @@ else
 					fi
 					str=$str"$p""p, "
 					# AST
-					echo "ASM" >> "$errorsfile"
+					echo "WAS" >> "$errorsfile"
 					echo "-----------" >> "$errorsfile" 
 					if [ "$e" == "" ]
 					then
