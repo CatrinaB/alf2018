@@ -23,7 +23,7 @@ passed=0
 failed=0
 total=0
 
-npm install lodash
+npm install lodash was
 
 df -h
 
