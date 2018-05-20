@@ -1,7 +1,10 @@
     
     ;; script
     (module
-        (import "io" "writeint" (func $writeint (param $int i32))
+        ;; import functions
+        (import "io" "writeint" (func $writeint (param $int i32)))
+        ;; define a memory
+        (memory 1)
         (func $start
             ;; call $writeint
             ;; expression and
@@ -20,19 +23,9 @@
                         ;; value int 8
                         i32.const 8
                     i32.div_s
-                    ;; typecast logic int
-                    i32.eqz
-                    i32.const 1
-                    i32.const 0
-                    select
                     ;; value int 10
                     i32.const 10
-                    ;; typecast logic int
-                    i32.eqz
-                    i32.const 1
-                    i32.const 0
-                    select
-                i32.gt
+                i32.gt_s
                 ;; expression xor
                     ;; expression <
                         ;; expression +
@@ -41,36 +34,16 @@
                             ;; value int 5
                             i32.const 5
                         i32.add
-                        ;; typecast logic int
-                        i32.eqz
-                        i32.const 1
-                        i32.const 0
-                        select
                         ;; value int 5
                         i32.const 5
-                        ;; typecast logic int
-                        i32.eqz
-                        i32.const 1
-                        i32.const 0
-                        select
-                    i32.lt
+                    i32.lt_s
                     ;; expression !=
                         ;; value int 7
                         i32.const 7
-                        ;; typecast logic int
-                        i32.eqz
-                        i32.const 1
-                        i32.const 0
-                        select
                         i32.const 0
                         i32.load
-                        ;; typecast logic int
-                        i32.eqz
-                        i32.const 1
-                        i32.const 0
-                        select
                     i32.ne
             call $writeint
         )
-        (start $start))
+        (start $start)
     )

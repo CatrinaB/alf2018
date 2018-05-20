@@ -1,7 +1,10 @@
     
     ;; script
     (module
-        (import "io" "writechar" (func $writechar (param $char i32))
+        ;; import functions
+        (import "io" "writechar" (func $writechar (param $char i32)))
+        ;; define a memory
+        (memory 1)
         (func $start
             ;; set
             i32.const 0
@@ -23,5 +26,5 @@
             i32.load
             call $writechar
         )
-        (start $start))
+        (start $start)
     )

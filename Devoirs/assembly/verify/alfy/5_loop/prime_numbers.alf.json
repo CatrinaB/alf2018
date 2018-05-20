@@ -1,0 +1,316 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "p": {
+                    "type": "int",
+                    "line": 2
+                },
+                "isPrime": {
+                    "type": "logic",
+                    "line": 3
+                },
+                "i": {
+                    "type": "int",
+                    "line": 4
+                },
+                "s": {
+                    "type": "logic",
+                    "value": {
+                        "id": "value",
+                        "type": "logic",
+                        "value": false,
+                        "line": 6,
+                        "symbol": 0
+                    },
+                    "line": 6
+                }
+            },
+            "messages": {
+                "readint": {
+                    "type": "int",
+                    "parameters": [],
+                    "symbol": 1,
+                    "line": 11
+                },
+                "writeint": {
+                    "type": "int",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "id": "nr",
+                            "line": 13,
+                            "symbol": 2
+                        }
+                    ],
+                    "symbol": 2,
+                    "line": 16
+                }
+            },
+            "types": {},
+            "type": "module"
+        },
+        {
+            "variables": {},
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "readint",
+            "return_type": "int"
+        },
+        {
+            "variables": {},
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "writeint",
+            "return_type": "int"
+        }
+    ],
+    "ast": {
+        "id": "module",
+        "statements": [
+            {
+                "id": "set",
+                "to": {
+                    "id": "identifier",
+                    "title": "s",
+                    "symbol": 0,
+                    "type": "logic"
+                },
+                "from": {
+                    "id": "value",
+                    "type": "logic",
+                    "value": false,
+                    "line": 6,
+                    "symbol": 0
+                },
+                "line": 6,
+                "symbol": 0
+            },
+            {
+                "id": "while",
+                "exp": {
+                    "id": "exp",
+                    "op": "not",
+                    "value": {
+                        "id": "identifier",
+                        "title": "s",
+                        "line": 18,
+                        "symbol": 0,
+                        "type": "logic"
+                    },
+                    "line": 18,
+                    "symbol": 0,
+                    "type": "logic"
+                },
+                "statements": [
+                    {
+                        "id": "set",
+                        "to": {
+                            "id": "identifier",
+                            "title": "p",
+                            "line": 19,
+                            "symbol": 0,
+                            "type": "int"
+                        },
+                        "from": {
+                            "id": "dispatch",
+                            "message": "readint",
+                            "object": "io",
+                            "parameters": [],
+                            "line": 19,
+                            "symbol": 0,
+                            "type": "int"
+                        },
+                        "line": 19,
+                        "symbol": 0
+                    },
+                    {
+                        "id": "set",
+                        "to": {
+                            "id": "identifier",
+                            "title": "isPrime",
+                            "line": 20,
+                            "symbol": 0,
+                            "type": "logic"
+                        },
+                        "from": {
+                            "id": "value",
+                            "type": "logic",
+                            "value": true,
+                            "line": 20,
+                            "symbol": 0
+                        },
+                        "line": 20,
+                        "symbol": 0
+                    },
+                    {
+                        "id": "for",
+                        "variable": "i",
+                        "list": {
+                            "low": {
+                                "id": "value",
+                                "type": "int",
+                                "value": 2,
+                                "line": 21,
+                                "symbol": 0
+                            },
+                            "high": {
+                                "id": "exp",
+                                "op": "/",
+                                "left": {
+                                    "id": "identifier",
+                                    "title": "p",
+                                    "line": 21,
+                                    "symbol": 0,
+                                    "type": "int"
+                                },
+                                "right": {
+                                    "id": "value",
+                                    "type": "int",
+                                    "value": 2,
+                                    "line": 21,
+                                    "symbol": 0
+                                },
+                                "line": 21,
+                                "symbol": 0,
+                                "type": "int"
+                            },
+                            "direction": "to"
+                        },
+                        "statements": [
+                            {
+                                "id": "if",
+                                "exp": {
+                                    "id": "exp",
+                                    "op": "=",
+                                    "left": {
+                                        "id": "exp",
+                                        "op": "mod",
+                                        "left": {
+                                            "id": "identifier",
+                                            "title": "p",
+                                            "line": 22,
+                                            "symbol": 0,
+                                            "type": "int"
+                                        },
+                                        "right": {
+                                            "id": "identifier",
+                                            "title": "i",
+                                            "line": 22,
+                                            "symbol": 0,
+                                            "type": "int"
+                                        },
+                                        "line": 22,
+                                        "symbol": 0,
+                                        "type": "int"
+                                    },
+                                    "right": {
+                                        "id": "value",
+                                        "type": "int",
+                                        "value": 0,
+                                        "line": 22,
+                                        "symbol": 0
+                                    },
+                                    "line": 22,
+                                    "symbol": 0,
+                                    "type": "logic"
+                                },
+                                "then": [
+                                    {
+                                        "id": "set",
+                                        "to": {
+                                            "id": "identifier",
+                                            "title": "isPrime",
+                                            "line": 23,
+                                            "symbol": 0,
+                                            "type": "logic"
+                                        },
+                                        "from": {
+                                            "id": "value",
+                                            "type": "logic",
+                                            "value": false,
+                                            "line": 23,
+                                            "symbol": 0
+                                        },
+                                        "line": 23,
+                                        "symbol": 0
+                                    }
+                                ],
+                                "line": 24,
+                                "symbol": 0
+                            }
+                        ],
+                        "line": 25,
+                        "symbol": 0
+                    },
+                    {
+                        "id": "if",
+                        "exp": {
+                            "id": "exp",
+                            "op": "not",
+                            "value": {
+                                "id": "identifier",
+                                "title": "isPrime",
+                                "line": 27,
+                                "symbol": 0,
+                                "type": "logic"
+                            },
+                            "line": 27,
+                            "symbol": 0,
+                            "type": "logic"
+                        },
+                        "then": [
+                            {
+                                "id": "dispatch",
+                                "message": "writeint",
+                                "object": "io",
+                                "parameters": {
+                                    "nr": {
+                                        "id": "identifier",
+                                        "title": "p",
+                                        "line": 28,
+                                        "symbol": 0,
+                                        "type": "int"
+                                    }
+                                },
+                                "line": 28,
+                                "symbol": 0,
+                                "type": "int"
+                            }
+                        ],
+                        "line": 29,
+                        "symbol": 0
+                    },
+                    {
+                        "id": "set",
+                        "to": {
+                            "id": "identifier",
+                            "title": "s",
+                            "line": 31,
+                            "symbol": 0,
+                            "type": "logic"
+                        },
+                        "from": {
+                            "id": "identifier",
+                            "title": "isPrime",
+                            "line": 31,
+                            "symbol": 0,
+                            "type": "logic"
+                        },
+                        "line": 31,
+                        "symbol": 0
+                    }
+                ],
+                "line": 32,
+                "symbol": 0
+            }
+        ],
+        "line": 32,
+        "symbol": 0
+    },
+    "error_list": []
+}

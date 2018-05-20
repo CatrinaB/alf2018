@@ -1,7 +1,10 @@
     
     ;; script
     (module
-        (import "io" "writefloat" (func $writefloat (param $float f32))
+        ;; import functions
+        (import "io" "writefloat" (func $writefloat (param $float f32)))
+        ;; define a memory
+        (memory 1)
         (func $start
             ;; set
             i32.const 0
@@ -10,8 +13,8 @@
             f32.store
             ;; call $writefloat
             i32.const 0
-            i32.load
+            f32.load
             call $writefloat
         )
-        (start $start))
+        (start $start)
     )

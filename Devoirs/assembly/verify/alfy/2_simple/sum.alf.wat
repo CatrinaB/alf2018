@@ -1,8 +1,11 @@
     
     ;; script
     (module
-        (import "io" "writeint" (func $writeint (param $int i32))
-        (import "io" "readint" (func $readint (result i32))
+        ;; import functions
+        (import "io" "writeint" (func $writeint (param $int i32)))
+        (import "io" "readint" (func $readint (result i32)))
+        ;; define a memory
+        (memory 1)
         (func $start
             ;; set
             i32.const 0
@@ -28,5 +31,5 @@
             i32.load
             call $writeint
         )
-        (start $start))
+        (start $start)
     )

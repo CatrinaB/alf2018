@@ -1,4 +1,6 @@
-{Even and div6 number}
+{Even number}
+define a:int
+define e:character
 
 message writechar:charcater char:character
 begin
@@ -10,20 +12,14 @@ begin
 	none
 end
 
-define a:int
-define e:character
+a:=[io readint]
 
-a:= [io readint]
-
-if (a mod 2 = 0) 
-	if (a mod 6 = 0) 
-		e:="y"
-	else
-		e:="n"
-	end
+if (a mod 2 = 0)
+	e:="e"
 else
 	e:="o"
 end
 
 
 [io writechar char:e]
+

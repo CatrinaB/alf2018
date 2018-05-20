@@ -1,0 +1,36 @@
+{Base 16}
+
+message writeint:int nr:int
+begin
+	none
+end
+
+message writechar:charcter char:character
+begin
+	none
+end
+
+message readint:int
+begin
+	none
+end
+
+define number:int
+
+message base16:none number:int
+begin
+	define a:int
+	if number > 0
+		[module base16 number:number / 16]
+		a := number mod 16
+		if a >= 10
+			[io writechar char:"a"+a-10]
+		else
+			[io writechar char:"0"+a]
+		end
+	end
+end
+
+number:=[io readint]
+
+[module base16 number : number]

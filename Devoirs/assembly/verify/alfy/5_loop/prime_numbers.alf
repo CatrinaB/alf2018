@@ -1,0 +1,32 @@
+{Prime numbers}
+define p:int
+define isPrime:logic
+define i:int
+
+define s:logic := false
+
+message readint:int
+begin
+	none
+end
+
+message writeint:int nr:int
+begin
+	none
+end
+
+while not s 
+	p:=[io readint]
+	isPrime := true
+	for i in range (2 to p / 2)
+		if p mod i = 0
+			isPrime := false
+		end
+	end
+
+	if not isPrime
+		[io writeint nr:p]
+	end
+
+	s := isPrime
+end

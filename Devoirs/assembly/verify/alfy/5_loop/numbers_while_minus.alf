@@ -1,0 +1,20 @@
+{Numbers while minus}
+
+define i:int
+define h:real
+
+message readint:int
+begin
+	none
+end
+
+message writefloat:real nr:real
+begin
+	none
+end
+
+repeat
+	i:=[io readint]
+	h:=i
+	[io writefloat nr:h]
+when i >= 0

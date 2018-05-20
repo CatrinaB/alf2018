@@ -1,7 +1,10 @@
     
     ;; script
     (module
-        (import "io" "writeint" (func $writeint (param $int i32))
+        ;; import functions
+        (import "io" "writeint" (func $writeint (param $int i32)))
+        ;; define a memory
+        (memory 1)
         (func $start
             ;; call $writeint
             ;; expression and
@@ -12,23 +15,13 @@
                         ;; value int 4
                         i32.const 4
                     i32.add
-                    ;; typecast logic int
-                    i32.eqz
-                    i32.const 1
-                    i32.const 0
-                    select
                     ;; expression *
                         ;; value int 5
                         i32.const 5
                         ;; value int 6
                         i32.const 6
                     i32.mul
-                    ;; typecast logic int
-                    i32.eqz
-                    i32.const 1
-                    i32.const 0
-                    select
-                i32.gt
+                i32.gt_s
                 ;; expression <
                     ;; expression +
                         ;; value int 4
@@ -36,24 +29,14 @@
                         ;; value int 5
                         i32.const 5
                     i32.add
-                    ;; typecast logic int
-                    i32.eqz
-                    i32.const 1
-                    i32.const 0
-                    select
                     ;; expression /
                         ;; value int 6
                         i32.const 6
                         ;; value int 7
                         i32.const 7
                     i32.div_s
-                    ;; typecast logic int
-                    i32.eqz
-                    i32.const 1
-                    i32.const 0
-                    select
-                i32.lt
+                i32.lt_s
             call $writeint
         )
-        (start $start))
+        (start $start)
     )

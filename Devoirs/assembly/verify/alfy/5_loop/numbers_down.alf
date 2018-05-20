@@ -1,0 +1,12 @@
+{Numbers down}
+
+define i:int
+
+message writeint:int nr:int
+begin
+	none
+end
+
+for i in range (6 downto 1)
+	[io writeint nr: i]
+end

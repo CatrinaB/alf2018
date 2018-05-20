@@ -698,4 +698,5 @@ direction
 type
 : TYPE
 | IDENTIFIER
+| NONE
 ;

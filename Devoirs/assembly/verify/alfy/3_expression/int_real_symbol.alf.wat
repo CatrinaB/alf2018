@@ -1,7 +1,10 @@
     
     ;; script
     (module
-        (import "io" "writeint" (func $writeint (param $int i32))
+        ;; import functions
+        (import "io" "writeint" (func $writeint (param $int i32)))
+        ;; define a memory
+        (memory 1)
         (func $start
             ;; call $writeint
             ;; expression +
@@ -18,5 +21,5 @@
             f32.add
             call $writeint
         )
-        (start $start))
+        (start $start)
     )

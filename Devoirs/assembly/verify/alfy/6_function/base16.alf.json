@@ -1,0 +1,372 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "number": {
+                    "type": "int",
+                    "line": 18
+                }
+            },
+            "messages": {
+                "writeint": {
+                    "type": "int",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "id": "nr",
+                            "line": 3,
+                            "symbol": 1
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "id": "value",
+                            "type": "none",
+                            "line": 5,
+                            "symbol": 1
+                        }
+                    ],
+                    "symbol": 1,
+                    "line": 6
+                },
+                "writechar": {
+                    "type": "charcter",
+                    "parameters": [
+                        {
+                            "type": "character",
+                            "id": "char",
+                            "line": 8,
+                            "symbol": 2
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "id": "value",
+                            "type": "none",
+                            "line": 10,
+                            "symbol": 2
+                        }
+                    ],
+                    "symbol": 2,
+                    "line": 11
+                },
+                "readint": {
+                    "type": "int",
+                    "parameters": [],
+                    "statements": [
+                        {
+                            "id": "value",
+                            "type": "none",
+                            "line": 15,
+                            "symbol": 3
+                        }
+                    ],
+                    "symbol": 3,
+                    "line": 16
+                },
+                "base16": {
+                    "type": "none",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "id": "number",
+                            "line": 20,
+                            "symbol": 4
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "id": "if",
+                            "exp": {
+                                "id": "exp",
+                                "op": ">",
+                                "left": {
+                                    "id": "identifier",
+                                    "title": "number",
+                                    "line": 23,
+                                    "symbol": 4,
+                                    "type": "int"
+                                },
+                                "right": {
+                                    "id": "value",
+                                    "type": "int",
+                                    "value": 0,
+                                    "line": 23,
+                                    "symbol": 4
+                                },
+                                "line": 23,
+                                "symbol": 4,
+                                "type": "logic"
+                            },
+                            "then": [
+                                {
+                                    "id": "dispatch",
+                                    "message": "base16",
+                                    "object": "module",
+                                    "parameters": {
+                                        "number": {
+                                            "id": "exp",
+                                            "op": "/",
+                                            "left": {
+                                                "id": "identifier",
+                                                "title": "number",
+                                                "line": 24,
+                                                "symbol": 4,
+                                                "type": "int"
+                                            },
+                                            "right": {
+                                                "id": "value",
+                                                "type": "int",
+                                                "value": 16,
+                                                "line": 24,
+                                                "symbol": 4
+                                            },
+                                            "line": 24,
+                                            "symbol": 4,
+                                            "type": "int"
+                                        }
+                                    },
+                                    "line": 24,
+                                    "symbol": 4,
+                                    "type": "none"
+                                },
+                                {
+                                    "id": "set",
+                                    "to": {
+                                        "id": "identifier",
+                                        "title": "a",
+                                        "line": 25,
+                                        "symbol": 4,
+                                        "type": "int"
+                                    },
+                                    "from": {
+                                        "id": "exp",
+                                        "op": "mod",
+                                        "left": {
+                                            "id": "identifier",
+                                            "title": "number",
+                                            "line": 25,
+                                            "symbol": 4,
+                                            "type": "int"
+                                        },
+                                        "right": {
+                                            "id": "value",
+                                            "type": "int",
+                                            "value": 16,
+                                            "line": 25,
+                                            "symbol": 4
+                                        },
+                                        "line": 25,
+                                        "symbol": 4,
+                                        "type": "int"
+                                    },
+                                    "line": 25,
+                                    "symbol": 4
+                                },
+                                {
+                                    "id": "if",
+                                    "exp": {
+                                        "id": "exp",
+                                        "op": ">=",
+                                        "left": {
+                                            "id": "identifier",
+                                            "title": "a",
+                                            "line": 26,
+                                            "symbol": 4,
+                                            "type": "int"
+                                        },
+                                        "right": {
+                                            "id": "value",
+                                            "type": "int",
+                                            "value": 10,
+                                            "line": 26,
+                                            "symbol": 4
+                                        },
+                                        "line": 26,
+                                        "symbol": 4,
+                                        "type": "logic"
+                                    },
+                                    "then": [
+                                        {
+                                            "id": "dispatch",
+                                            "message": "writechar",
+                                            "object": "io",
+                                            "parameters": {
+                                                "char": {
+                                                    "id": "exp",
+                                                    "op": "-",
+                                                    "left": {
+                                                        "id": "exp",
+                                                        "op": "+",
+                                                        "left": {
+                                                            "id": "value",
+                                                            "type": "character",
+                                                            "value": "a",
+                                                            "line": 27,
+                                                            "symbol": 4
+                                                        },
+                                                        "right": {
+                                                            "id": "identifier",
+                                                            "title": "a",
+                                                            "line": 27,
+                                                            "symbol": 4,
+                                                            "type": "int"
+                                                        },
+                                                        "line": 27,
+                                                        "symbol": 4,
+                                                        "type": "int"
+                                                    },
+                                                    "right": {
+                                                        "id": "value",
+                                                        "type": "int",
+                                                        "value": 10,
+                                                        "line": 27,
+                                                        "symbol": 4
+                                                    },
+                                                    "line": 27,
+                                                    "symbol": 4,
+                                                    "type": "int"
+                                                }
+                                            },
+                                            "line": 27,
+                                            "symbol": 4,
+                                            "type": "charcter"
+                                        }
+                                    ],
+                                    "else": [
+                                        {
+                                            "id": "dispatch",
+                                            "message": "writechar",
+                                            "object": "io",
+                                            "parameters": {
+                                                "char": {
+                                                    "id": "exp",
+                                                    "op": "+",
+                                                    "left": {
+                                                        "id": "value",
+                                                        "type": "character",
+                                                        "value": "0",
+                                                        "line": 29,
+                                                        "symbol": 4
+                                                    },
+                                                    "right": {
+                                                        "id": "identifier",
+                                                        "title": "a",
+                                                        "line": 29,
+                                                        "symbol": 4,
+                                                        "type": "int"
+                                                    },
+                                                    "line": 29,
+                                                    "symbol": 4,
+                                                    "type": "int"
+                                                }
+                                            },
+                                            "line": 29,
+                                            "symbol": 4,
+                                            "type": "charcter"
+                                        }
+                                    ],
+                                    "line": 30,
+                                    "symbol": 4
+                                }
+                            ],
+                            "line": 31,
+                            "symbol": 4
+                        }
+                    ],
+                    "symbol": 4,
+                    "line": 32
+                }
+            },
+            "types": {},
+            "type": "module"
+        },
+        {
+            "variables": {},
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "writeint",
+            "return_type": "int"
+        },
+        {
+            "variables": {},
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "writechar",
+            "return_type": "charcter"
+        },
+        {
+            "variables": {},
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "readint",
+            "return_type": "int"
+        },
+        {
+            "variables": {
+                "a": {
+                    "type": "int",
+                    "line": 22
+                }
+            },
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "base16",
+            "return_type": "none"
+        }
+    ],
+    "ast": {
+        "id": "module",
+        "statements": [
+            {
+                "id": "set",
+                "to": {
+                    "id": "identifier",
+                    "title": "number",
+                    "line": 34,
+                    "symbol": 0,
+                    "type": "int"
+                },
+                "from": {
+                    "id": "dispatch",
+                    "message": "readint",
+                    "object": "io",
+                    "parameters": [],
+                    "line": 34,
+                    "symbol": 0,
+                    "type": "int"
+                },
+                "line": 34,
+                "symbol": 0
+            },
+            {
+                "id": "dispatch",
+                "message": "base16",
+                "object": "module",
+                "parameters": {
+                    "number": {
+                        "id": "identifier",
+                        "title": "number",
+                        "line": 36,
+                        "symbol": 0,
+                        "type": "int"
+                    }
+                },
+                "line": 36,
+                "symbol": 0,
+                "type": "none"
+            }
+        ],
+        "line": 37,
+        "symbol": 0
+    },
+    "error_list": []
+}

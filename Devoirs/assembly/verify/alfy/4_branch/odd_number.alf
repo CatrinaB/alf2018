@@ -1,0 +1,25 @@
+{Even number}
+define a:int
+define e:character
+
+message writechar:charcater char:character
+begin
+	none
+end
+
+message readint:int
+begin
+	none
+end
+
+a:=[io readint]
+
+e:="e"
+
+if (a mod 2 = 1)
+	e:="o"
+end
+
+
+[io writechar char:e]
+

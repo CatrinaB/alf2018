@@ -1,0 +1,22 @@
+{Even numbers}
+define nr:int
+define i:int
+
+message readint:int
+begin
+	none
+end
+
+message writeint:int nr:int
+begin
+	none
+end
+
+nr:=[io readint]
+
+for i in range (2 to nr)
+	if (i mod 2 = 0)
+		[io writeint nr:i]
+	end
+end
+

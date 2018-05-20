@@ -1,0 +1,29 @@
+{Numbers}
+
+define x:int, y:int, w:int
+
+define i:int
+
+message readint:int
+begin
+	none
+end
+
+message writeint:int nr:int
+begin
+	none
+end
+
+x:=[io readint]
+y:=[io readint]
+w:=[io readint]
+
+if (x < y)
+	for i in range (x to y)
+		[io writeint nr:i]
+	end
+else
+	for i in range(x downto y)
+		[io writeint nr:i]
+	end
+end

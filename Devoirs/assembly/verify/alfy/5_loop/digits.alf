@@ -1,0 +1,27 @@
+{Digits}
+
+define number:int
+define digits:int := 0
+
+message readint:int
+begin
+	none
+end
+
+message writeint:int nr:int
+begin
+	none
+end
+
+number:=[io readint]
+
+if number = 0 
+	digits:=1
+end
+
+while number != 0
+	number:=number / 10
+	digits:=digits + 1
+end
+
+[io writeint nr:digits]

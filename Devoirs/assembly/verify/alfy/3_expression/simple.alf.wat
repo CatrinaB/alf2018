@@ -1,6 +1,9 @@
     
     ;; script
     (module
+        ;; import functions
+        ;; define a memory
+        (memory 1)
         (func $start
             ;; expression +
                 ;; value int 2
@@ -9,5 +12,5 @@
                 i32.const 3
             i32.add
         )
-        (start $start))
+        (start $start)
     )
