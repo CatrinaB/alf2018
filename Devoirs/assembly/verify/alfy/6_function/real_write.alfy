@@ -1,22 +1,35 @@
 {Real write}
 
-define real_write | number => real as
+message writeint:int nr:int
 begin
-	define integer => int;
-	define fractional => int;
+	none
+end
 
-	integer is number;
-	asm push number;
-	asm pop to fractional;
-	fractional is fractional mod 1000;
+message writechar:charcter char:character
+begin
+	none
+end
 
-	asm writenumber integer;
-	asm write ".";
-	asm writenumber fractional;
-end;
+message readfloat:real
+begin
+	none
+end
 
-define i => real;
+message real_write:none number:real
+begin
+	define integer:int
+	define fractional:int
 
-asm readnumber to i;
+	integer:=number
+	fractional := real - integer * 1000
 
-valueof real_write with number is i parameters;
+	[io writeint nr:integer]
+	[io writechar char:"."]
+	[io writeint nr:fractional]
+end
+
+define i:real
+
+i:=[io readfloat]
+
+[module real_write number : i]
