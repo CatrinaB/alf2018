@@ -76,7 +76,7 @@ else
 					# Symbol
 					echo "Variables" > "$errorsfile"
 					echo "-----------" >> "$errorsfile"
-					if node verify.js "$originalfile".variables.json "$outputfile".variables.json  >> "$errorsfile" 2>&1
+					if node verify.js "$inputfile".variables.json "$outputfile".variables.json  >> "$errorsfile" 2>&1
 					then
 						p=$P1
 						passed=$(($passed+1))
