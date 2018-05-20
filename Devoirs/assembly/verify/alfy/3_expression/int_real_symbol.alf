@@ -1,0 +1,8 @@
+{Expression with int, real, symbol}
+
+message writeint:int nr:int
+begin
+	none
+end
+
+[io writeint nr:2+3.5+"e"]

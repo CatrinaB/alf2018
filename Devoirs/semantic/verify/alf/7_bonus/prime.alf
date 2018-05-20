@@ -1,20 +1,20 @@
 {Prime number}
 
-define v = 768687
+define v := 768687
 
-message sqrt:real number=0 = number
-message read:int = v
+message sqrt:real number=0 := number
+message read:int := v
 message write:empty text=""
 begin
 end
 
-define n = [module read];
+define n := [module read];
 
-define p = true
+define p := true
 
 for i in range (2, [module sqrt number: n])
-	if n mod i = 0 then
-		p = false
+	if n mod i := 0 then
+		p := false
 	end
 end
 

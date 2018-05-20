@@ -1,0 +1,110 @@
+{
+    "symbol": [
+        {
+            "variables": {},
+            "functions": {
+                "sum": {
+                    "type": "int",
+                    "parameters": [
+                        {
+                            "id": "n1",
+                            "type": "int",
+                            "line": 4,
+                            "symbol": 1
+                        },
+                        {
+                            "id": "n2",
+                            "type": "int",
+                            "line": 5,
+                            "symbol": 1
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "type": "value_of_function",
+                            "value": {
+                                "type": "expression",
+                                "op": "+",
+                                "left": {
+                                    "type": "id",
+                                    "value": "n1",
+                                    "line": 6,
+                                    "symbol": 1,
+                                    "t": "int"
+                                },
+                                "right": {
+                                    "type": "id",
+                                    "value": "n2",
+                                    "line": 6,
+                                    "symbol": 1,
+                                    "t": "int"
+                                },
+                                "line": 6,
+                                "symbol": 1,
+                                "t": "int"
+                            },
+                            "line": 6,
+                            "symbol": 1,
+                            "t": "int"
+                        }
+                    ],
+                    "symbol": 1,
+                    "line": 6
+                }
+            },
+            "types": {},
+            "type": "script"
+        },
+        {
+            "variables": {},
+            "functions": {},
+            "types": {},
+            "parent": 0,
+            "type": "function",
+            "fn": "sum",
+            "value_type": "int"
+        }
+    ],
+    "ast": {
+        "type": "script",
+        "statements": [
+            {
+                "type": "asm",
+                "instruction": "writenumber",
+                "parameters": [
+                    {
+                        "type": "valueof",
+                        "function": {
+                            "id": "sum",
+                            "library": []
+                        },
+                        "parameters": {
+                            "n2": {
+                                "type": "value",
+                                "t": "int",
+                                "value": 7,
+                                "line": 8,
+                                "symbol": 0
+                            },
+                            "n1": {
+                                "type": "value",
+                                "t": "int",
+                                "value": 3,
+                                "line": 8,
+                                "symbol": 0
+                            }
+                        },
+                        "line": 8,
+                        "symbol": 0,
+                        "t": "int"
+                    }
+                ],
+                "line": 8,
+                "symbol": 0
+            }
+        ],
+        "line": 9,
+        "symbol": 0
+    },
+    "error_list": []
+}

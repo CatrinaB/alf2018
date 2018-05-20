@@ -1,0 +1,10 @@
+{Expression with variable}
+
+message writeint:int nr:int
+begin
+	none
+end
+
+define n:int
+n := 3
+[io writeint nr:n+4]

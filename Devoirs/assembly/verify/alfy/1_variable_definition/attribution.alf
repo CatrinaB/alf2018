@@ -1,0 +1,11 @@
+{Variable value Attribution}
+define n : int
+
+message writeint:int nr:int
+begin
+	none
+end
+
+n := 6
+
+[module writeint nr:n]

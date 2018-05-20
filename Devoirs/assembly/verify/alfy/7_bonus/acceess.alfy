@@ -1,0 +1,12 @@
+{Access element of struct}
+struct school
+	define name => string,
+	define private => logic,
+	define type => int
+end;
+
+define s => school;
+define s3 => school;
+
+s element private is true;
+asm writenumber s element private;

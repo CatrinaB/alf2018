@@ -1,0 +1,22 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "variable": {
+                    "type": "int",
+                    "line": 2
+                }
+            },
+            "messages": {},
+            "types": {},
+            "type": "module"
+        }
+    ],
+    "ast": {
+        "id": "module",
+        "statements": [],
+        "line": 2,
+        "symbol": 0
+    },
+    "error_list": []
+}

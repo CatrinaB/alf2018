@@ -1,0 +1,39 @@
+{
+    "symbol": [
+        {
+            "variables": {},
+            "messages": {},
+            "types": {},
+            "type": "module"
+        }
+    ],
+    "ast": {
+        "id": "module",
+        "statements": [
+            {
+                "id": "exp",
+                "op": "+",
+                "left": {
+                    "id": "value",
+                    "type": "int",
+                    "value": 2,
+                    "line": 3,
+                    "symbol": 0
+                },
+                "right": {
+                    "id": "value",
+                    "type": "int",
+                    "value": 3,
+                    "line": 3,
+                    "symbol": 0
+                },
+                "line": 3,
+                "symbol": 0,
+                "type": "int"
+            }
+        ],
+        "line": 3,
+        "symbol": 0
+    },
+    "error_list": []
+}

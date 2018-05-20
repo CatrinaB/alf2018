@@ -1,0 +1,7 @@
+{Access element of array}
+array list of int from 1 to 9;
+
+define v => list;
+
+v(5) is 6;
+asm writenumber v(5);

@@ -1,0 +1,20 @@
+{Sum}
+
+define x:int, y:int, s:int
+
+message writeint:int nr:int
+begin
+	none
+end
+
+message readint:int
+begin
+	none
+end
+
+x:=[io readint]
+y:=[io readint]
+
+s:=x+y
+
+[io writeint nr:s]

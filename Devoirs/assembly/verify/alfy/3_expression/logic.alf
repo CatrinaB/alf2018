@@ -1,0 +1,8 @@
+{Logic expression}
+
+message writeint:int nr:int
+begin
+	none
+end
+
+[io writeint nr:2+3 = 4+5]

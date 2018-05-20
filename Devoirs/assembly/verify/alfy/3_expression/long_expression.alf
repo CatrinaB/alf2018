@@ -1,0 +1,10 @@
+{Long expression}
+
+message writeint:int nr:int
+begin
+	none
+end
+
+define n:int
+
+[io writeint nr:(2+3)*7/8 > 10 and (7+5) < 5  xor 7 != n]

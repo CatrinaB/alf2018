@@ -1,0 +1,7 @@
+{Numbers down}
+
+define i => int;
+
+for i from 6 downto 1 step 1 run
+	asm writenumber i;
+end;

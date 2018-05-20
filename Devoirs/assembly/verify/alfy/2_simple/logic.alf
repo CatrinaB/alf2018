@@ -1,0 +1,10 @@
+{Logic}
+
+message writeint:int nr:int
+begin
+	none
+end
+
+define a:logic:=false
+
+[io writeint nr:a]

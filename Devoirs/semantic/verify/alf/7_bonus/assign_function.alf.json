@@ -4,18 +4,17 @@
    "error_list": [
       {
          "type": "SYNTAX",
-         "line": 3,
+         "line": 5,
          "elements": {
             "error": "syntax",
-            "line": 3,
-            "text": "=",
-            "token": "=",
+            "line": 5,
+            "text": ":=",
+            "token": "ASSIGN",
             "expected": [
-               "':'",
-               "'ASSIGN'"
+               "':'"
             ]
          },
-         "text": "="
+         "text": ":="
       }
    ]
 }

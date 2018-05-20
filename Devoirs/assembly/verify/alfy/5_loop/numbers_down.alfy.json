@@ -1,0 +1,68 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "i": {
+                    "type": "int",
+                    "line": 3
+                }
+            },
+            "functions": {},
+            "types": {},
+            "type": "script"
+        }
+    ],
+    "ast": {
+        "type": "script",
+        "statements": [
+            {
+                "type": "for",
+                "variable": "i",
+                "from": {
+                    "type": "value",
+                    "t": "int",
+                    "value": 6,
+                    "line": 5,
+                    "symbol": 0
+                },
+                "direction": "downto",
+                "to": {
+                    "type": "value",
+                    "t": "int",
+                    "value": 1,
+                    "line": 5,
+                    "symbol": 0
+                },
+                "step": {
+                    "type": "value",
+                    "t": "int",
+                    "value": 1,
+                    "line": 5,
+                    "symbol": 0
+                },
+                "statements": [
+                    {
+                        "type": "asm",
+                        "instruction": "writenumber",
+                        "parameters": [
+                            {
+                                "type": "id",
+                                "value": "i",
+                                "line": 6,
+                                "symbol": 0,
+                                "t": "int"
+                            }
+                        ],
+                        "line": 6,
+                        "symbol": 0
+                    }
+                ],
+                "line": 7,
+                "symbol": 0
+            }
+        ],
+        "line": 7,
+        "symbol": 0
+    },
+    "error_list": []
+}

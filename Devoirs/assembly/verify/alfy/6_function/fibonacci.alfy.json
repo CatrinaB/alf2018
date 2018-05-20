@@ -1,0 +1,283 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "item": {
+                    "type": "int",
+                    "line": 2
+                },
+                "stack": {
+                    "type": "int",
+                    "line": 3
+                }
+            },
+            "functions": {
+                "fibonacci": {
+                    "type": "int",
+                    "parameters": [
+                        {
+                            "id": "item",
+                            "type": "int",
+                            "line": 5,
+                            "symbol": 1
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "type": "if",
+                            "expression": {
+                                "type": "expression",
+                                "op": "OR",
+                                "left": {
+                                    "type": "expression",
+                                    "op": "=",
+                                    "left": {
+                                        "type": "id",
+                                        "value": "item",
+                                        "line": 7,
+                                        "symbol": 1,
+                                        "t": "int"
+                                    },
+                                    "right": {
+                                        "type": "value",
+                                        "t": "int",
+                                        "value": 0,
+                                        "line": 7,
+                                        "symbol": 1
+                                    },
+                                    "line": 7,
+                                    "symbol": 1,
+                                    "t": "logic"
+                                },
+                                "right": {
+                                    "type": "expression",
+                                    "op": "=",
+                                    "left": {
+                                        "type": "id",
+                                        "value": "item",
+                                        "line": 7,
+                                        "symbol": 1,
+                                        "t": "int"
+                                    },
+                                    "right": {
+                                        "type": "value",
+                                        "t": "int",
+                                        "value": 1,
+                                        "line": 7,
+                                        "symbol": 1
+                                    },
+                                    "line": 7,
+                                    "symbol": 1,
+                                    "t": "logic"
+                                },
+                                "line": 7,
+                                "symbol": 1,
+                                "t": "logic"
+                            },
+                            "then": [
+                                {
+                                    "type": "value_of_function",
+                                    "value": {
+                                        "type": "value",
+                                        "t": "int",
+                                        "value": 1,
+                                        "line": 8,
+                                        "symbol": 1
+                                    },
+                                    "line": 8,
+                                    "symbol": 1,
+                                    "t": "int"
+                                }
+                            ],
+                            "else": [
+                                {
+                                    "type": "value_of_function",
+                                    "value": {
+                                        "type": "expression",
+                                        "op": "+",
+                                        "left": {
+                                            "type": "valueof",
+                                            "function": {
+                                                "id": "fibonacci",
+                                                "library": []
+                                            },
+                                            "parameters": {
+                                                "item": {
+                                                    "type": "expression",
+                                                    "op": "-",
+                                                    "left": {
+                                                        "type": "id",
+                                                        "value": "item",
+                                                        "line": 10,
+                                                        "symbol": 1,
+                                                        "t": "int"
+                                                    },
+                                                    "right": {
+                                                        "type": "value",
+                                                        "t": "int",
+                                                        "value": 2,
+                                                        "line": 10,
+                                                        "symbol": 1
+                                                    },
+                                                    "line": 10,
+                                                    "symbol": 1,
+                                                    "t": "int"
+                                                }
+                                            },
+                                            "line": 10,
+                                            "symbol": 1,
+                                            "t": "int"
+                                        },
+                                        "right": {
+                                            "type": "valueof",
+                                            "function": {
+                                                "id": "fibonacci",
+                                                "library": []
+                                            },
+                                            "parameters": {
+                                                "item": {
+                                                    "type": "expression",
+                                                    "op": "-",
+                                                    "left": {
+                                                        "type": "id",
+                                                        "value": "item",
+                                                        "line": 10,
+                                                        "symbol": 1,
+                                                        "t": "int"
+                                                    },
+                                                    "right": {
+                                                        "type": "value",
+                                                        "t": "int",
+                                                        "value": 1,
+                                                        "line": 10,
+                                                        "symbol": 1
+                                                    },
+                                                    "line": 10,
+                                                    "symbol": 1,
+                                                    "t": "int"
+                                                }
+                                            },
+                                            "line": 10,
+                                            "symbol": 1,
+                                            "t": "int"
+                                        },
+                                        "line": 10,
+                                        "symbol": 1,
+                                        "t": "int"
+                                    },
+                                    "line": 10,
+                                    "symbol": 1,
+                                    "t": "int"
+                                }
+                            ],
+                            "line": 11,
+                            "symbol": 1
+                        }
+                    ],
+                    "symbol": 1,
+                    "line": 12
+                }
+            },
+            "types": {},
+            "type": "script"
+        },
+        {
+            "variables": {},
+            "functions": {},
+            "types": {},
+            "parent": 0,
+            "type": "function",
+            "fn": "fibonacci",
+            "value_type": "int"
+        }
+    ],
+    "ast": {
+        "type": "script",
+        "statements": [
+            {
+                "type": "asm",
+                "instruction": "readnumber",
+                "parameters": [
+                    {
+                        "type": "id",
+                        "value": "item",
+                        "line": 14,
+                        "address": true,
+                        "symbol": 0,
+                        "t": "int"
+                    }
+                ],
+                "line": 14,
+                "symbol": 0
+            },
+            {
+                "type": "asm",
+                "instruction": "writenumber",
+                "parameters": [
+                    {
+                        "type": "valueof",
+                        "function": {
+                            "id": "fibonacci",
+                            "library": []
+                        },
+                        "parameters": {
+                            "item": {
+                                "type": "id",
+                                "value": "item",
+                                "line": 15,
+                                "symbol": 0,
+                                "t": "int"
+                            }
+                        },
+                        "line": 15,
+                        "symbol": 0,
+                        "t": "int"
+                    }
+                ],
+                "line": 15,
+                "symbol": 0
+            },
+            {
+                "type": "asm",
+                "instruction": "pushsp",
+                "parameters": [],
+                "line": 17,
+                "symbol": 0
+            },
+            {
+                "type": "asm",
+                "instruction": "pop",
+                "parameters": [
+                    {
+                        "type": "id",
+                        "value": "stack",
+                        "line": 18,
+                        "address": true,
+                        "symbol": 0,
+                        "t": "int"
+                    }
+                ],
+                "line": 18,
+                "symbol": 0
+            },
+            {
+                "type": "asm",
+                "instruction": "writenumber",
+                "parameters": [
+                    {
+                        "type": "id",
+                        "value": "stack",
+                        "line": 19,
+                        "symbol": 0,
+                        "t": "int"
+                    }
+                ],
+                "line": 19,
+                "symbol": 0
+            }
+        ],
+        "line": 20,
+        "symbol": 0
+    },
+    "error_list": []
+}

@@ -1,0 +1,18 @@
+{Real from int}
+
+message writeint:int nr:int
+begin
+	none
+end
+
+message readint:int
+begin
+	none
+end
+
+define s:real
+define n:int
+
+n:=[io readint]
+s :=n
+[io writeint nr:s]

@@ -1,0 +1,15 @@
+{Even number}
+define a => int;
+define e => symbol;
+
+asm readnumber to a;
+
+if (a mod 2 = 0) then
+	e is "e";
+else
+	e is "o";
+end;
+
+
+asm write e;
+

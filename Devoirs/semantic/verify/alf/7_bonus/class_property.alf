@@ -8,4 +8,4 @@ end
 
 define s:school
 
-define t = s|type
+define t := s|type

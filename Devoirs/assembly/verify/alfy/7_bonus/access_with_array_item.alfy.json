@@ -1,0 +1,153 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "v": {
+                    "type": "list",
+                    "line": 4
+                },
+                "p": {
+                    "type": "list",
+                    "line": 4
+                }
+            },
+            "functions": {},
+            "types": {
+                "list": {
+                    "type": "array",
+                    "line": 2,
+                    "elements_type": "int",
+                    "from": 1,
+                    "to": 9
+                }
+            },
+            "type": "script"
+        }
+    ],
+    "ast": {
+        "type": "script",
+        "statements": [
+            {
+                "type": "attribution",
+                "to": {
+                    "type": "element_of_array",
+                    "array": {
+                        "type": "id",
+                        "value": "p",
+                        "line": 6,
+                        "symbol": 0,
+                        "t": "list"
+                    },
+                    "index": {
+                        "type": "value",
+                        "t": "int",
+                        "value": 5,
+                        "line": 6,
+                        "symbol": 0
+                    },
+                    "line": 6,
+                    "symbol": 0,
+                    "t": "int"
+                },
+                "from": {
+                    "type": "value",
+                    "t": "int",
+                    "value": 5,
+                    "line": 6,
+                    "symbol": 0
+                },
+                "line": 6,
+                "symbol": 0
+            },
+            {
+                "type": "attribution",
+                "to": {
+                    "type": "element_of_array",
+                    "array": {
+                        "type": "id",
+                        "value": "v",
+                        "line": 7,
+                        "symbol": 0,
+                        "t": "list"
+                    },
+                    "index": {
+                        "type": "element_of_array",
+                        "array": {
+                            "type": "id",
+                            "value": "p",
+                            "line": 7,
+                            "symbol": 0,
+                            "t": "list"
+                        },
+                        "index": {
+                            "type": "value",
+                            "t": "int",
+                            "value": 5,
+                            "line": 7,
+                            "symbol": 0
+                        },
+                        "line": 7,
+                        "symbol": 0,
+                        "t": "int"
+                    },
+                    "line": 7,
+                    "symbol": 0,
+                    "t": "int"
+                },
+                "from": {
+                    "type": "value",
+                    "t": "int",
+                    "value": 7,
+                    "line": 7,
+                    "symbol": 0
+                },
+                "line": 7,
+                "symbol": 0
+            },
+            {
+                "type": "asm",
+                "instruction": "writenumber",
+                "parameters": [
+                    {
+                        "type": "element_of_array",
+                        "array": {
+                            "type": "id",
+                            "value": "v",
+                            "line": 8,
+                            "symbol": 0,
+                            "t": "list"
+                        },
+                        "index": {
+                            "type": "element_of_array",
+                            "array": {
+                                "type": "id",
+                                "value": "p",
+                                "line": 8,
+                                "symbol": 0,
+                                "t": "list"
+                            },
+                            "index": {
+                                "type": "value",
+                                "t": "int",
+                                "value": 5,
+                                "line": 8,
+                                "symbol": 0
+                            },
+                            "line": 8,
+                            "symbol": 0,
+                            "t": "int"
+                        },
+                        "line": 8,
+                        "symbol": 0,
+                        "t": "int"
+                    }
+                ],
+                "line": 8,
+                "symbol": 0
+            }
+        ],
+        "line": 9,
+        "symbol": 0
+    },
+    "error_list": []
+}

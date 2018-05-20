@@ -1,21 +1,74 @@
 {
-   "symbol_table": {},
-   "ast": {},
+   "symbol_table": [
+      {
+         "variables": {
+            "x": {
+               "type": "auto",
+               "value": {
+                  "id": "identifier",
+                  "title": "y",
+                  "line": 3,
+                  "symbol": 0,
+                  "type": "int"
+               },
+               "line": 3
+            },
+            "y": {
+               "type": "int",
+               "line": 5
+            }
+         },
+         "messages": {},
+         "types": {},
+         "type": "module"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "define",
+            "elements": [
+               {
+                  "type": "auto",
+                  "title": "x",
+                  "value": {
+                     "id": "identifier",
+                     "title": "y",
+                     "line": 3,
+                     "symbol": 0,
+                     "type": "int"
+                  },
+                  "line": 3
+               }
+            ],
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "id": "define",
+            "elements": [
+               {
+                  "type": "int",
+                  "title": "y",
+                  "line": 5
+               }
+            ],
+            "line": 5,
+            "symbol": 0
+         }
+      ],
+      "line": 5,
+      "symbol": 0
+   },
    "error_list": [
       {
-         "type": "SYNTAX",
+         "type": "UNDEFINED_TYPE",
          "line": 3,
          "elements": {
-            "error": "syntax",
-            "line": 3,
-            "text": "=",
-            "token": "=",
-            "expected": [
-               "':'",
-               "'ASSIGN'"
-            ]
+            "type": "auto"
          },
-         "text": "="
+         "text": "Type auto is not defined"
       }
    ]
 }

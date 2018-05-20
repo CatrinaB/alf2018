@@ -1,0 +1,21 @@
+{Prime numbers}
+define p => int;
+define isPrime => logic;
+
+define s => logic is false;
+
+while not s run
+	asm readnumber to p;
+	isPrime is true;
+	for i from 2 to p / 2 step 1 run
+		if p mod i = 0 then
+			isPrime is false;
+		end;
+	end;
+
+	if not isPrime then
+		asm writenumber p;
+	end;
+
+	s is isPrime;
+end;

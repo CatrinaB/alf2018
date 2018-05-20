@@ -1,0 +1,110 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "n": {
+                    "type": "int",
+                    "value": {
+                        "id": "value",
+                        "type": "int",
+                        "value": 3,
+                        "line": 2,
+                        "symbol": 0
+                    },
+                    "line": 2
+                },
+                "r": {
+                    "type": "real",
+                    "value": {
+                        "id": "value",
+                        "type": "real",
+                        "value": 3.7,
+                        "line": 2,
+                        "symbol": 0
+                    },
+                    "line": 2
+                },
+                "l": {
+                    "type": "logic",
+                    "value": {
+                        "id": "value",
+                        "type": "logic",
+                        "value": false,
+                        "line": 2,
+                        "symbol": 0
+                    },
+                    "line": 2
+                },
+                "s": {
+                    "type": "string",
+                    "line": 2
+                }
+            },
+            "messages": {},
+            "types": {},
+            "type": "module"
+        }
+    ],
+    "ast": {
+        "id": "module",
+        "statements": [
+            {
+                "id": "set",
+                "to": {
+                    "id": "identifier",
+                    "title": "n",
+                    "symbol": 0,
+                    "type": "int"
+                },
+                "from": {
+                    "id": "value",
+                    "type": "int",
+                    "value": 3,
+                    "line": 2,
+                    "symbol": 0
+                },
+                "line": 2,
+                "symbol": 0
+            },
+            {
+                "id": "set",
+                "to": {
+                    "id": "identifier",
+                    "title": "r",
+                    "symbol": 0,
+                    "type": "real"
+                },
+                "from": {
+                    "id": "value",
+                    "type": "real",
+                    "value": 3.7,
+                    "line": 2,
+                    "symbol": 0
+                },
+                "line": 2,
+                "symbol": 0
+            },
+            {
+                "id": "set",
+                "to": {
+                    "id": "identifier",
+                    "title": "l",
+                    "symbol": 0,
+                    "type": "logic"
+                },
+                "from": {
+                    "id": "value",
+                    "type": "logic",
+                    "value": false,
+                    "line": 2,
+                    "symbol": 0
+                },
+                "line": 2,
+                "symbol": 0
+            }
+        ],
+        "line": 2,
+        "symbol": 0
+    },
+    "error_list": []
+}

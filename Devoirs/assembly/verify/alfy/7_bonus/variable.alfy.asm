@@ -1,0 +1,4 @@
+    
+    ; script
+start:
+    stop

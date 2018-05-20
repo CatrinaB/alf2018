@@ -1,0 +1,220 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "i": {
+                    "type": "real",
+                    "line": 18
+                }
+            },
+            "functions": {
+                "real_write": {
+                    "type": "empty",
+                    "parameters": [
+                        {
+                            "id": "number",
+                            "type": "real",
+                            "line": 3,
+                            "symbol": 1
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "type": "attribution",
+                            "to": {
+                                "type": "id",
+                                "value": "integer",
+                                "line": 8,
+                                "symbol": 1,
+                                "t": "int"
+                            },
+                            "from": {
+                                "type": "id",
+                                "value": "number",
+                                "line": 8,
+                                "symbol": 1,
+                                "t": "real"
+                            },
+                            "line": 8,
+                            "symbol": 1
+                        },
+                        {
+                            "type": "asm",
+                            "instruction": "push",
+                            "parameters": [
+                                {
+                                    "type": "id",
+                                    "value": "number",
+                                    "line": 9,
+                                    "symbol": 1,
+                                    "t": "real"
+                                }
+                            ],
+                            "line": 9,
+                            "symbol": 1
+                        },
+                        {
+                            "type": "asm",
+                            "instruction": "pop",
+                            "parameters": [
+                                {
+                                    "type": "id",
+                                    "value": "fractional",
+                                    "line": 10,
+                                    "address": true,
+                                    "symbol": 1,
+                                    "t": "int"
+                                }
+                            ],
+                            "line": 10,
+                            "symbol": 1
+                        },
+                        {
+                            "type": "attribution",
+                            "to": {
+                                "type": "id",
+                                "value": "fractional",
+                                "line": 11,
+                                "symbol": 1,
+                                "t": "int"
+                            },
+                            "from": {
+                                "type": "expression",
+                                "op": "mod",
+                                "left": {
+                                    "type": "id",
+                                    "value": "fractional",
+                                    "line": 11,
+                                    "symbol": 1,
+                                    "t": "int"
+                                },
+                                "right": {
+                                    "type": "value",
+                                    "t": "int",
+                                    "value": 1000,
+                                    "line": 11,
+                                    "symbol": 1
+                                },
+                                "line": 11,
+                                "symbol": 1,
+                                "t": "int"
+                            },
+                            "line": 11,
+                            "symbol": 1
+                        },
+                        {
+                            "type": "asm",
+                            "instruction": "writenumber",
+                            "parameters": [
+                                {
+                                    "type": "id",
+                                    "value": "integer",
+                                    "line": 13,
+                                    "symbol": 1,
+                                    "t": "int"
+                                }
+                            ],
+                            "line": 13,
+                            "symbol": 1
+                        },
+                        {
+                            "type": "asm",
+                            "instruction": "write",
+                            "parameters": [
+                                {
+                                    "type": "value",
+                                    "t": "symbol",
+                                    "value": ".",
+                                    "line": 14,
+                                    "symbol": 1
+                                }
+                            ],
+                            "line": 14,
+                            "symbol": 1
+                        },
+                        {
+                            "type": "asm",
+                            "instruction": "writenumber",
+                            "parameters": [
+                                {
+                                    "type": "id",
+                                    "value": "fractional",
+                                    "line": 15,
+                                    "symbol": 1,
+                                    "t": "int"
+                                }
+                            ],
+                            "line": 15,
+                            "symbol": 1
+                        }
+                    ],
+                    "symbol": 1,
+                    "line": 16
+                }
+            },
+            "types": {},
+            "type": "script"
+        },
+        {
+            "variables": {
+                "integer": {
+                    "type": "int",
+                    "line": 5
+                },
+                "fractional": {
+                    "type": "int",
+                    "line": 6
+                }
+            },
+            "functions": {},
+            "types": {},
+            "parent": 0,
+            "type": "function",
+            "fn": "real_write",
+            "value_type": "empty"
+        }
+    ],
+    "ast": {
+        "type": "script",
+        "statements": [
+            {
+                "type": "asm",
+                "instruction": "readnumber",
+                "parameters": [
+                    {
+                        "type": "id",
+                        "value": "i",
+                        "line": 20,
+                        "address": true,
+                        "symbol": 0,
+                        "t": "real"
+                    }
+                ],
+                "line": 20,
+                "symbol": 0
+            },
+            {
+                "type": "valueof",
+                "function": {
+                    "id": "real_write",
+                    "library": []
+                },
+                "parameters": {
+                    "number": {
+                        "type": "id",
+                        "value": "i",
+                        "line": 22,
+                        "symbol": 0,
+                        "t": "real"
+                    }
+                },
+                "line": 22,
+                "symbol": 0,
+                "t": "empty"
+            }
+        ],
+        "line": 22,
+        "symbol": 0
+    },
+    "error_list": []
+}

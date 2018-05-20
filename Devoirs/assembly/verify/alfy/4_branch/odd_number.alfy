@@ -1,0 +1,14 @@
+{Odd number}
+define a => int;
+define e => symbol;
+
+asm readnumber to a;
+
+e is "o";
+
+if (a mod 2 = 1) then
+	e is "e";
+end;
+
+
+asm write e;

@@ -1,0 +1,11 @@
+{Function definition with variables}
+
+define sum | n1 => int 
+			 n2 => int 
+			value int as
+begin
+	define s => int is n1 + n2;
+	value s;
+end;
+
+asm writenumber valueof sum with n1 is 3 n2 is 7 parameters;

@@ -1,0 +1,105 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "i": {
+                    "type": "int",
+                    "line": 3
+                },
+                "h": {
+                    "type": "real",
+                    "line": 4
+                }
+            },
+            "functions": {},
+            "types": {},
+            "type": "script"
+        }
+    ],
+    "ast": {
+        "type": "script",
+        "statements": [
+            {
+                "type": "repeat",
+                "expression": {
+                    "type": "expression",
+                    "op": ">=",
+                    "left": {
+                        "type": "id",
+                        "value": "i",
+                        "line": 10,
+                        "symbol": 0,
+                        "t": "int"
+                    },
+                    "right": {
+                        "type": "value",
+                        "t": "int",
+                        "value": 0,
+                        "line": 10,
+                        "symbol": 0
+                    },
+                    "line": 10,
+                    "symbol": 0,
+                    "t": "logic"
+                },
+                "statements": [
+                    {
+                        "type": "asm",
+                        "instruction": "readnumber",
+                        "parameters": [
+                            {
+                                "type": "id",
+                                "value": "i",
+                                "line": 7,
+                                "address": true,
+                                "symbol": 0,
+                                "t": "int"
+                            }
+                        ],
+                        "line": 7,
+                        "symbol": 0
+                    },
+                    {
+                        "type": "attribution",
+                        "to": {
+                            "type": "id",
+                            "value": "h",
+                            "line": 8,
+                            "symbol": 0,
+                            "t": "real"
+                        },
+                        "from": {
+                            "type": "id",
+                            "value": "i",
+                            "line": 8,
+                            "symbol": 0,
+                            "t": "int"
+                        },
+                        "line": 8,
+                        "symbol": 0
+                    },
+                    {
+                        "type": "asm",
+                        "instruction": "writenumber",
+                        "parameters": [
+                            {
+                                "type": "id",
+                                "value": "h",
+                                "line": 9,
+                                "symbol": 0,
+                                "t": "real"
+                            }
+                        ],
+                        "line": 9,
+                        "symbol": 0
+                    }
+                ],
+                "line": 10,
+                "symbol": 0
+            }
+        ],
+        "line": 11,
+        "symbol": 0
+    },
+    "error_list": []
+}

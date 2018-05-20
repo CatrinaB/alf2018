@@ -1,0 +1,8 @@
+{Comparison expression}
+
+message writeint:int nr:int
+begin
+	none
+end
+
+[io writeint nr:2+4 > 5*6 and 4+5 < 6/7]

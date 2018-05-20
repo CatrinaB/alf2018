@@ -1,0 +1,17 @@
+{Digits}
+
+define number => int;
+define digits => int is 0;
+
+asm readnumber to number;
+
+if number = 0 then
+	digits is 1;
+end;
+
+while number != 0 run
+	number is number / 10;
+	digits is digits + 1;
+end;
+
+asm writenumber digits;

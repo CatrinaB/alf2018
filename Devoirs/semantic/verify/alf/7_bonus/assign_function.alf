@@ -1,12 +1,12 @@
 {Type from function}
 
-define v = [module power a:6,  n:6]
+define v := [module power a:6,  n:6]
 
-message power:real a:0.0, n:0 
+message power:real a:=0.0, n:=0 
 begin
-	define p = 1
+	define p := 1
 	for i in range (1, n) 
-		p = p * a
+		p := p * a
 	end
 	return p
 end

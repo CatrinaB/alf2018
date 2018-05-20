@@ -1,0 +1,224 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "number": {
+                    "type": "int",
+                    "line": 3
+                },
+                "digits": {
+                    "type": "int",
+                    "value": {
+                        "type": "value",
+                        "t": "int",
+                        "value": 0,
+                        "line": 4,
+                        "symbol": 0
+                    },
+                    "line": 4
+                }
+            },
+            "functions": {},
+            "types": {},
+            "type": "script"
+        }
+    ],
+    "ast": {
+        "type": "script",
+        "statements": [
+            {
+                "type": "attribution",
+                "to": {
+                    "type": "id",
+                    "value": "digits",
+                    "symbol": 0,
+                    "t": "int"
+                },
+                "from": {
+                    "type": "value",
+                    "t": "int",
+                    "value": 0,
+                    "line": 4,
+                    "symbol": 0
+                },
+                "line": 4,
+                "symbol": 0
+            },
+            {
+                "type": "asm",
+                "instruction": "readnumber",
+                "parameters": [
+                    {
+                        "type": "id",
+                        "value": "number",
+                        "line": 6,
+                        "address": true,
+                        "symbol": 0,
+                        "t": "int"
+                    }
+                ],
+                "line": 6,
+                "symbol": 0
+            },
+            {
+                "type": "if",
+                "expression": {
+                    "type": "expression",
+                    "op": "=",
+                    "left": {
+                        "type": "id",
+                        "value": "number",
+                        "line": 8,
+                        "symbol": 0,
+                        "t": "int"
+                    },
+                    "right": {
+                        "type": "value",
+                        "t": "int",
+                        "value": 0,
+                        "line": 8,
+                        "symbol": 0
+                    },
+                    "line": 8,
+                    "symbol": 0,
+                    "t": "logic"
+                },
+                "then": [
+                    {
+                        "type": "attribution",
+                        "to": {
+                            "type": "id",
+                            "value": "digits",
+                            "line": 9,
+                            "symbol": 0,
+                            "t": "int"
+                        },
+                        "from": {
+                            "type": "value",
+                            "t": "int",
+                            "value": 1,
+                            "line": 9,
+                            "symbol": 0
+                        },
+                        "line": 9,
+                        "symbol": 0
+                    }
+                ],
+                "line": 10,
+                "symbol": 0
+            },
+            {
+                "type": "while",
+                "expression": {
+                    "type": "expression",
+                    "op": "!=",
+                    "left": {
+                        "type": "id",
+                        "value": "number",
+                        "line": 12,
+                        "symbol": 0,
+                        "t": "int"
+                    },
+                    "right": {
+                        "type": "value",
+                        "t": "int",
+                        "value": 0,
+                        "line": 12,
+                        "symbol": 0
+                    },
+                    "line": 12,
+                    "symbol": 0,
+                    "t": "logic"
+                },
+                "statements": [
+                    {
+                        "type": "attribution",
+                        "to": {
+                            "type": "id",
+                            "value": "number",
+                            "line": 13,
+                            "symbol": 0,
+                            "t": "int"
+                        },
+                        "from": {
+                            "type": "expression",
+                            "op": "/",
+                            "left": {
+                                "type": "id",
+                                "value": "number",
+                                "line": 13,
+                                "symbol": 0,
+                                "t": "int"
+                            },
+                            "right": {
+                                "type": "value",
+                                "t": "int",
+                                "value": 10,
+                                "line": 13,
+                                "symbol": 0
+                            },
+                            "line": 13,
+                            "symbol": 0,
+                            "t": "int"
+                        },
+                        "line": 13,
+                        "symbol": 0
+                    },
+                    {
+                        "type": "attribution",
+                        "to": {
+                            "type": "id",
+                            "value": "digits",
+                            "line": 14,
+                            "symbol": 0,
+                            "t": "int"
+                        },
+                        "from": {
+                            "type": "expression",
+                            "op": "+",
+                            "left": {
+                                "type": "id",
+                                "value": "digits",
+                                "line": 14,
+                                "symbol": 0,
+                                "t": "int"
+                            },
+                            "right": {
+                                "type": "value",
+                                "t": "int",
+                                "value": 1,
+                                "line": 14,
+                                "symbol": 0
+                            },
+                            "line": 14,
+                            "symbol": 0,
+                            "t": "int"
+                        },
+                        "line": 14,
+                        "symbol": 0
+                    }
+                ],
+                "line": 15,
+                "symbol": 0
+            },
+            {
+                "type": "asm",
+                "instruction": "writenumber",
+                "parameters": [
+                    {
+                        "type": "id",
+                        "value": "digits",
+                        "line": 17,
+                        "symbol": 0,
+                        "t": "int"
+                    }
+                ],
+                "line": 17,
+                "symbol": 0
+            }
+        ],
+        "line": 18,
+        "symbol": 0
+    },
+    "error_list": []
+}

@@ -1,0 +1,10 @@
+{Real number}
+
+message writefloat:real nr:real
+begin
+	none
+end
+
+define a:real:=3.7
+
+[io writefloat nr:a]

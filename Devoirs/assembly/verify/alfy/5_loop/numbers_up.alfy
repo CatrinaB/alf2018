@@ -1,0 +1,7 @@
+{Numbers up}
+
+define i => int;
+
+for i from 1 to 6 step 1 run
+	asm writenumber i;
+end;

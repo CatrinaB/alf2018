@@ -1,0 +1,21 @@
+{Base 16}
+
+define number => int;
+
+define base16 | number => int as
+begin
+	define a => int;
+	if number > 0 then
+		valueof base16 with number is number / 16 parameters;
+		a is number mod 16;
+		if a >= 10 then
+			asm write "a"+a-10;
+		else
+			asm write "0"+a;
+		end;
+	end;
+end;
+
+asm readnumber to number;
+
+valueof base16 with number is number parameters;

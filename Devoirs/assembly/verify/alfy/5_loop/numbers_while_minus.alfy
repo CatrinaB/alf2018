@@ -1,0 +1,10 @@
+{Numbers while minus}
+
+define i => int;
+define h => real;
+
+repeat
+	asm readnumber to i;
+	h is i;
+	asm writenumber h;
+aslongas i >= 0;

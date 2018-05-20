@@ -1,21 +1,133 @@
 {
-   "symbol_table": {},
-   "ast": {},
+   "symbol_table": [
+      {
+         "variables": {
+            "s": {
+               "type": "school",
+               "line": 9
+            },
+            "t": {
+               "type": "auto",
+               "value": {
+                  "id": "property",
+                  "object": {
+                     "id": "identifier",
+                     "title": "s",
+                     "line": 11,
+                     "symbol": 0,
+                     "type": "school"
+                  },
+                  "title": "type",
+                  "line": 11,
+                  "symbol": 0,
+                  "type": "int"
+               },
+               "line": 11
+            }
+         },
+         "messages": {},
+         "types": {
+            "school": {
+               "type": "class",
+               "properties": [
+                  {
+                     "type": "string",
+                     "title": "name",
+                     "line": 4
+                  },
+                  {
+                     "type": "logic",
+                     "title": "private",
+                     "line": 5
+                  },
+                  {
+                     "type": "int",
+                     "title": "type",
+                     "line": 6
+                  }
+               ]
+            }
+         },
+         "type": "module"
+      }
+   ],
+   "ast": {
+      "id": "module",
+      "statements": [
+         {
+            "id": "class",
+            "title": "school",
+            "parent": "",
+            "properties": [
+               {
+                  "type": "string",
+                  "title": "name",
+                  "line": 4
+               },
+               {
+                  "type": "logic",
+                  "title": "private",
+                  "line": 5
+               },
+               {
+                  "type": "int",
+                  "title": "type",
+                  "line": 6
+               }
+            ],
+            "messages": [],
+            "symbol": 0
+         },
+         {
+            "id": "define",
+            "elements": [
+               {
+                  "type": "school",
+                  "title": "s",
+                  "line": 9
+               }
+            ],
+            "line": 9,
+            "symbol": 0
+         },
+         {
+            "id": "define",
+            "elements": [
+               {
+                  "type": "auto",
+                  "title": "t",
+                  "value": {
+                     "id": "property",
+                     "object": {
+                        "id": "identifier",
+                        "title": "s",
+                        "line": 11,
+                        "symbol": 0,
+                        "type": "school"
+                     },
+                     "title": "type",
+                     "line": 11,
+                     "symbol": 0,
+                     "type": "int"
+                  },
+                  "line": 11
+               }
+            ],
+            "line": 11,
+            "symbol": 0
+         }
+      ],
+      "line": 11,
+      "symbol": 0
+   },
    "error_list": [
       {
-         "type": "SYNTAX",
+         "type": "UNDEFINED_TYPE",
          "line": 11,
          "elements": {
-            "error": "syntax",
-            "line": 11,
-            "text": "=",
-            "token": "=",
-            "expected": [
-               "':'",
-               "'ASSIGN'"
-            ]
+            "type": "auto"
          },
-         "text": "="
+         "text": "Type auto is not defined"
       }
    ]
 }

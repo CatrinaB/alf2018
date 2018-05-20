@@ -1,0 +1,97 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "s": {
+                    "type": "school",
+                    "line": 8
+                },
+                "s3": {
+                    "type": "school",
+                    "line": 9
+                }
+            },
+            "functions": {},
+            "types": {
+                "school": {
+                    "type": "struct",
+                    "line": 6,
+                    "elements": [
+                        {
+                            "type": "string",
+                            "id": "name",
+                            "line": 3
+                        },
+                        {
+                            "type": "logic",
+                            "id": "private",
+                            "line": 4
+                        },
+                        {
+                            "type": "int",
+                            "id": "type",
+                            "line": 5
+                        }
+                    ]
+                }
+            },
+            "type": "script"
+        }
+    ],
+    "ast": {
+        "type": "script",
+        "statements": [
+            {
+                "type": "attribution",
+                "to": {
+                    "type": "element_of_struct",
+                    "struct": {
+                        "type": "id",
+                        "value": "s",
+                        "line": 11,
+                        "symbol": 0,
+                        "t": "school"
+                    },
+                    "element": "private",
+                    "line": 11,
+                    "symbol": 0,
+                    "t": "logic"
+                },
+                "from": {
+                    "type": "value",
+                    "t": "logic",
+                    "value": true,
+                    "line": 11,
+                    "symbol": 0
+                },
+                "line": 11,
+                "symbol": 0
+            },
+            {
+                "type": "asm",
+                "instruction": "writenumber",
+                "parameters": [
+                    {
+                        "type": "element_of_struct",
+                        "struct": {
+                            "type": "id",
+                            "value": "s",
+                            "line": 12,
+                            "symbol": 0,
+                            "t": "school"
+                        },
+                        "element": "private",
+                        "line": 12,
+                        "symbol": 0,
+                        "t": "logic"
+                    }
+                ],
+                "line": 12,
+                "symbol": 0
+            }
+        ],
+        "line": 12,
+        "symbol": 0
+    },
+    "error_list": []
+}

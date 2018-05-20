@@ -1,5 +1,5 @@
 {Assign before define}
 
-define x = y
+define x := y
 
 define y : int

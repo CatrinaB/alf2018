@@ -1,0 +1,34 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "n": {
+                    "type": "int",
+                    "line": 2
+                },
+                "r": {
+                    "type": "real",
+                    "line": 2
+                },
+                "l": {
+                    "type": "logic",
+                    "line": 2
+                },
+                "s": {
+                    "type": "string",
+                    "line": 2
+                }
+            },
+            "messages": {},
+            "types": {},
+            "type": "module"
+        }
+    ],
+    "ast": {
+        "id": "module",
+        "statements": [],
+        "line": 2,
+        "symbol": 0
+    },
+    "error_list": []
+}

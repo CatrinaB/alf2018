@@ -1,0 +1,19 @@
+{Fibonacci}
+define item => int;
+define stack => int;
+
+define fibonacci | item => int value int as
+begin
+	if item = 0 or item = 1  then
+		value 1;
+	else
+		value valueof fibonacci with item is item - 2 parameters + valueof fibonacci with item is item - 1 parameters;
+	end;
+end;
+
+asm readnumber to item;
+asm writenumber valueof fibonacci with item is item parameters;
+
+asm pushsp;
+asm pop to stack;
+asm writenumber stack;

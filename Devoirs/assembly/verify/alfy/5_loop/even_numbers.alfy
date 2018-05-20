@@ -1,0 +1,12 @@
+{Even numbers}
+define nr => int;
+define i => int;
+
+asm readnumber to nr;
+
+for i from 2 to nr step 1 run
+	if (i mod 2 = 0) then 
+		asm writenumber i;
+	end;
+end;
+

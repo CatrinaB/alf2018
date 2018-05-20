@@ -1,0 +1,12 @@
+{Symbol}
+
+message writechar:character char:character
+begin
+	none
+end
+
+define c:character:="s"
+
+c :=c + 6
+
+[io writechar char:c]

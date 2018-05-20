@@ -1,0 +1,16 @@
+{Array with structure definition}
+array list of int from 1 to 9;
+
+define v => list;
+
+struct structure
+	define position => int
+end;
+
+define s => structure;
+
+asm readnumber to s element position;
+
+asm readnumber to v(s element position);
+
+asm writenumber v(s element position);

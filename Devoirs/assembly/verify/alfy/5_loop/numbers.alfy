@@ -1,0 +1,21 @@
+{Numbers}
+
+define x => int 
+	y => int 
+	w => int;
+
+define i => int;
+
+asm readnumber to x;
+asm readnumber to y;
+asm readnumber to w;
+
+if (x < y) then
+	for i from x to y step w run
+		asm writenumber i;
+	end;
+else
+	for i from x downto y step w run
+		asm writenumber i;
+	end;
+end;

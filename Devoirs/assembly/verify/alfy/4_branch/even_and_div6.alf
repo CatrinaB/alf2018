@@ -1,0 +1,29 @@
+{Even and div6 number}
+
+message writechar:charcater char:character
+begin
+	none
+end
+
+message readint:int
+begin
+	none
+end
+
+define a:int
+define e:symbol
+
+a:= [io readint]
+
+if (a mod 2 = 0) 
+	if (a mod 6 = 0) 
+		e:="y"
+	else
+		e:="n"
+	end
+else
+	e:="o"
+end
+
+
+[io writechar char:e]

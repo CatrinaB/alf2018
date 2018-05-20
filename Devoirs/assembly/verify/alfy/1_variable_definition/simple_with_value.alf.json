@@ -1,0 +1,48 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "variable": {
+                    "type": "int",
+                    "value": {
+                        "id": "value",
+                        "type": "int",
+                        "value": 0,
+                        "line": 2,
+                        "symbol": 0
+                    },
+                    "line": 2
+                }
+            },
+            "messages": {},
+            "types": {},
+            "type": "module"
+        }
+    ],
+    "ast": {
+        "id": "module",
+        "statements": [
+            {
+                "id": "set",
+                "to": {
+                    "id": "identifier",
+                    "title": "variable",
+                    "symbol": 0,
+                    "type": "int"
+                },
+                "from": {
+                    "id": "value",
+                    "type": "int",
+                    "value": 0,
+                    "line": 2,
+                    "symbol": 0
+                },
+                "line": 2,
+                "symbol": 0
+            }
+        ],
+        "line": 3,
+        "symbol": 0
+    },
+    "error_list": []
+}

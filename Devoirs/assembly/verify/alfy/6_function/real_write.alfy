@@ -1,0 +1,22 @@
+{Real write}
+
+define real_write | number => real as
+begin
+	define integer => int;
+	define fractional => int;
+
+	integer is number;
+	asm push number;
+	asm pop to fractional;
+	fractional is fractional mod 1000;
+
+	asm writenumber integer;
+	asm write ".";
+	asm writenumber fractional;
+end;
+
+define i => real;
+
+asm readnumber to i;
+
+valueof real_write with number is i parameters;

@@ -1,0 +1,91 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "list_of_schools": {
+                    "type": "list",
+                    "line": 10
+                }
+            },
+            "functions": {},
+            "types": {
+                "school": {
+                    "type": "struct",
+                    "line": 6,
+                    "elements": [
+                        {
+                            "type": "string",
+                            "id": "name",
+                            "line": 3
+                        },
+                        {
+                            "type": "logic",
+                            "id": "private",
+                            "line": 4
+                        },
+                        {
+                            "type": "int",
+                            "id": "type",
+                            "line": 5
+                        }
+                    ]
+                },
+                "list": {
+                    "type": "array",
+                    "line": 8,
+                    "elements_type": "school",
+                    "from": 1,
+                    "to": 9
+                }
+            },
+            "type": "script"
+        }
+    ],
+    "ast": {
+        "type": "script",
+        "statements": [
+            {
+                "type": "attribution",
+                "to": {
+                    "type": "element_of_struct",
+                    "struct": {
+                        "type": "element_of_array",
+                        "array": {
+                            "type": "id",
+                            "value": "list_of_schools",
+                            "line": 12,
+                            "symbol": 0,
+                            "t": "list"
+                        },
+                        "index": {
+                            "type": "value",
+                            "t": "int",
+                            "value": 1,
+                            "line": 12,
+                            "symbol": 0
+                        },
+                        "line": 12,
+                        "symbol": 0,
+                        "t": "school"
+                    },
+                    "element": "private",
+                    "line": 12,
+                    "symbol": 0,
+                    "t": "logic"
+                },
+                "from": {
+                    "type": "value",
+                    "t": "logic",
+                    "value": false,
+                    "line": 12,
+                    "symbol": 0
+                },
+                "line": 12,
+                "symbol": 0
+            }
+        ],
+        "line": 12,
+        "symbol": 0
+    },
+    "error_list": []
+}

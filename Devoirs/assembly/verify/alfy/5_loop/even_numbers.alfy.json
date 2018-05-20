@@ -1,0 +1,130 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "nr": {
+                    "type": "int",
+                    "line": 2
+                },
+                "i": {
+                    "type": "int",
+                    "line": 3
+                }
+            },
+            "functions": {},
+            "types": {},
+            "type": "script"
+        }
+    ],
+    "ast": {
+        "type": "script",
+        "statements": [
+            {
+                "type": "asm",
+                "instruction": "readnumber",
+                "parameters": [
+                    {
+                        "type": "id",
+                        "value": "nr",
+                        "line": 5,
+                        "address": true,
+                        "symbol": 0,
+                        "t": "int"
+                    }
+                ],
+                "line": 5,
+                "symbol": 0
+            },
+            {
+                "type": "for",
+                "variable": "i",
+                "from": {
+                    "type": "value",
+                    "t": "int",
+                    "value": 2,
+                    "line": 7,
+                    "symbol": 0
+                },
+                "direction": "to",
+                "to": {
+                    "type": "id",
+                    "value": "nr",
+                    "line": 7,
+                    "symbol": 0,
+                    "t": "int"
+                },
+                "step": {
+                    "type": "value",
+                    "t": "int",
+                    "value": 1,
+                    "line": 7,
+                    "symbol": 0
+                },
+                "statements": [
+                    {
+                        "type": "if",
+                        "expression": {
+                            "type": "expression",
+                            "op": "=",
+                            "left": {
+                                "type": "expression",
+                                "op": "mod",
+                                "left": {
+                                    "type": "id",
+                                    "value": "i",
+                                    "line": 8,
+                                    "symbol": 0,
+                                    "t": "int"
+                                },
+                                "right": {
+                                    "type": "value",
+                                    "t": "int",
+                                    "value": 2,
+                                    "line": 8,
+                                    "symbol": 0
+                                },
+                                "line": 8,
+                                "symbol": 0,
+                                "t": "int"
+                            },
+                            "right": {
+                                "type": "value",
+                                "t": "int",
+                                "value": 0,
+                                "line": 8,
+                                "symbol": 0
+                            },
+                            "line": 8,
+                            "symbol": 0,
+                            "t": "logic"
+                        },
+                        "then": [
+                            {
+                                "type": "asm",
+                                "instruction": "writenumber",
+                                "parameters": [
+                                    {
+                                        "type": "id",
+                                        "value": "i",
+                                        "line": 9,
+                                        "symbol": 0,
+                                        "t": "int"
+                                    }
+                                ],
+                                "line": 9,
+                                "symbol": 0
+                            }
+                        ],
+                        "line": 10,
+                        "symbol": 0
+                    }
+                ],
+                "line": 11,
+                "symbol": 0
+            }
+        ],
+        "line": 13,
+        "symbol": 0
+    },
+    "error_list": []
+}

@@ -1,0 +1,284 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "number": {
+                    "type": "int",
+                    "line": 3
+                }
+            },
+            "functions": {
+                "base16": {
+                    "type": "empty",
+                    "parameters": [
+                        {
+                            "id": "number",
+                            "type": "int",
+                            "line": 5,
+                            "symbol": 1
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "type": "if",
+                            "expression": {
+                                "type": "expression",
+                                "op": ">",
+                                "left": {
+                                    "type": "id",
+                                    "value": "number",
+                                    "line": 8,
+                                    "symbol": 1,
+                                    "t": "int"
+                                },
+                                "right": {
+                                    "type": "value",
+                                    "t": "int",
+                                    "value": 0,
+                                    "line": 8,
+                                    "symbol": 1
+                                },
+                                "line": 8,
+                                "symbol": 1,
+                                "t": "logic"
+                            },
+                            "then": [
+                                {
+                                    "type": "valueof",
+                                    "function": {
+                                        "id": "base16",
+                                        "library": []
+                                    },
+                                    "parameters": {
+                                        "number": {
+                                            "type": "expression",
+                                            "op": "/",
+                                            "left": {
+                                                "type": "id",
+                                                "value": "number",
+                                                "line": 9,
+                                                "symbol": 1,
+                                                "t": "int"
+                                            },
+                                            "right": {
+                                                "type": "value",
+                                                "t": "int",
+                                                "value": 16,
+                                                "line": 9,
+                                                "symbol": 1
+                                            },
+                                            "line": 9,
+                                            "symbol": 1,
+                                            "t": "int"
+                                        }
+                                    },
+                                    "line": 9,
+                                    "symbol": 1,
+                                    "t": "empty"
+                                },
+                                {
+                                    "type": "attribution",
+                                    "to": {
+                                        "type": "id",
+                                        "value": "a",
+                                        "line": 10,
+                                        "symbol": 1,
+                                        "t": "int"
+                                    },
+                                    "from": {
+                                        "type": "expression",
+                                        "op": "mod",
+                                        "left": {
+                                            "type": "id",
+                                            "value": "number",
+                                            "line": 10,
+                                            "symbol": 1,
+                                            "t": "int"
+                                        },
+                                        "right": {
+                                            "type": "value",
+                                            "t": "int",
+                                            "value": 16,
+                                            "line": 10,
+                                            "symbol": 1
+                                        },
+                                        "line": 10,
+                                        "symbol": 1,
+                                        "t": "int"
+                                    },
+                                    "line": 10,
+                                    "symbol": 1
+                                },
+                                {
+                                    "type": "if",
+                                    "expression": {
+                                        "type": "expression",
+                                        "op": ">=",
+                                        "left": {
+                                            "type": "id",
+                                            "value": "a",
+                                            "line": 11,
+                                            "symbol": 1,
+                                            "t": "int"
+                                        },
+                                        "right": {
+                                            "type": "value",
+                                            "t": "int",
+                                            "value": 10,
+                                            "line": 11,
+                                            "symbol": 1
+                                        },
+                                        "line": 11,
+                                        "symbol": 1,
+                                        "t": "logic"
+                                    },
+                                    "then": [
+                                        {
+                                            "type": "asm",
+                                            "instruction": "write",
+                                            "parameters": [
+                                                {
+                                                    "type": "expression",
+                                                    "op": "-",
+                                                    "left": {
+                                                        "type": "expression",
+                                                        "op": "+",
+                                                        "left": {
+                                                            "type": "value",
+                                                            "t": "symbol",
+                                                            "value": "a",
+                                                            "line": 12,
+                                                            "symbol": 1
+                                                        },
+                                                        "right": {
+                                                            "type": "id",
+                                                            "value": "a",
+                                                            "line": 12,
+                                                            "symbol": 1,
+                                                            "t": "int"
+                                                        },
+                                                        "line": 12,
+                                                        "symbol": 1,
+                                                        "t": "int"
+                                                    },
+                                                    "right": {
+                                                        "type": "value",
+                                                        "t": "int",
+                                                        "value": 10,
+                                                        "line": 12,
+                                                        "symbol": 1
+                                                    },
+                                                    "line": 12,
+                                                    "symbol": 1,
+                                                    "t": "int"
+                                                }
+                                            ],
+                                            "line": 12,
+                                            "symbol": 1
+                                        }
+                                    ],
+                                    "else": [
+                                        {
+                                            "type": "asm",
+                                            "instruction": "write",
+                                            "parameters": [
+                                                {
+                                                    "type": "expression",
+                                                    "op": "+",
+                                                    "left": {
+                                                        "type": "value",
+                                                        "t": "symbol",
+                                                        "value": "0",
+                                                        "line": 14,
+                                                        "symbol": 1
+                                                    },
+                                                    "right": {
+                                                        "type": "id",
+                                                        "value": "a",
+                                                        "line": 14,
+                                                        "symbol": 1,
+                                                        "t": "int"
+                                                    },
+                                                    "line": 14,
+                                                    "symbol": 1,
+                                                    "t": "int"
+                                                }
+                                            ],
+                                            "line": 14,
+                                            "symbol": 1
+                                        }
+                                    ],
+                                    "line": 15,
+                                    "symbol": 1
+                                }
+                            ],
+                            "line": 16,
+                            "symbol": 1
+                        }
+                    ],
+                    "symbol": 1,
+                    "line": 17
+                }
+            },
+            "types": {},
+            "type": "script"
+        },
+        {
+            "variables": {
+                "a": {
+                    "type": "int",
+                    "line": 7
+                }
+            },
+            "functions": {},
+            "types": {},
+            "parent": 0,
+            "type": "function",
+            "fn": "base16",
+            "value_type": "empty"
+        }
+    ],
+    "ast": {
+        "type": "script",
+        "statements": [
+            {
+                "type": "asm",
+                "instruction": "readnumber",
+                "parameters": [
+                    {
+                        "type": "id",
+                        "value": "number",
+                        "line": 19,
+                        "address": true,
+                        "symbol": 0,
+                        "t": "int"
+                    }
+                ],
+                "line": 19,
+                "symbol": 0
+            },
+            {
+                "type": "valueof",
+                "function": {
+                    "id": "base16",
+                    "library": []
+                },
+                "parameters": {
+                    "number": {
+                        "type": "id",
+                        "value": "number",
+                        "line": 21,
+                        "symbol": 0,
+                        "t": "int"
+                    }
+                },
+                "line": 21,
+                "symbol": 0,
+                "t": "empty"
+            }
+        ],
+        "line": 22,
+        "symbol": 0
+    },
+    "error_list": []
+}
