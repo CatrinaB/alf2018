@@ -1,0 +1,295 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "i": {
+                    "type": "real",
+                    "line": 31
+                }
+            },
+            "messages": {
+                "writeint": {
+                    "type": "int",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "id": "nr",
+                            "line": 3,
+                            "symbol": 1
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "id": "value",
+                            "type": "none",
+                            "line": 5,
+                            "symbol": 1
+                        }
+                    ],
+                    "symbol": 1,
+                    "line": 6
+                },
+                "writechar": {
+                    "type": "charcter",
+                    "parameters": [
+                        {
+                            "type": "character",
+                            "id": "char",
+                            "line": 8,
+                            "symbol": 2
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "id": "value",
+                            "type": "none",
+                            "line": 10,
+                            "symbol": 2
+                        }
+                    ],
+                    "symbol": 2,
+                    "line": 11
+                },
+                "readfloat": {
+                    "type": "real",
+                    "parameters": [],
+                    "statements": [
+                        {
+                            "id": "value",
+                            "type": "none",
+                            "line": 15,
+                            "symbol": 3
+                        }
+                    ],
+                    "symbol": 3,
+                    "line": 16
+                },
+                "floatwrite": {
+                    "type": "none",
+                    "parameters": [
+                        {
+                            "type": "real",
+                            "id": "number",
+                            "line": 18,
+                            "symbol": 4
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "id": "set",
+                            "to": {
+                                "id": "identifier",
+                                "title": "vinteger",
+                                "line": 23,
+                                "symbol": 4,
+                                "type": "int"
+                            },
+                            "from": {
+                                "id": "identifier",
+                                "title": "number",
+                                "line": 23,
+                                "symbol": 4,
+                                "type": "real"
+                            },
+                            "line": 23,
+                            "symbol": 4
+                        },
+                        {
+                            "id": "set",
+                            "to": {
+                                "id": "identifier",
+                                "title": "vfractional",
+                                "line": 24,
+                                "symbol": 4,
+                                "type": "int"
+                            },
+                            "from": {
+                                "id": "exp",
+                                "op": "-",
+                                "left": {
+                                    "id": "identifier",
+                                    "title": "number",
+                                    "line": 24,
+                                    "symbol": 4,
+                                    "type": "real"
+                                },
+                                "right": {
+                                    "id": "exp",
+                                    "op": "*",
+                                    "left": {
+                                        "id": "identifier",
+                                        "title": "vinteger",
+                                        "line": 24,
+                                        "symbol": 4,
+                                        "type": "int"
+                                    },
+                                    "right": {
+                                        "id": "value",
+                                        "type": "int",
+                                        "value": 1000,
+                                        "line": 24,
+                                        "symbol": 4
+                                    },
+                                    "line": 24,
+                                    "symbol": 4,
+                                    "type": "int"
+                                },
+                                "line": 24,
+                                "symbol": 4,
+                                "type": "real"
+                            },
+                            "line": 24,
+                            "symbol": 4
+                        },
+                        {
+                            "id": "dispatch",
+                            "message": "writeint",
+                            "object": "io",
+                            "parameters": {
+                                "nr": {
+                                    "id": "identifier",
+                                    "title": "vinteger",
+                                    "line": 26,
+                                    "symbol": 4,
+                                    "type": "int"
+                                }
+                            },
+                            "line": 26,
+                            "symbol": 4,
+                            "type": "int"
+                        },
+                        {
+                            "id": "dispatch",
+                            "message": "writechar",
+                            "object": "io",
+                            "parameters": {
+                                "char": {
+                                    "id": "value",
+                                    "type": "character",
+                                    "value": ".",
+                                    "line": 27,
+                                    "symbol": 4
+                                }
+                            },
+                            "line": 27,
+                            "symbol": 4,
+                            "type": "charcter"
+                        },
+                        {
+                            "id": "dispatch",
+                            "message": "writeint",
+                            "object": "io",
+                            "parameters": {
+                                "nr": {
+                                    "id": "identifier",
+                                    "title": "vfractional",
+                                    "line": 28,
+                                    "symbol": 4,
+                                    "type": "int"
+                                }
+                            },
+                            "line": 28,
+                            "symbol": 4,
+                            "type": "int"
+                        }
+                    ],
+                    "symbol": 4,
+                    "line": 29
+                }
+            },
+            "types": {},
+            "type": "module"
+        },
+        {
+            "variables": {},
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "writeint",
+            "return_type": "int"
+        },
+        {
+            "variables": {},
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "writechar",
+            "return_type": "charcter"
+        },
+        {
+            "variables": {},
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "readfloat",
+            "return_type": "real"
+        },
+        {
+            "variables": {
+                "vinteger": {
+                    "type": "int",
+                    "line": 20
+                },
+                "vfractional": {
+                    "type": "int",
+                    "line": 21
+                }
+            },
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "floatwrite",
+            "return_type": "none"
+        }
+    ],
+    "ast": {
+        "id": "module",
+        "statements": [
+            {
+                "id": "set",
+                "to": {
+                    "id": "identifier",
+                    "title": "i",
+                    "line": 33,
+                    "symbol": 0,
+                    "type": "real"
+                },
+                "from": {
+                    "id": "dispatch",
+                    "message": "readfloat",
+                    "object": "io",
+                    "parameters": [],
+                    "line": 33,
+                    "symbol": 0,
+                    "type": "real"
+                },
+                "line": 33,
+                "symbol": 0
+            },
+            {
+                "id": "dispatch",
+                "message": "floatwrite",
+                "object": "module",
+                "parameters": {
+                    "number": {
+                        "id": "identifier",
+                        "title": "i",
+                        "line": 35,
+                        "symbol": 0,
+                        "type": "real"
+                    }
+                },
+                "line": 35,
+                "symbol": 0,
+                "type": "none"
+            }
+        ],
+        "line": 35,
+        "symbol": 0
+    },
+    "error_list": []
+}

@@ -1,0 +1,14 @@
+{Message definition without local variables}
+
+
+message writeint:int nr:int
+begin
+	none
+end
+
+message sum:int n1:int, n2:int 
+begin
+	return n1 + n2
+end
+
+[io writeint nr:[module sum n1 : 3, n2 : 7]]

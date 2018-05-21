@@ -1,0 +1,35 @@
+{Real write}
+
+message writeint:int nr:int
+begin
+	none
+end
+
+message writechar:charcter char:character
+begin
+	none
+end
+
+message readfloat:real
+begin
+	none
+end
+
+message floatwrite:none number:real
+begin
+	define vinteger:int
+	define vfractional:int
+
+	vinteger:=number
+	vfractional := number - vinteger * 1000
+
+	[io writeint nr:vinteger]
+	[io writechar char:"."]
+	[io writeint nr:vfractional]
+end
+
+define i:real
+
+i:=[io readfloat]
+
+[module floatwrite number : i]

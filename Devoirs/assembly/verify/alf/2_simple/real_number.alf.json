@@ -1,0 +1,96 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "a": {
+                    "type": "real",
+                    "value": {
+                        "id": "value",
+                        "type": "real",
+                        "value": 3.7,
+                        "line": 8,
+                        "symbol": 0
+                    },
+                    "line": 8
+                }
+            },
+            "messages": {
+                "writefloat": {
+                    "type": "real",
+                    "parameters": [
+                        {
+                            "type": "real",
+                            "id": "nr",
+                            "line": 3,
+                            "symbol": 1
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "id": "value",
+                            "type": "none",
+                            "line": 5,
+                            "symbol": 1
+                        }
+                    ],
+                    "symbol": 1,
+                    "line": 6
+                }
+            },
+            "types": {},
+            "type": "module"
+        },
+        {
+            "variables": {},
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "writefloat",
+            "return_type": "real"
+        }
+    ],
+    "ast": {
+        "id": "module",
+        "statements": [
+            {
+                "id": "set",
+                "to": {
+                    "id": "identifier",
+                    "title": "a",
+                    "symbol": 0,
+                    "type": "real"
+                },
+                "from": {
+                    "id": "value",
+                    "type": "real",
+                    "value": 3.7,
+                    "line": 8,
+                    "symbol": 0
+                },
+                "line": 8,
+                "symbol": 0
+            },
+            {
+                "id": "dispatch",
+                "message": "writefloat",
+                "object": "io",
+                "parameters": {
+                    "nr": {
+                        "id": "identifier",
+                        "title": "a",
+                        "line": 10,
+                        "symbol": 0,
+                        "type": "real"
+                    }
+                },
+                "line": 10,
+                "symbol": 0,
+                "type": "real"
+            }
+        ],
+        "line": 11,
+        "symbol": 0
+    },
+    "error_list": []
+}

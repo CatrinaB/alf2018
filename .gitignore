@@ -101,5 +101,6 @@ error.js
 symbol.js
 type.js
 main.js
+*.wasm
 
 

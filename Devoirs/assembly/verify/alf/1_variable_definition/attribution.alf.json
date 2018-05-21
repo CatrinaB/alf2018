@@ -1,0 +1,90 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "n": {
+                    "type": "int",
+                    "line": 2
+                }
+            },
+            "messages": {
+                "writeint": {
+                    "type": "int",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "id": "nr",
+                            "line": 4,
+                            "symbol": 1
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "id": "value",
+                            "type": "none",
+                            "line": 6,
+                            "symbol": 1
+                        }
+                    ],
+                    "symbol": 1,
+                    "line": 7
+                }
+            },
+            "types": {},
+            "type": "module"
+        },
+        {
+            "variables": {},
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "writeint",
+            "return_type": "int"
+        }
+    ],
+    "ast": {
+        "id": "module",
+        "statements": [
+            {
+                "id": "set",
+                "to": {
+                    "id": "identifier",
+                    "title": "n",
+                    "line": 9,
+                    "symbol": 0,
+                    "type": "int"
+                },
+                "from": {
+                    "id": "value",
+                    "type": "int",
+                    "value": 6,
+                    "line": 9,
+                    "symbol": 0
+                },
+                "line": 9,
+                "symbol": 0
+            },
+            {
+                "id": "dispatch",
+                "message": "writeint",
+                "object": "module",
+                "parameters": {
+                    "nr": {
+                        "id": "identifier",
+                        "title": "n",
+                        "line": 11,
+                        "symbol": 0,
+                        "type": "int"
+                    }
+                },
+                "line": 11,
+                "symbol": 0,
+                "type": "int"
+            }
+        ],
+        "line": 11,
+        "symbol": 0
+    },
+    "error_list": []
+}

@@ -1,0 +1,264 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "a": {
+                    "type": "int",
+                    "line": 13
+                },
+                "e": {
+                    "type": "character",
+                    "line": 14
+                }
+            },
+            "messages": {
+                "writechar": {
+                    "type": "charcater",
+                    "parameters": [
+                        {
+                            "type": "character",
+                            "id": "char",
+                            "line": 3,
+                            "symbol": 1
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "id": "value",
+                            "type": "none",
+                            "line": 5,
+                            "symbol": 1
+                        }
+                    ],
+                    "symbol": 1,
+                    "line": 6
+                },
+                "readint": {
+                    "type": "int",
+                    "parameters": [],
+                    "statements": [
+                        {
+                            "id": "value",
+                            "type": "none",
+                            "line": 10,
+                            "symbol": 2
+                        }
+                    ],
+                    "symbol": 2,
+                    "line": 11
+                }
+            },
+            "types": {},
+            "type": "module"
+        },
+        {
+            "variables": {},
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "writechar",
+            "return_type": "charcater"
+        },
+        {
+            "variables": {},
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "readint",
+            "return_type": "int"
+        }
+    ],
+    "ast": {
+        "id": "module",
+        "statements": [
+            {
+                "id": "set",
+                "to": {
+                    "id": "identifier",
+                    "title": "a",
+                    "line": 16,
+                    "symbol": 0,
+                    "type": "int"
+                },
+                "from": {
+                    "id": "dispatch",
+                    "message": "readint",
+                    "object": "io",
+                    "parameters": [],
+                    "line": 16,
+                    "symbol": 0,
+                    "type": "int"
+                },
+                "line": 16,
+                "symbol": 0
+            },
+            {
+                "id": "if",
+                "exp": {
+                    "id": "exp",
+                    "op": "=",
+                    "left": {
+                        "id": "exp",
+                        "op": "mod",
+                        "left": {
+                            "id": "identifier",
+                            "title": "a",
+                            "line": 18,
+                            "symbol": 0,
+                            "type": "int"
+                        },
+                        "right": {
+                            "id": "value",
+                            "type": "int",
+                            "value": 2,
+                            "line": 18,
+                            "symbol": 0
+                        },
+                        "line": 18,
+                        "symbol": 0,
+                        "type": "int"
+                    },
+                    "right": {
+                        "id": "value",
+                        "type": "int",
+                        "value": 0,
+                        "line": 18,
+                        "symbol": 0
+                    },
+                    "line": 18,
+                    "symbol": 0,
+                    "type": "logic"
+                },
+                "then": [
+                    {
+                        "id": "if",
+                        "exp": {
+                            "id": "exp",
+                            "op": "=",
+                            "left": {
+                                "id": "exp",
+                                "op": "mod",
+                                "left": {
+                                    "id": "identifier",
+                                    "title": "a",
+                                    "line": 19,
+                                    "symbol": 0,
+                                    "type": "int"
+                                },
+                                "right": {
+                                    "id": "value",
+                                    "type": "int",
+                                    "value": 6,
+                                    "line": 19,
+                                    "symbol": 0
+                                },
+                                "line": 19,
+                                "symbol": 0,
+                                "type": "int"
+                            },
+                            "right": {
+                                "id": "value",
+                                "type": "int",
+                                "value": 0,
+                                "line": 19,
+                                "symbol": 0
+                            },
+                            "line": 19,
+                            "symbol": 0,
+                            "type": "logic"
+                        },
+                        "then": [
+                            {
+                                "id": "set",
+                                "to": {
+                                    "id": "identifier",
+                                    "title": "e",
+                                    "line": 20,
+                                    "symbol": 0,
+                                    "type": "character"
+                                },
+                                "from": {
+                                    "id": "value",
+                                    "type": "character",
+                                    "value": "y",
+                                    "line": 20,
+                                    "symbol": 0
+                                },
+                                "line": 20,
+                                "symbol": 0
+                            }
+                        ],
+                        "else": [
+                            {
+                                "id": "set",
+                                "to": {
+                                    "id": "identifier",
+                                    "title": "e",
+                                    "line": 22,
+                                    "symbol": 0,
+                                    "type": "character"
+                                },
+                                "from": {
+                                    "id": "value",
+                                    "type": "character",
+                                    "value": "n",
+                                    "line": 22,
+                                    "symbol": 0
+                                },
+                                "line": 22,
+                                "symbol": 0
+                            }
+                        ],
+                        "line": 23,
+                        "symbol": 0
+                    }
+                ],
+                "else": [
+                    {
+                        "id": "set",
+                        "to": {
+                            "id": "identifier",
+                            "title": "e",
+                            "line": 25,
+                            "symbol": 0,
+                            "type": "character"
+                        },
+                        "from": {
+                            "id": "value",
+                            "type": "character",
+                            "value": "o",
+                            "line": 25,
+                            "symbol": 0
+                        },
+                        "line": 25,
+                        "symbol": 0
+                    }
+                ],
+                "line": 26,
+                "symbol": 0
+            },
+            {
+                "id": "dispatch",
+                "message": "writechar",
+                "object": "io",
+                "parameters": {
+                    "char": {
+                        "id": "identifier",
+                        "title": "e",
+                        "line": 29,
+                        "symbol": 0,
+                        "type": "character"
+                    }
+                },
+                "line": 29,
+                "symbol": 0,
+                "type": "charcater"
+            }
+        ],
+        "line": 30,
+        "symbol": 0
+    },
+    "error_list": []
+}

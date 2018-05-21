@@ -14,6 +14,9 @@ function semantic (sourceStr)
 	{
 		var SymbolAST = require ('./symbol.js');
 		var Type = require ('./type.js');
+		var s;
+		var t;
+		var output;
 		
 		if (_.isString (sourceStr))
 		{
@@ -24,11 +27,11 @@ function semantic (sourceStr)
 
 			if (ast)
 			{
-				var s = new SymbolAST (ast);
+				s = new SymbolAST (ast);
 
 				// console.log (s);
 
-				var t = new Type (s);
+				t = new Type (s);
 
 				t.symbol_type ();
 
@@ -45,7 +48,7 @@ function semantic (sourceStr)
 				ast = {};
 			}
 
-			var output = {
+			output = {
 				symbol: s,
 				type: t,
 				ast: ast,
@@ -56,7 +59,7 @@ function semantic (sourceStr)
 		}
 		else
 		{
-			s = new SymbolAST (sourceStr.symbol, sourceStr.ast);
+			s = new SymbolAST (sourceStr.ast, sourceStr.symbol);
 			output = {
 				symbol: s,
 				type: t,

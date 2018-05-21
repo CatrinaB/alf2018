@@ -1,0 +1,96 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "a": {
+                    "type": "logic",
+                    "value": {
+                        "id": "value",
+                        "type": "logic",
+                        "value": false,
+                        "line": 8,
+                        "symbol": 0
+                    },
+                    "line": 8
+                }
+            },
+            "messages": {
+                "writeint": {
+                    "type": "int",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "id": "nr",
+                            "line": 3,
+                            "symbol": 1
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "id": "value",
+                            "type": "none",
+                            "line": 5,
+                            "symbol": 1
+                        }
+                    ],
+                    "symbol": 1,
+                    "line": 6
+                }
+            },
+            "types": {},
+            "type": "module"
+        },
+        {
+            "variables": {},
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "writeint",
+            "return_type": "int"
+        }
+    ],
+    "ast": {
+        "id": "module",
+        "statements": [
+            {
+                "id": "set",
+                "to": {
+                    "id": "identifier",
+                    "title": "a",
+                    "symbol": 0,
+                    "type": "logic"
+                },
+                "from": {
+                    "id": "value",
+                    "type": "logic",
+                    "value": false,
+                    "line": 8,
+                    "symbol": 0
+                },
+                "line": 8,
+                "symbol": 0
+            },
+            {
+                "id": "dispatch",
+                "message": "writeint",
+                "object": "io",
+                "parameters": {
+                    "nr": {
+                        "id": "identifier",
+                        "title": "a",
+                        "line": 10,
+                        "symbol": 0,
+                        "type": "logic"
+                    }
+                },
+                "line": 10,
+                "symbol": 0,
+                "type": "int"
+            }
+        ],
+        "line": 11,
+        "symbol": 0
+    },
+    "error_list": []
+}

@@ -16,7 +16,7 @@ var verifyTree;
 
 try
 {
-	originalTree = require ('./'+originalFile);
+	originalTree = require (originalFile);
 }
 catch (e)
 {

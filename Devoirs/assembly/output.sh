@@ -1,6 +1,14 @@
 #!/bin/bash
 
-for folder in verify/alfy/*
+for folder in verify/alf/*
+do
+	rm $folder/*.out
+	rm $folder/*.json
+	rm $folder/*.wat
+	rm $folder/*.wasm
+done
+
+for folder in verify/alf/*
 do
 	for file in $folder/*.alf
 	do
@@ -9,17 +17,17 @@ do
 	done
 done
 
-# cd verify 
+cd verify 
 
-# for folder in alfy/*
-# do
-# 	for file in $folder/*.alfy
-# 	do
-# 		echo $file
-# 		keyboardfile="$file".in
-# 		if [ ! -f $keyboardfile ]; then keyboardfile="empty.in"; fi
-# 		./run_asm.sh "$file".asm "$keyboardfile" "$file".asm.out
-# 	done
-# done
+for folder in alf/*
+do
+	for file in $folder/*.alf
+	do
+		echo $file
+		keyboardfile="$file".in
+		if [ ! -f $keyboardfile ]; then keyboardfile="empty.in"; fi
+		./run_asm.sh "$file".wat "$keyboardfile" "$file".wasm.out
+	done
+done
 
-# cd ..
+cd ..

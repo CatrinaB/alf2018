@@ -1,0 +1,140 @@
+{
+    "symbol": [
+        {
+            "variables": {},
+            "messages": {
+                "writeint": {
+                    "type": "int",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "id": "nr",
+                            "line": 4,
+                            "symbol": 1
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "id": "value",
+                            "type": "none",
+                            "line": 6,
+                            "symbol": 1
+                        }
+                    ],
+                    "symbol": 1,
+                    "line": 7
+                },
+                "sum": {
+                    "type": "int",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "id": "n1",
+                            "line": 9,
+                            "symbol": 2
+                        },
+                        {
+                            "type": "int",
+                            "id": "n2",
+                            "line": 9,
+                            "symbol": 2
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "id": "return",
+                            "value": {
+                                "id": "exp",
+                                "op": "+",
+                                "left": {
+                                    "id": "identifier",
+                                    "title": "n1",
+                                    "line": 11,
+                                    "symbol": 2,
+                                    "type": "int"
+                                },
+                                "right": {
+                                    "id": "identifier",
+                                    "title": "n2",
+                                    "line": 11,
+                                    "symbol": 2,
+                                    "type": "int"
+                                },
+                                "line": 11,
+                                "symbol": 2,
+                                "type": "int"
+                            },
+                            "line": 11,
+                            "symbol": 2,
+                            "type": "int"
+                        }
+                    ],
+                    "symbol": 2,
+                    "line": 12
+                }
+            },
+            "types": {},
+            "type": "module"
+        },
+        {
+            "variables": {},
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "writeint",
+            "return_type": "int"
+        },
+        {
+            "variables": {},
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "sum",
+            "return_type": "int"
+        }
+    ],
+    "ast": {
+        "id": "module",
+        "statements": [
+            {
+                "id": "dispatch",
+                "message": "writeint",
+                "object": "io",
+                "parameters": {
+                    "nr": {
+                        "id": "dispatch",
+                        "message": "sum",
+                        "object": "module",
+                        "parameters": {
+                            "n1": {
+                                "id": "value",
+                                "type": "int",
+                                "value": 3,
+                                "line": 14,
+                                "symbol": 0
+                            },
+                            "n2": {
+                                "id": "value",
+                                "type": "int",
+                                "value": 7,
+                                "line": 14,
+                                "symbol": 0
+                            }
+                        },
+                        "line": 14,
+                        "symbol": 0,
+                        "type": "int"
+                    }
+                },
+                "line": 14,
+                "symbol": 0,
+                "type": "int"
+            }
+        ],
+        "line": 15,
+        "symbol": 0
+    },
+    "error_list": []
+}

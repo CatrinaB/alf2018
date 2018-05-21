@@ -1,0 +1,94 @@
+{
+    "symbol": [
+        {
+            "variables": {},
+            "messages": {
+                "writeint": {
+                    "type": "int",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "id": "nr",
+                            "line": 3,
+                            "symbol": 1
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "id": "value",
+                            "type": "none",
+                            "line": 5,
+                            "symbol": 1
+                        }
+                    ],
+                    "symbol": 1,
+                    "line": 6
+                }
+            },
+            "types": {},
+            "type": "module"
+        },
+        {
+            "variables": {},
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "writeint",
+            "return_type": "int"
+        }
+    ],
+    "ast": {
+        "id": "module",
+        "statements": [
+            {
+                "id": "dispatch",
+                "message": "writeint",
+                "object": "io",
+                "parameters": {
+                    "nr": {
+                        "id": "exp",
+                        "op": "+",
+                        "left": {
+                            "id": "exp",
+                            "op": "+",
+                            "left": {
+                                "id": "value",
+                                "type": "int",
+                                "value": 2,
+                                "line": 8,
+                                "symbol": 0
+                            },
+                            "right": {
+                                "id": "value",
+                                "type": "real",
+                                "value": 3.5,
+                                "line": 8,
+                                "symbol": 0
+                            },
+                            "line": 8,
+                            "symbol": 0,
+                            "type": "real"
+                        },
+                        "right": {
+                            "id": "value",
+                            "type": "character",
+                            "value": "e",
+                            "line": 8,
+                            "symbol": 0
+                        },
+                        "line": 8,
+                        "symbol": 0,
+                        "type": "real"
+                    }
+                },
+                "line": 8,
+                "symbol": 0,
+                "type": "int"
+            }
+        ],
+        "line": 8,
+        "symbol": 0
+    },
+    "error_list": []
+}

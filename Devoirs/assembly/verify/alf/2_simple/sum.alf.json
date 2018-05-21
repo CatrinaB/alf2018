@@ -1,0 +1,177 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "x": {
+                    "type": "int",
+                    "line": 3
+                },
+                "y": {
+                    "type": "int",
+                    "line": 3
+                },
+                "s": {
+                    "type": "int",
+                    "line": 3
+                }
+            },
+            "messages": {
+                "writeint": {
+                    "type": "int",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "id": "nr",
+                            "line": 5,
+                            "symbol": 1
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "id": "value",
+                            "type": "none",
+                            "line": 7,
+                            "symbol": 1
+                        }
+                    ],
+                    "symbol": 1,
+                    "line": 8
+                },
+                "readint": {
+                    "type": "int",
+                    "parameters": [],
+                    "statements": [
+                        {
+                            "id": "value",
+                            "type": "none",
+                            "line": 12,
+                            "symbol": 2
+                        }
+                    ],
+                    "symbol": 2,
+                    "line": 13
+                }
+            },
+            "types": {},
+            "type": "module"
+        },
+        {
+            "variables": {},
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "writeint",
+            "return_type": "int"
+        },
+        {
+            "variables": {},
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "readint",
+            "return_type": "int"
+        }
+    ],
+    "ast": {
+        "id": "module",
+        "statements": [
+            {
+                "id": "set",
+                "to": {
+                    "id": "identifier",
+                    "title": "x",
+                    "line": 15,
+                    "symbol": 0,
+                    "type": "int"
+                },
+                "from": {
+                    "id": "dispatch",
+                    "message": "readint",
+                    "object": "io",
+                    "parameters": [],
+                    "line": 15,
+                    "symbol": 0,
+                    "type": "int"
+                },
+                "line": 15,
+                "symbol": 0
+            },
+            {
+                "id": "set",
+                "to": {
+                    "id": "identifier",
+                    "title": "y",
+                    "line": 16,
+                    "symbol": 0,
+                    "type": "int"
+                },
+                "from": {
+                    "id": "dispatch",
+                    "message": "readint",
+                    "object": "io",
+                    "parameters": [],
+                    "line": 16,
+                    "symbol": 0,
+                    "type": "int"
+                },
+                "line": 16,
+                "symbol": 0
+            },
+            {
+                "id": "set",
+                "to": {
+                    "id": "identifier",
+                    "title": "s",
+                    "line": 18,
+                    "symbol": 0,
+                    "type": "int"
+                },
+                "from": {
+                    "id": "exp",
+                    "op": "+",
+                    "left": {
+                        "id": "identifier",
+                        "title": "x",
+                        "line": 18,
+                        "symbol": 0,
+                        "type": "int"
+                    },
+                    "right": {
+                        "id": "identifier",
+                        "title": "y",
+                        "line": 18,
+                        "symbol": 0,
+                        "type": "int"
+                    },
+                    "line": 18,
+                    "symbol": 0,
+                    "type": "int"
+                },
+                "line": 18,
+                "symbol": 0
+            },
+            {
+                "id": "dispatch",
+                "message": "writeint",
+                "object": "io",
+                "parameters": {
+                    "nr": {
+                        "id": "identifier",
+                        "title": "s",
+                        "line": 20,
+                        "symbol": 0,
+                        "type": "int"
+                    }
+                },
+                "line": 20,
+                "symbol": 0,
+                "type": "int"
+            }
+        ],
+        "line": 21,
+        "symbol": 0
+    },
+    "error_list": []
+}

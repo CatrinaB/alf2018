@@ -28,16 +28,16 @@ npm install lodash was
 df -h
 
 echo '{ "node":true, "loopfunc": true, "esnext":true }' > .jshintrc
-echo 'alfy.js' > .jshintignore
+echo 'grammar.js' > .jshintignore
 if [ ! -f `basename "$1"` ];
 then
 	echo "Your main.js file is missing"
-elif ! jshint *.js;
-then
-	echo "Please review your code, you have jshint errors"
+# elif ! jshint *.js;
+# then
+# 	echo "Please review your code, you have jshint errors"
 else
 	cd -
-	for folder in alfy/*
+	for folder in alf/*
 	do
 		if [ -d $folder ];
 		then
@@ -53,11 +53,13 @@ else
 			fi
 			if [ $failed == 0 ] || ! (echo $folder | grep bonus &> /dev/null);
 			then
-				for file in "$folder"/*.alfy
+				for file in "$folder"/*.alf
 				do
 					inputfile=`pwd`/"$file".json
-					outputfile=output/`basename "$file"`.asm
-					originalfile="$file.asm"
+					variablesFile=`pwd`/"$file".wat.variables.json
+					outputfile=output/`basename "$file"`.wat
+					originalfile="$file.wat"
+					originaloutputfile="$file.wasm"
 					errorsfile=output/`basename "$file"`.err
 					title=`head -n 1 "$file" | grep '{' | cut -d '{' -f 2 | cut -d '}' -f 1` 
 					if [ `echo -n "$title" | wc -c` -eq 0 ];
@@ -76,7 +78,7 @@ else
 					# Symbol
 					echo "Variables" > "$errorsfile"
 					echo "-----------" >> "$errorsfile"
-					if node verify.js "$inputfile".variables.json "$outputfile".variables.json  >> "$errorsfile" 2>&1
+					if node verify.js "$variablesFile" "$outputfile".variables.json  >> "$errorsfile" 2>&1
 					then
 						p=$P1
 						passed=$(($passed+1))
@@ -94,7 +96,7 @@ else
 						keyboardfile="$file".in
 						if [ ! -f $keyboardfile ]; then keyboardfile="empty.in"; fi
 						./run_asm.sh "$outputfile" "$keyboardfile" "$outputfile".out
-						if diff -y --suppress-common-lines "$originalfile".out "$outputfile".out >> "$errorsfile" 2>&1
+						if diff -y --suppress-common-lines "$originaloutputfile".out "$outputfile".out >> "$errorsfile" 2>&1
 						then
 							p=$P2
 							passed=$(($passed+1))

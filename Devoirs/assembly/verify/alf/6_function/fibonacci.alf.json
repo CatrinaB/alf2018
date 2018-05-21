@@ -1,0 +1,329 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "item": {
+                    "type": "int",
+                    "line": 2
+                },
+                "stack": {
+                    "type": "int",
+                    "line": 3
+                }
+            },
+            "messages": {
+                "readint": {
+                    "type": "int",
+                    "parameters": [],
+                    "statements": [
+                        {
+                            "id": "value",
+                            "type": "none",
+                            "line": 7,
+                            "symbol": 1
+                        }
+                    ],
+                    "symbol": 1,
+                    "line": 8
+                },
+                "writeint": {
+                    "type": "int",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "id": "nr",
+                            "line": 10,
+                            "symbol": 2
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "id": "value",
+                            "type": "none",
+                            "line": 12,
+                            "symbol": 2
+                        }
+                    ],
+                    "symbol": 2,
+                    "line": 13
+                },
+                "fibonacci": {
+                    "type": "int",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "id": "item",
+                            "line": 15,
+                            "symbol": 3
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "id": "if",
+                            "exp": {
+                                "id": "exp",
+                                "op": "or",
+                                "left": {
+                                    "id": "exp",
+                                    "op": "=",
+                                    "left": {
+                                        "id": "identifier",
+                                        "title": "item",
+                                        "line": 18,
+                                        "symbol": 3,
+                                        "type": "int"
+                                    },
+                                    "right": {
+                                        "id": "value",
+                                        "type": "int",
+                                        "value": 0,
+                                        "line": 18,
+                                        "symbol": 3
+                                    },
+                                    "line": 18,
+                                    "symbol": 3,
+                                    "type": "logic"
+                                },
+                                "right": {
+                                    "id": "exp",
+                                    "op": "=",
+                                    "left": {
+                                        "id": "identifier",
+                                        "title": "item",
+                                        "line": 18,
+                                        "symbol": 3,
+                                        "type": "int"
+                                    },
+                                    "right": {
+                                        "id": "value",
+                                        "type": "int",
+                                        "value": 1,
+                                        "line": 18,
+                                        "symbol": 3
+                                    },
+                                    "line": 18,
+                                    "symbol": 3,
+                                    "type": "logic"
+                                },
+                                "line": 18,
+                                "symbol": 3,
+                                "type": "logic"
+                            },
+                            "then": [
+                                {
+                                    "id": "set",
+                                    "to": {
+                                        "id": "identifier",
+                                        "title": "value",
+                                        "line": 19,
+                                        "symbol": 3,
+                                        "type": "int"
+                                    },
+                                    "from": {
+                                        "id": "value",
+                                        "type": "int",
+                                        "value": 1,
+                                        "line": 19,
+                                        "symbol": 3
+                                    },
+                                    "line": 19,
+                                    "symbol": 3
+                                }
+                            ],
+                            "else": [
+                                {
+                                    "id": "set",
+                                    "to": {
+                                        "id": "identifier",
+                                        "title": "value",
+                                        "line": 21,
+                                        "symbol": 3,
+                                        "type": "int"
+                                    },
+                                    "from": {
+                                        "id": "exp",
+                                        "op": "+",
+                                        "left": {
+                                            "id": "dispatch",
+                                            "message": "fibonacci",
+                                            "object": "module",
+                                            "parameters": {
+                                                "item": {
+                                                    "id": "exp",
+                                                    "op": "-",
+                                                    "left": {
+                                                        "id": "identifier",
+                                                        "title": "item",
+                                                        "line": 21,
+                                                        "symbol": 3,
+                                                        "type": "int"
+                                                    },
+                                                    "right": {
+                                                        "id": "value",
+                                                        "type": "int",
+                                                        "value": 2,
+                                                        "line": 21,
+                                                        "symbol": 3
+                                                    },
+                                                    "line": 21,
+                                                    "symbol": 3,
+                                                    "type": "int"
+                                                }
+                                            },
+                                            "line": 21,
+                                            "symbol": 3,
+                                            "type": "int"
+                                        },
+                                        "right": {
+                                            "id": "dispatch",
+                                            "message": "fibonacci",
+                                            "object": "module",
+                                            "parameters": {
+                                                "item": {
+                                                    "id": "exp",
+                                                    "op": "-",
+                                                    "left": {
+                                                        "id": "identifier",
+                                                        "title": "item",
+                                                        "line": 21,
+                                                        "symbol": 3,
+                                                        "type": "int"
+                                                    },
+                                                    "right": {
+                                                        "id": "value",
+                                                        "type": "int",
+                                                        "value": 1,
+                                                        "line": 21,
+                                                        "symbol": 3
+                                                    },
+                                                    "line": 21,
+                                                    "symbol": 3,
+                                                    "type": "int"
+                                                }
+                                            },
+                                            "line": 21,
+                                            "symbol": 3,
+                                            "type": "int"
+                                        },
+                                        "line": 21,
+                                        "symbol": 3,
+                                        "type": "int"
+                                    },
+                                    "line": 21,
+                                    "symbol": 3
+                                }
+                            ],
+                            "line": 22,
+                            "symbol": 3
+                        },
+                        {
+                            "id": "return",
+                            "value": {
+                                "id": "identifier",
+                                "title": "value",
+                                "line": 23,
+                                "symbol": 3,
+                                "type": "int"
+                            },
+                            "line": 23,
+                            "symbol": 3,
+                            "type": "int"
+                        }
+                    ],
+                    "symbol": 3,
+                    "line": 24
+                }
+            },
+            "types": {},
+            "type": "module"
+        },
+        {
+            "variables": {},
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "readint",
+            "return_type": "int"
+        },
+        {
+            "variables": {},
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "writeint",
+            "return_type": "int"
+        },
+        {
+            "variables": {
+                "value": {
+                    "type": "int",
+                    "line": 17
+                }
+            },
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "fibonacci",
+            "return_type": "int"
+        }
+    ],
+    "ast": {
+        "id": "module",
+        "statements": [
+            {
+                "id": "set",
+                "to": {
+                    "id": "identifier",
+                    "title": "item",
+                    "line": 26,
+                    "symbol": 0,
+                    "type": "int"
+                },
+                "from": {
+                    "id": "dispatch",
+                    "message": "readint",
+                    "object": "io",
+                    "parameters": [],
+                    "line": 26,
+                    "symbol": 0,
+                    "type": "int"
+                },
+                "line": 26,
+                "symbol": 0
+            },
+            {
+                "id": "dispatch",
+                "message": "writeint",
+                "object": "io",
+                "parameters": {
+                    "nr": {
+                        "id": "dispatch",
+                        "message": "fibonacci",
+                        "object": "module",
+                        "parameters": {
+                            "item": {
+                                "id": "identifier",
+                                "title": "item",
+                                "line": 27,
+                                "symbol": 0,
+                                "type": "int"
+                            }
+                        },
+                        "line": 27,
+                        "symbol": 0,
+                        "type": "int"
+                    }
+                },
+                "line": 27,
+                "symbol": 0,
+                "type": "int"
+            }
+        ],
+        "line": 29,
+        "symbol": 0
+    },
+    "error_list": []
+}

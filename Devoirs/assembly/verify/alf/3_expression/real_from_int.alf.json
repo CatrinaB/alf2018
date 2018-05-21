@@ -1,0 +1,138 @@
+{
+    "symbol": [
+        {
+            "variables": {
+                "s": {
+                    "type": "real",
+                    "line": 13
+                },
+                "n": {
+                    "type": "int",
+                    "line": 14
+                }
+            },
+            "messages": {
+                "writeint": {
+                    "type": "int",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "id": "nr",
+                            "line": 3,
+                            "symbol": 1
+                        }
+                    ],
+                    "statements": [
+                        {
+                            "id": "value",
+                            "type": "none",
+                            "line": 5,
+                            "symbol": 1
+                        }
+                    ],
+                    "symbol": 1,
+                    "line": 6
+                },
+                "readint": {
+                    "type": "int",
+                    "parameters": [],
+                    "statements": [
+                        {
+                            "id": "value",
+                            "type": "none",
+                            "line": 10,
+                            "symbol": 2
+                        }
+                    ],
+                    "symbol": 2,
+                    "line": 11
+                }
+            },
+            "types": {},
+            "type": "module"
+        },
+        {
+            "variables": {},
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "writeint",
+            "return_type": "int"
+        },
+        {
+            "variables": {},
+            "messages": {},
+            "types": {},
+            "parent": 0,
+            "type": "message",
+            "message": "readint",
+            "return_type": "int"
+        }
+    ],
+    "ast": {
+        "id": "module",
+        "statements": [
+            {
+                "id": "set",
+                "to": {
+                    "id": "identifier",
+                    "title": "n",
+                    "line": 16,
+                    "symbol": 0,
+                    "type": "int"
+                },
+                "from": {
+                    "id": "dispatch",
+                    "message": "readint",
+                    "object": "io",
+                    "parameters": [],
+                    "line": 16,
+                    "symbol": 0,
+                    "type": "int"
+                },
+                "line": 16,
+                "symbol": 0
+            },
+            {
+                "id": "set",
+                "to": {
+                    "id": "identifier",
+                    "title": "s",
+                    "line": 17,
+                    "symbol": 0,
+                    "type": "real"
+                },
+                "from": {
+                    "id": "identifier",
+                    "title": "n",
+                    "line": 17,
+                    "symbol": 0,
+                    "type": "int"
+                },
+                "line": 17,
+                "symbol": 0
+            },
+            {
+                "id": "dispatch",
+                "message": "writeint",
+                "object": "io",
+                "parameters": {
+                    "nr": {
+                        "id": "identifier",
+                        "title": "s",
+                        "line": 18,
+                        "symbol": 0,
+                        "type": "real"
+                    }
+                },
+                "line": 18,
+                "symbol": 0,
+                "type": "int"
+            }
+        ],
+        "line": 19,
+        "symbol": 0
+    },
+    "error_list": []
+}
